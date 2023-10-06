@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <title>投资分析</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/x_base.css" rel="stylesheet">
+    <link href="css/x_index.css" rel="stylesheet">
+	
+	
+    <link href="css/distributedPP.css" type="text/css" rel="stylesheet"/>
+    <!-- here is the ico-->
+    <link rel="shortcut icon" href="img/x_light_logo.ico">
+    </head>
+    <body>
+            <div class="x_header">
+               <div class="row-fluid">
+                    <div class="pull-left x_ltheaderlf">
+                        <img src="img/x_light_logos.png" >
+                        <img src="img/x_lt_title.png" >
+                    </div>
+                    <div class="pull-right"><img src="img/x_lt_phone.jpg"></div>
+                </div>
+                <div class="x_ltnav">
+                    <div class="x_ltnav_mid">
+                        <div class="pull-left">
+                            <ul class="unstyled inline">
+                                <li class="active"><a href="index.html">首页</a></li>
+                                <li><a href="#">服务平台</a></li>
+                                <li><a href="news.html">行业资讯</a></li>
+                                <li><a href="notice.html">平台公告</a></li>
+                                <li><a href="class.html">分布式课堂</a></li>
+                                <li><a href="tzfx.html">投资分析</a></li>
+                            </ul>
+                        </div>
+                        <form class="form-search pull-right" style="margin-top:10px;">
+                            <div class="input-append " >
+                                <input type="text" class="span2 search-query" placeholder="请输入关键字">    
+                                <button type="submit" class="btn"><i class="icon-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="x_ltmarqueen">
+                        <div class="x_lt_new pull-left">
+                           <span class="pull-left">&nbsp;&nbsp;最新动态&nbsp;&nbsp;</span>
+                           <span class="pull-left"><img src="img/dongtai_bg.jpg"></span>
+                        </div>
+                       <div class="marquee  pull-left">
+                            <marquee scrollAmount=2   onMouseOver="this.stop()" onMouseOut="this.start()">
+                                <a href="#">深度解读《河南省推进光伏电站建设的通知》（626）号文件</a>
+                                <a href="zckd/zckd_article2.html">能源局、工商局关于印发风力发电场、光伏电站购售电合同示范文本的通知</a>
+                                <a href="#">能源局、工商局关于印发风力发电场、光伏电站并网调度协议示范文本的通知</a>
+                                <a href="#">国家能源局就《关于进一步落实分布式光伏发电有关政策》征求意见</a>
+                            </marquee>
+                        </div>
+                        <div class="x_lt_more pull-right">
+                            <a href="#">更多</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div style="width:100%; text-align:center;">
+                <img src="img/x_ltaa.jpg">
+            </div>
+
+
+            <div class="x_container">
+                <div class="row-fluid">	
+	<div class="tzfx" >
+	<div class="content_left">
+		<div class="tabs">
+			<ul>
+				<li class="tab tab1 selected">发电收益测算</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="content_tabs">
+			<div class="tab_content tab_content1" >
+				<div class="tab_list">
+					<ul>
+						<li>
+							<div class="t_left">装机量：&nbsp;&nbsp;</div>
+							<div class="t_right">
+								<input type="text" style="width:205px;" id="ygzj"  value="10"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								KW </div>
+						</li>
+						<li>
+							<div class="t_left">设备成本：</div>
+							<div class="t_right">
+								<input type="text" style="width:205px;" id="ygsb" value="100000"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								万元 </div>
+						</li>
+						<li>
+							<div class="t_left">所在地：&nbsp;&nbsp;</div>
+							<div class="t_right">
+								<select name="province" id="syprovince" class="popup_list">
+								</select>
+								<select name="city" id="sycity" class="popup_list" style="margin-left:20px;">
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="t_left">度电补贴：</div>
+							<div class="t_right"> 0.42（国家） +
+								<input type="text" style="width:90px;" id="ygdd" value="0"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								（地方）元/度 </div>
+						</li>
+						<li>
+							<div class="t_left">初装补贴：</div>
+							<div class="t_left">
+								<input type="text" style=" margin-left:10px;width:50px;" id="ygcz" value="0"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								元/瓦 </div>
+							<div  style="float:left;">&nbsp;&nbsp;用电电价：</div>
+							<span >
+							<input type="text" style="width:50px;" id="ygyd" value="0.6"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+							元/瓦 </span> </li>
+						<li>
+							<div class="t_left">累计收益：&nbsp;</div>
+							<div class="t_right">
+								<input type="text" style="width:90px;" value="5" id="ljn"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								年 </div>
+						</li>
+					</ul>
+				</div>
+				<button onClick="showBenefits()" class="btn btn-primary" type="button">提交</button>
+
+				<div class="tab_count">
+					<span class="badge badge-important">总收益</span>
+					<span id="totalMoney" style="color:red"><strong>0元</strong></span></div>
+			</div>
+		</div>
+		<div class="tab_content tab_content2" style="display:none;">
+			<form id="distForm" name="disForm" method="post"  >
+				<div class="content_tabs">
+					<ul>
+						<li class="norequired">
+							<div class="t_left">业主名称：</div>
+							<div class="t_right"> <span>
+								<input type="text" name="truename" />
+								</span> </div>
+						</li>
+						<li class="norequired">
+							<div class="t_left">联系方式：</div>
+							<div class="t_right"><span>
+								<input type="text" name="tel"/>
+								</span></div>
+						</li>
+						<li class="norequired">
+							<div class="t_left">邮件地址：</div>
+							<div class="t_right"><span>
+								<input style="width:190px;" type="text" name="email" />
+								</span></div>
+						</li>
+						<li class="do_address">
+							<div class="t_left"><font>*</font>安装地址：</div>
+							<div class="t_right">
+								<select name="province" id="zjprovince" class="popup_list">
+								</select>
+								<select name="citys" id="zjcity" class="popup_list" style="margin-left:20px;">
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="t_left"><font>*</font>屋面类型：</div>
+							<div class="t_right">
+								<select id="wuding" name="wuding" class="popup_list">
+									<option>--屋面类型--</option>
+								</select>
+								<select id="wudingtype" name="wudingtype" class="popup_list">
+									<option>--屋面类型--</option>
+								</select>
+								<input type="hidden" id="jiaodu" name="jiaodu" />
+							</div>
+						</li>
+						<li>
+							<div class="t_left"><font>*</font>屋顶面积：</div>
+							<div class="t_right"><span>约
+								<input style="width:60px;margin:0 3px 0 3px;" type="text" id="area" name="area" />
+								平方米</span></div>
+						</li>
+						<li>
+							<div class="t_left"><font>*</font>阴影问题：</div>
+							<div class="t_left">
+								<select class="popup_list" id="shadow" name="shadow">
+									<option value="1">--屋顶无遮挡--</option>
+									<option value="0">--屋顶有遮挡--</option>
+								</select>
+							</div>
+							<div id="zhedang" class="t_right" style="display:none;">阴影面积比例：
+								<select class="popup_list" id="yybl">
+									<option value="0.1">0%——10%</option>
+									<option value="0.2">10%——20%</option>
+									<option value="0.3">20%——30%</option>
+									<option value="0.4">30%——40%</option>
+									<option value="0.5">40%——50%</option>
+									<option value="0.6">50%——60%</option>
+									<option value="0.7">60%——70%</option>
+								</select>
+							</div>
+							<div style="clear:both;"></div>
+						</li>
+						<li class="norequired">
+							<div class="t_left">房屋年限：</div>
+							<div class="t_left"> <span>
+								<input style="width:60px; margin-right:5px;" type="text" name="years" />
+								年</span> </div>
+							<div class="t_left">年用电量：</div>
+							<div class="t_left"><span>每年约
+								<input style="width:60px; margin:0 3px 0 3px;" type="text" name="power" />
+								千瓦时</span></div>
+							<div style="clear:both;"></div>
+						</li>
+						<li class="norequired">
+							<div class="t_left" id="ygfd" >预估装机量：<span id="dianliang">KW</span></div>
+							<div class="t_left" id="ygbj" >预估报价：<span style="color:red;" id="baojia">0元</span></div>
+							<div style="clear:both;"></div>
+						</li>
+					</ul>
+					<div class="other_comments" > 其他需求说明：
+						<div>
+							<textarea rows="2" name="explain"></textarea>
+						</div>
+					</div>
+					<div class="buttons">
+						<ul>
+							<li onClick="showResult()">计算</li>
+							<li onClick="sub()">我想安装</li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	
+	<div class="content_right">
+		<div class="tabs">
+			<ul>
+				<li class="tab tab2  selected">投资回报率计算</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="content_tabs">
+			 
+			<div class="tab_content tab_content2"   >
+				<div class="tab_list">
+					<ul>
+						<li>
+							<div class="t_left">电站类型：</div>
+							<div class="t_right" >
+								<label class="radio inline">
+								 	<input type="radio" name="stationType" checked="checked" onClick="selectFenbu()" value="geren"/>
+								  屋顶分布式
+								</label>
+								
+								<label class="radio inline">
+									<input type="radio" name="stationType" onClick="selectDianzhan()" value="dianzhan"/>
+								 地面电站 
+								 </label>
+								</div>
+						</li>
+						<li>
+							<div class="t_left">电站位置：</div>
+							<div class="t_right">
+								<select id="province">
+									<option>--请选择--</option>
+								</select>
+								<select id="city">
+									<option>--请选择--</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="t_left">电站装机容量： </div>
+							<div style="float:left">
+								<input style="float:left;width:50px;" id="zj" value="10" type="text"   onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'" />
+								<font id="danwei">KW</font> </div>
+							<div style="float:left"> 设备成本：</div>
+							<div style="float:left">
+								<input id="sbcb"  style="width:50px;" type="text" value="10" onFocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span  style="margin-left:2px;">（万元）</span> </div>
+							<div style="clear:both;"></div>
+						</li>
+						<li>
+							<div class="t_left">光伏组件朝向：</div>
+							<div class="t_right">
+								<label class="checkbox inline">
+									<input type="checkbox" name="jd" value="0.9" checked="checked" />东
+								</label>
+								<label class="checkbox inline">
+									<input type="checkbox" name="jd" value="0.96" />
+										东南
+								</label>		
+								<label class="checkbox inline">
+									<input type="checkbox" name="jd" value="1" />
+										南
+								</label>
+								<label class="checkbox inline">
+									<input type="checkbox" name="jd" value="0.96" />
+										西南
+								</label>
+								<label class="checkbox inline">
+									<input type="checkbox" name="jd" value="0.9" />
+										西
+								</label>
+								<div style="line-height:12px; color:#b1b1b1;margin:5px 0;">	如果倾角为零度，那么朝向选择对发电量无影响
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="t_left">安装倾角范围：</div>
+							<div class="t_right">
+								<input type="checkbox" name="jd2" value="1" style="width:15px;">
+								<span id="jdz">推荐角度：</span>
+								<input type="checkbox" name="jd2" value="0" style="width:15px;">
+								0° </div>
+						</li>
+						<li>
+							<div class="t_left">贷款比例：</div>
+							<div class="t_right">
+								<input id="dkbl" type="text" value="0"  style="width:30px" onFocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" style="margin-left:2px;">%</span> 贷款利率：
+								<input id="dklv" value="6.5" type="text" style="width:30px;"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" style="margin-left:2px;">%</span> 贷款年限：
+								<input id="dknx" value="20" type="text" style="width:30px" onFocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" style="margin-left:5px;">年</span> </div>
+						</li>
+						<li>
+							<div class="t_left"><font>*</font>电网电价：</div>
+							<div class="t_right">
+								<input id="dj" value="0.45" type="text" style="width:30px;"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" >元/度</span> 运维成本：
+								<input id="cb" value="2" type="text" style="width:30px;" onFocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" >%</span> <span id="butie">国家补贴：0.42元/度</span> </div>
+						</li>
+						<li>
+							<div class="t_left"><font>*</font>地方补贴：</div>
+							<div class="t_right">
+								<input id="part" value=0 type="text" style="width:30px;"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" >元/度</span> <span id="use"> 自用比例：
+								<input id="zybl" value="80" type="text" style="width:30px;"  onfocus="this.className='input_on';this.onmouseout='';this.value=''" onBlur="this.className='input_off';this.onmouseout=function(){this.className='input_out'};if(!value){value=defaultValue;}" onMouseMove="this.className='input_move'" onMouseOut="this.className='input_out'"/>
+								<span class="left" >%</span> </span> </div>
+						</li>
+						<li>
+							<div class="t_left">
+								<span class="badge badge-important">预估收益</span>
+							</div>
+							<span id="ygsy" class="left" style="margin-left:0px;color:red;font-weight:bold;">0.00元/度</span>
+							<span class="badge badge-important">售电总收入</span>
+
+							<span class="left" style="margin-left:5px;color:red;font-weight:bold;" id="totle">0</span><span style="color:red;font-weight:bold;">万元</span> </li>
+					</ul>
+				</div>
+				<!-- <div class="tab_comment alert"> -->
+				<div class="alert alert-error">
+				  <b>备注:</b>请如实填写电站所在地相关数值,初始数值仅供参考。电网电价为自发自用业主用电价格。计算公式中已包含各地脱硫上网电价。
+				</div>
+				<button onClick="ffdl()" class="btn btn-primary" type="button">提交</button>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>		
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 尾部 -->
+            <div class="x_footer">
+                <div class="row-fluid">
+                    <div class="span8 x_textalign offset2">
+                        <ul class="inline unstyled ">
+                            <li><a href="#">关于我们</a></li>
+                            <li>|</li>
+                            <li><a href="#">联系我们</a></li>
+                            <li>|</li>
+                            <li><a href="#">合作伙伴</a></li>  
+                            <li>|</li>
+                            <li><a href="#">联系方式</a></li>
+                            <li>|</li>
+                            <li><a href="#">加入我们</a></li>
+                            <li>|</li>
+                            <li><a href="#">合作服务</a></li>
+                            <li>|</li>
+                            <li><a href="#">国家电网</a></li>
+                        </ul>
+                    </div>
+                    <div class="span8 x_textalign offset2">
+                        <ul class="inline unstyled">
+                            <li><a href="#">友情链接：</a></li>
+                            <li><a href="http://www.sgepri.sgcc.com.cn/">南瑞集团公司（国网电力科学研究院）</a></li>
+                            <li><a href="http://info.guodiantong.com.cn/">北京国电通信网络技术有限公司</a></li> 
+                            <li><a href="http://www.wanmagroup.com/">浙江万马股份有限公司</a></li> 
+                            <li><a href="http://www.zjdpc.gov.cn/">浙江发改委</a></li> 
+                        </ul>
+                    </div>
+                    <div class="span8 x_textalign offset2">
+                        <img src="img/weixin.jpg">
+                        <img src="img/weibo.jpg"> 
+                        <img src="img/qq.jpg">
+                        <img src="img/95598.jpg">
+                    </div> 
+                </div>
+                <p>版权所有:浙江电腾云光伏科技有限公司&nbsp;&nbsp;&nbsp;Copyright &copy; 2014-2020
+                    投资运营：浙江电腾云光伏科技有限公司&nbsp;&nbsp;&nbsp;</p>  
+            </div>  
+    </body>
+    <script language="javascript" src="js/jquery.js" type="text/javascript"></script>
+    <script language="javascript" src="js/sl.js" type="text/javascript"></script>
+    <script language="javascript" src="js/distributedPP.js" type="text/javascript"></script>
+    <script type="text/javascript">
+         // 文档就绪
+        $(function(){
+            // $(window).resize(function(){
+              var x_footerht = $(".x_footer").height(),
+                  x_headerht = $(".x_header").height(),
+                x_winht = $(window).height();
+             console.log($(window).width())
+            // });
+        });
+    </script>
+</html>

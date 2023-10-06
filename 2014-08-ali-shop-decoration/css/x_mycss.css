@@ -1,0 +1,196 @@
+/*
+  Created by 奚圣波 on 14-8-7.  
+  Copyright (c) 2014年 奚圣波. All rights reserved.
+  email:15757125409@163.com;
+  aliexpress
+  */
+  @charset "utf-8";
+  html{-webkit-text-size-adjust: none;}
+a:hover{
+  text-decoration: none;
+}
+      /* Custom container */
+      .container {
+        margin: 0px auto;
+        width: 980px;
+      }
+      .x_container {
+        width: 100%;
+        overflow: hidden;
+        +overflow: hidden;
+      }
+      
+      .container > hr {
+        margin: 5px 0;
+      }
+/*my css*/
+
+    /*the header start*/
+    .x_header_top{
+        position: relative;
+        width: 100%;
+        height: 27px;
+        background: url(../img/x_header_top.gif ) repeat-x #f5f7f9;
+    }
+    .x_center{
+        margin:0  auto;
+    }
+    .x_textalign{
+      text-align: center;
+    }
+    .x_phone_logo{
+      float: left;
+      width: 16px;
+      height: 14px;
+      background: url(../img/x_phone_logo.png) no-repeat;
+    }
+    .x_height{
+      width: 100%;
+      height: 500px;
+    }
+    .x_orange{
+      font-family: 'Microsoft Yahei';
+      color: #ff6c00;
+    }
+    .x_red{
+      color: red;
+    }
+    .x_border{
+      border:1px solid purple;
+     }
+     .x_blanket{
+      width: 100%;
+      height: 20px;
+     }
+.inline > li{
+        padding: 0 0px;
+}
+  .x_shadow{
+    -webkit-box-shadow:0 0 3px;  
+       -moz-box-shadow:0 0 3px; 
+            box-shadow: 0 0 3px;
+  }
+
+.breadcrumb a{
+  font-size: 15px;
+  color: #ff6c00;
+}
+
+
+body{
+        padding:0px;
+        width: 100%;
+        font-family: 'Simsun';
+        font-size: 12px;
+    }
+    nav{
+        width: 100%;
+        height: 80px;
+        margin-top: 0px;
+        float: left;
+        background-color: #fff;
+    }
+    nav ul{
+      float: left!important;
+    }
+    header{
+        width: 100%;
+        height: 30px;
+        float: left;
+        background: #000;
+    }
+
+/***/
+.x_ali_header{
+  width: 980px;
+  height: 30px;
+  color: #b5b5b5;
+  margin:0 auto;
+  line-height: 30px;
+}
+.x_ali_header a{
+  display: block;
+  padding: 0 10px;
+  float: left;
+  color: #b5b5b5;
+}
+.x_ali_header a:hover{
+  color: #f86625;
+}
+
+/*nav*/
+.x_ali_nav{
+  width: 980px;
+  height: 50px;
+  margin:30px auto 0 auto;
+}
+nav ul{
+  float: right;
+}
+ nav ul li{
+      height: 50px;
+      float: left;
+      padding: 0 10px;
+      position: relative;
+}
+    nav ul li a{
+      font-family: 'Microsoft Yahei';
+      display: block;
+      font-size: 16px;
+      height: 30px;
+      padding-top:15px;
+      text-align: center;
+      color: #444;
+    } 
+    nav ul li a:hover{
+        -webkit-transition:0.2s ease;
+      -moz-transition:0.2s ease;
+      color: #eda30c;
+      border-bottom: 5px solid #f86625;
+    } 
+    nav input{
+      width: 120px;
+      height: 25px;
+      border-radius: 0px!important;
+      border-style: none;
+      border-right: 1px solid #fff;
+      color: #cecece;
+      background: url(../img/x_stusearchbtn.jpg) no-repeat right center;
+    }
+    .x_stusearch{
+      width: 140px;
+      height: 25px;
+      margin: 10px 0 0 55px;
+    }
+
+
+
+
+
+
+
+footer{
+      width: 100%;
+      height: 76px;
+      float: left;
+      font-size: 11px;
+      color: #676767;
+      background: #fff;
+    }
+    footer .container{
+      margin-top: 5px;
+      height: 76px;
+      /*background: url(../img/cnnic.png) no-repeat right 10px;*/
+    }
+footer p{
+  width: 980px;
+  height: 20px;
+  margin-top: 7px;
+  /**/
+}
+footer .sco {
+    color: #999;
+}
+footer p .pull-right{ 
+  color: #dadada;
+} 

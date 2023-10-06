@@ -1,0 +1,296 @@
+﻿body {
+    padding:0px; margin:0px;
+    /*font:14px/1.5 Tahoma,'Microsoft Yahei','Simsun';*/
+    font: 13px/1.5 宋体,Arial,sans-serif;
+}
+* {
+word-wrap: break-word;
+}
+div {color: #2f2725;}
+ul {padding: 0px; margin: 0px; color:#b1b1b1;}
+li {list-style: none;}
+a {text-decoration: none; color: #2f2725;}
+a:hover { text-decoration:underline; color:#BA2636;}
+img{border:none;}
+.clear { clear:both;}
+.paddingTop10 { padding-top:10px;}
+
+
+.content .nav_bar .menu_search .search_type { padding-right:15px; text-align:center; line-height:27px; float:left; width:50px;}
+.content .nav_bar .menu_search .search_type .search_type_list {display:none; position:absolute; background-color:#fff; width:60px; margin-left:1px; border:1px solid #b1b1b1; border-top:1px solid #fff;}
+.content .nav_bar .menu_search .search_type .search_type_list li {text-align:center; line-height:20px; cursor:pointer; color: #2f2725;}
+.content .nav_bar .menu_search input { border:0px; width:200px; margin-left:5px; color:#b1b1b1;float:left;margin-top:5px;}
+.content .nav_bar .menu_search  .search_button { width:28px; cursor:pointer;display:block;float:left;height:28px;}
+.content .nav_path {line-height:32px; border-bottom:1px solid #b1b1b1; padding-left:15px; color:#7f7f7f; font-size:14px;}
+.content .nav_path a {padding:0 5px 0 5px; color:#000;}
+
+.page_nav { text-align:center; padding-top:30px;}
+.page_nav a {border:1px solid #b1b1b1; font-size:15px; color:#494848; padding:3px 7px 3px 7px;}
+.page_nav a.selected { background-color:#02357a; color:#fff;}
+.page_nav a.pre_btn { background:url("../images/136.png") no-repeat center center; padding:3px 10px 3px 10px; margin-right:5px;}
+.page_nav span {border:1px solid #b1b1b1; padding:3px 7px 3px 7px; color:#494848;}
+.page_nav span font {border:1px solid #b1b1b1; padding:1px 3px 1px 3px; }
+/**新增公共头部样式**/
+input, button, select, textarea {
+color: #252525;
+font: 12px/1.5 "Segoe UI",Tahoma,Arial;
+}
+
+input, textarea, keygen, select, button, isindex {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: -webkit-auto;
+}
+em,cite,i{font-style:normal;}
+button {
+-webkit-box-align: center;
+text-align: center;
+cursor: default;
+color: buttontext;
+padding: 2px 6px 3px;
+border: 2px outset buttonface;
+border-image: initial;
+background-color: buttonface;
+box-sizing: border-box;
+}
+
+.px-solar {
+width: 110px;
+}
+.pn {
+vertical-align: middle;
+overflow: hidden;
+margin-right: 3px;
+padding: 0;
+height: 24px;
+border: 1px solid #999;
+background: #E5E5E5 url(images/pn.png) repeat-x 0 0;
+cursor: pointer;
+-moz-box-shadow: 0 1px 0 #E5E5E5;
+-webkit-box-shadow: 0 1px 0 #E5E5E5;
+box-shadow: 0 1px 0 #E5E5E5;
+}
+.pn em, .pn strong {
+font-weight: 700;
+}
+.pn em, .pn span, .pn strong {
+padding: 0 10px;
+line-height: 21px;
+}
+.vm {
+vertical-align: middle;
+}
+#toptb {
+line-height: 30px;
+background: url("../images/background.png") repeat-x scroll 0 0 white;
+}
+#toptb a {
+float: left;
+padding: 0 4px;
+height: 24px;
+}
+.cl {
+zoom: 1;
+}
+.width1024 {
+width: 1024px;
+margin: 0 auto;
+}
+.z {
+float: left;
+}
+.y {
+float: right;
+}
+.fastlg {
+line-height: 24px;
+}
+.fastlg td {
+padding: 2px 0 2px 4px;
+}
+.fastlg_l {
+padding-right: 4px !important;
+border-right: 1px solid #E5EDF2;
+}
+.fastlg_fm {
+margin-right: 5px;
+padding-right: 5px;
+border-right: 1px solid #CDCDCD;
+}
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+margin:0px;
+}
+table {
+empty-cells: show;
+border-collapse: collapse;
+}
+tr {
+display: table-row;
+vertical-align: inherit;
+border-color: inherit;
+}
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}
+label {
+cursor: pointer;
+}
+.cl:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+#scbar_type {
+display: block;
+padding-left: 5px;
+text-align: left;
+text-decoration: none;
+}
+#scbar_type_menu {
+margin-top: -8px;
+}
+.p_pop, .p_pof, .sllt {
+padding: 4px;
+border: 1px solid;
+min-width: 60px;
+border-color: #DDD;
+background: #FEFEFE;
+box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.p_pop a {
+display: block;
+padding: 3px 5px;
+border-bottom: 1px solid #E5EDF2;
+white-space: nowrap;
+}
+.search_label {
+width: 60px;
+padding: 1px;
+height: 20px;
+border: 1px solid #719572;
+margin-left: 5px;
+line-height: 18px;
+background: url("../images/arrwd.gif") no-repeat scroll 100% 50% transparent;
+}
+#scbar_txt {
+background-color: white;
+border: 1px solid #719572;
+color: #7D7D7D;
+float: left;
+font-weight: normal;
+height: 20px;
+line-height: 18px;
+padding: 1px 8px 1px 3px;
+width: 195px;
+}
+
+.wrap-te {
+    line-height: 22px;
+    padding-left: 100px;
+    padding-top: 3px;
+}
+.wrap-te .mobile {
+    background: url('../images/solarzoom-icon-bg.png') no-repeat scroll 0px -81px transparent;
+    color: #C00;
+    padding-left: 15px;
+}
+.wrap-te .weibo {
+    background: url('../images/weibo2.png') no-repeat scroll 0px 0px transparent;
+    color: #C00;
+    padding-left: 15px;
+}
+
+
+
+/*----------------*/
+/*wl5-12导航栏*/
+.wid300{width:290px;}
+.wid210{width:205px;}
+.wid200{width:200px;}
+.wid230{width:225px;}
+.nav {
+width: 1024px;
+height: 50px;
+line-height: 20px;
+overflow: hidden;
+border-top: 4px solid #02357a;
+margin:0 auto;
+}
+.nav_channel {
+width: 1024px;
+height: 50px;
+line-height: 20px;
+overflow: hidden;
+
+margin:0 auto;
+}
+.nav a {
+float: left;
+width: 30px;
+margin-left: 10px;
+line-height: 22px;
+white-space: nowrap;
+}
+
+.clearfix::after {
+display: block;
+overflow: hidden;
+clear: both;
+height: 0;
+visibility: hidden;
+content: ".";
+}
+.nav-w155 {
+width: 155px;
+}
+
+.divide {
+float: left;
+overflow: hidden;
+padding-right: 15px;
+margin-right: 15px;
+margin-top:5px;
+border-right: 1px dashed #DCDDDD;
+}
+.nav-con {
+margin-right:0px;
+margin-top:5px;
+float: left;
+overflow: hidden;
+}
+strong, b {
+font-weight: bold;
+
+}
+.nav strong a {
+margin-left: 0;
+
+}
+
+
+a:visited {
+text-decoration: none;
+}
+#toptb .pipe {
+    display: block;
+    margin: 0px 3px;
+	float: left;
+	color: #CCC;
+}
+/**新增公共头部样式结束**/

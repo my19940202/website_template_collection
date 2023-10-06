@@ -1,0 +1,151 @@
+body {
+        padding-bottom:0px;
+        font-size: 12px;
+        font-family: 'SimSun';
+      }
+      footer{
+      padding-top:10px;
+      font-size: 12px;
+      height: 50px;
+      width: 100%;
+      background-color: #005a9e;
+      }
+
+      .x_htitle{
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #005bac;
+      }
+
+
+      .x_border{
+        border:1px solid #cfd1d3;
+        height: 243px; 
+        overflow: hidden;
+      }
+
+       .x_borderdeepblue{
+        border:1px solid #005eb5; 
+        height: 243px;
+        overflow: hidden;
+        color: #555;
+      }
+
+      .x_more{
+        color: #32b2df;
+      }
+      .x_hidden{
+        overflow: hidden;
+      }
+      .x_divider{
+      width: 110%;
+      border-bottom: 1px #c4c4c4 dashed;
+      overflow: hidden;
+      }
+      .x_dividerline{
+      margin: 5px 0;
+      width: 110%;
+      border-bottom: 1px #dddfe1 solid;
+      }
+      .x_ie6{
+        _display: none;
+      }
+      .x_divide{
+      width: 100%;
+      height:5px;
+      float: left;
+      }
+      .x_limargin{
+       text-align: center;
+      }
+
+      .x_limargin li{
+        width:98%;
+        height:19px;
+        _margin:9px 0;
+        margin:7px 0;
+        overflow: hidden;
+      }
+
+      .x_limargin li a{
+        color: #555;
+      }
+      .x_limargin img{
+        margin-bottom: 5px;
+      }
+
+      .x_floor_height{
+        height: 243px;
+      }
+    
+      .x_title_height{
+      height: 28px;
+      }
+      .x_text_indent{
+        text-indent:1.0em;
+      }
+      .x_text_indentli{
+        text-indent:2.0em;
+      }
+      .x_title_height a{
+        
+        margin-top: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size:14px; 
+      }
+
+      .x_rect{
+        display: block;
+        float: left;
+        margin:3px 0 0 10px;
+        height:14px;
+        width: 3px;
+        background-color: #1464ab;
+      }
+      .x_aligncn{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      }
+
+      /*list.html**/
+      .x_borderblue{
+        border:1px solid #005eb5; 
+        height:700px;
+        color: #555;
+        overflow: hidden;
+      
+      }
+
+      .x_borderblueauto{
+        border:1px solid #005eb5; 
+        height:auto;
+        color: #555;
+        overflow: hidden;
+      }
+      .x_bottom_border{
+        width: 100%;
+        height: 10px;
+        margin-top: -10px;
+        float: left;
+        background: url(../../img/bottom_border.jpg) no-repeat;
+      }
+.x_pageni{
+text-align: center;
+width: 100%;
+  height: 30px;_height:30px;
+  margin-top:480px;
+}
+.x_lineheight{
+  margin: 0 auto;
+  line-height: 25px;
+  width: 500px;
+  height: auto;
+}
+
+#x_font_big,#x_font_small{
+  cursor: pointer;
+}
+

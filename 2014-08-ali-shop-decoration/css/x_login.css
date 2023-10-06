@@ -1,0 +1,63 @@
+@charset "utf-8";
+.x_container {
+	min-height: 400px;
+  float: left;
+  position: relative;
+}
+ nav{
+  background-color: #f6f6f6;
+    }
+nav ul{
+  float: right!important;
+}
+.xx_container{
+  position: absolute;
+  height: 400px;
+  width: 980px;
+  left: 15%;
+  right: 15%;
+  top: 0px;
+}
+.x_ali_form{
+  margin: 20px 15px 0 0;
+  padding: 0 20px;
+  width: 258px;
+  height: 328px;
+  background: #fff;
+  opacity: 0.85;
+
+}
+.x_ali_form .x_ali_ftitle{   
+    color: #666;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.x_ali_form input{   
+    color: #666;
+    width: 240px;
+    height: 20px;
+    padding: 8px;
+    margin: 10px 0;
+    margin: 8px 0\9;
+}
+.x_ali_form .controls input{
+   height: 20px;
+  padding: 8px;
+  width: 70px;
+}
+.x_ali_form button{
+  margin: 10px 0;
+}
+.x_ali_compatible{
+  display: none;
+  display: block\9;
+}
+.x_ali_regright{
+  margin: 30px 50px 0 0;
+}
+
+
+
+

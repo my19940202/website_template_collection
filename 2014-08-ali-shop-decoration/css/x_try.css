@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*try.html*/
+.x_container{
+	float: left;
+	background: url(../img/detail-up.jpg) repeat;
+}
+.container{
+	background: #f9f9f9;
+}
+.x_ali_tryleft{
+	padding:20px;
+	width: 346px;
+	height: 558px;border-right: 1px solid #e0e0e0;
+}
+.x_ali_tryright{
+	padding: 0 0  0  20px;
+	width: 543px;
+	height: 598px;
+	color: #666;
+	font-family: 'Microsoft Yahei';
+}
+h1{color: #666;
+	font-family: 'Microsoft Yahei';
+	margin-top: 15px;
+	font-weight: 400;
+}
+.x_ali_tryright div .pull-left{
+	width: 100px;
+	height: 30px;
+}
+.x_alirightct{
+	font-size: 16px;
+	line-height: 30px;
+	float: left;
+	margin-top: 20px; 
+}
+.x_alirightct .x_alirightctstyle img{
+	cursor: pointer;
+	margin: 10px;
+	width: 78px;
+	height: 121px;
+	border:1px solid #FFF;
+}
+.x_alirightct .x_alirightctstyle img:hover{
+	border:1px solid #F90;
+}
+.x_ali_piclist{
+	width: 980px;
+	float: left;
+	min-height: 100px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/*try2.html*/
+.x_ali_template{
+	cursor: move;
+	width: 920px;
+	min-height: 100px;
+	margin: 0 auto;
+	position: relative;
+	border: 2px solid #fff;
+}
+.x_ali_tpedit{
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 70px;
+	height: 20px;
+	line-height: 18px;
+	background: #666;
+	color: #fff;
+	display: none;
+}
+#myModal .tab-content pre{
+	height: 300px;
+	overflow-y:scroll; 
+}
+.x_ali_rdashed{
+	border: 2px dashed #666;
+}
+
+
+
+
+
+

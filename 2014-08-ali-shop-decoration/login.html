@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>登陆页</title>
+    <!-- 此处需要进行seo优化 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/x_mycss.css" rel="stylesheet">
+    <link href="css/x_login.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- 上面两个css公用 -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- here is the ico-->
+    <link rel="shortcut icon" href="img/x_stulogo.ico">
+  </head>
+    <body>
+        <header> 
+            <div class="x_ali_header">
+                <div class="pull-left">
+                    欢迎你，请登录您的账号!
+                </div>
+                <div class="pull-right">
+                    <a href="#">平台首页</a> 
+                    <a href="#">帮助中心</a> 
+                </div>
+            </div>   
+        </header>   
+        <nav>
+            <div class="x_ali_nav">
+                <a class="pull-left x_stulogowrap" href="#">
+                    <img src="img/x_stulogo.png">
+                </a>
+                <ul class="unstyled">
+                    <li><a href="#">后台登陆</a></li>
+                    <li><a href="#">自助开通 </a></li>
+                    <li><a href="index.html">速卖通装修试用</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="x_container">
+            <div class="banner">
+                <ul class="unstyled">
+                    <li style="background:url(img/slide1.jpg) no-repeat center center;"></li>
+                    <li style="background:url(img/slide2.jpg) no-repeat center center;"></li>
+                    <li style="background:url(img/slide3.jpg) no-repeat center center;"></li>
+                </ul>
+                <div class="xx_container">
+                    <div class="x_ali_form pull-right"> 
+                        <form>
+                            <p class="x_ali_ftitle">登录350.NET</p>
+                            <div class="x_ali_compatible" >UID/EMAIL电子邮箱</div>
+                            <input type="text" placeholder="UID/EMAIL电子邮箱">
+                            <div class="x_ali_compatible" >登陆密码</div>
+                            <input type="text" placeholder="登陆密码">
+                           
+                            <div class="controls controls-row">
+                                <input type="text" class="span1" placeholder="验证码">
+                                <input class="span1" type="text" placeholder=".span1">
+                            </div>
+                            <button class="btn btn-primary" type="button">确认提交</button>
+                            <p><a href="#">找回密码</a>|<a href="#">使用协议</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top:20px;">
+                <a href="#"><img src="img/ad1.gif"></a>
+                <a href="#"><img src="img/ad2.gif"></a>
+                <a href="#"><img src="img/ad3.gif"></a>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                <p>
+                    <a class="sco" target="_blank" href="http://www.350.net/about_us.htm">关于350</a>
+                    |
+                    <a class="sco" target="_blank" href="http://www.350.net/media.htm">媒体报道</a>
+                    |
+                    <a class="sco" target="_blank" href="http://www.350.net/agreement.htm">用户协议</a>
+                    |
+                    <a class="sco" target="_blank" href="http://www.350.net/icp_cert.htm">运营资质</a>
+                    |
+                    <a class="sco" target="_blank" href="http://www.350.net/contact_us.htm">联系我们</a>
+                    |
+                    <a class="sco" target="_blank" href="http://zx.350.net">淘宝装修</a>
+                    <a href="#"class="pull-right"><img src="img/cnnic.png"></a>
+                </p>
+                <p><a class="sco" target="_blank" href="http://zx.350.net">Copyright 2011 © 盛果网络 All Rights Reserved ICP证：川B2-20130002</a></p>
+            </div>
+        </footer>
+
+    </body>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/unslider.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $('.banner').unslider({
+                speed: 500,               //  The speed to animate each slide (in milliseconds)
+                delay: 3000,              //  The delay between slide animations (in milliseconds)
+                // complete: function() {},  //  A function that gets called after every slide animation
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+        });
+    </script>
+</html>

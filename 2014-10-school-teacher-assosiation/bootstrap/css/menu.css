@@ -1,0 +1,66 @@
+/*导航栏及热点词汇*/
+@charset "utf-8";
+.navv{
+	height:34px;
+	background:#4f4f4f;
+	border-top: 2px solid #858789;
+	z-index:100;
+	margin-left:0px;
+ 	position: relative; 
+}
+.navv a{
+	text-decoration: none;
+}
+
+.navv ul {
+	/*清除子菜单的缩进值*/
+	height:34px;
+	padding: 0;
+	margin-left: 5%;
+}
+ .hmain{
+ 	text-align: center;
+	height:34px;
+	width:103px;
+	float: left; 
+}
+ .hmain:hover{
+ 	height:34px;
+	background:url(../../img/titlebg.gif);
+}
+.xnav_title{
+	color: #fff !important;
+	font-size: 14px;
+	font-family:'SimSun';
+}
+
+
+.hmain ul{
+	height:auto;
+	display: none;
+	width:103px;
+	margin-left:-1px;
+	background-color: #25afdd;
+}
+
+.hmain ul li{
+	border-top:1px solid #fff; 
+}
+
+
+.navv li {
+	height:25px ;
+	width:103px;
+}
+.hmain a {
+	color: #343435;
+	height:25px ;
+	width:103px;
+	font-size:15px;
+	line-height:32px;
+}
+.hmain li:hover{
+	background-color:#858789;
+}
+
+

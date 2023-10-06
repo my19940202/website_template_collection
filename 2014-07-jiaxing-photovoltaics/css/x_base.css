@@ -1,0 +1,129 @@
+/*
+  Created by 奚圣波 on 14-7-29.  
+  Copyright (c) 2014年 奚圣波. All rights reserved.
+  email:15757125409@163.com;
+  QQ:595876167;
+  */
+  @charset "utf-8";
+  a:hover{
+    text-decoration: none;
+  }
+  body{
+    font-family: 'Simsun';
+  }
+      /* Custom container */
+    .x_center{
+        margin:0  auto;
+    }
+    .x_textalign{
+      text-align: center;
+    }
+    .x_height{
+      width: 100%;
+      height: 500px;
+    }
+    .x_orange{
+      font-family: 'Microsoft Yahei';
+      color: #ff6c00;
+    }
+    .x_red{
+      color: red;
+    }
+    .x_border{
+      border:1px solid purple;
+     }
+     .x_blanket{
+      width: 100%;
+      height: 20px;
+     }
+.x_header{
+  width: 100%;
+  height: 215px;
+  padding-top: 12px;
+  overflow: hidden;
+  background: url(../img/x_lheader_bg.jpg) repeat-x;
+  border-bottom: 2px solid #e0e0e0;
+}
+.x_ltheaderlf{
+  width: 784px;
+  height: 110px;
+}
+.x_ltheaderlf img{
+  margin: 0 20px;
+}
+.x_ltnav{
+  height: 90px;
+  width: 100%;
+  background: url(../img/x_ltheader_bg.gif) repeat-x;
+}
+.x_ltnav_mid{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+}
+.x_ltnav_mid ul li{
+  padding:0 15px;
+  height: 50px;
+  margin: 0 10px;
+}
+.x_ltnav_mid a{
+  line-height: 45px;
+  display: block;
+  color: #737373;
+  font-size: 20px;
+  font-weight: bold;
+}
+.x_ltnav_mid a:hover{
+  color: #73aa13;
+  border-bottom: 5px solid #609cdf;
+}
+.x_ltmarqueen{
+  width: 100%;
+  height: 40px;
+  float: left;
+}
+
+.x_ltmarqueen .x_lt_new{
+  /*text-indent: 1em;*/
+  width: 120px;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+}
+.x_ltmarqueen .x_lt_more{
+  line-height: 40px;
+  width: 50px;
+  height: 40px;margin-right: 1%;
+}
+.x_ltmarqueen .x_lt_more a{color: #737373; }
+
+.x_ltmarqueen .marquee{
+  line-height: 40px;
+  height: 40px;
+  width: 80%;
+}
+.x_ltmarqueen .marquee a{ color:#737373;}
+.x_container{
+  width: 99%;
+  height: auto;
+  margin-bottom:20px; 
+}
+.x_footer{
+  width: 100%;
+  padding-top: 20px;
+  float: left;
+  height: 148px;
+  color: #fff;
+  overflow: hidden;
+  background: url(../img/x_ll_ftbg.jpg) repeat-x;
+}
+.x_footer a{
+  color: #fff;
+  font-size: 14px;
+}
+.x_footer a:hover{
+  color: #73aa13;
+}
+.x_footer p{
+  text-align: center;
+}

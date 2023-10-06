@@ -1,0 +1,69 @@
+﻿body {
+    padding:0px; margin:0px;
+    /*font:14px/1.5 Tahoma,'Microsoft Yahei','Simsun';*/
+    font: 13px/1.5 宋体,Arial,sans-serif;
+}
+* {
+word-wrap: break-word;
+}
+div {color: #2f2725;}
+ul {padding: 0px; margin: 0px; color:#b1b1b1;}
+li {list-style: none;}
+a {text-decoration: none; color: #2f2725;}
+img{border:none;}
+.clear { clear:both;}
+.paddingTop10 { padding-top:10px;}
+
+.tzfx {width:80%; margin:0 auto; padding-top:30px; padding-bottom:20px;}
+.tabs { background-color:#eeeded; line-height:34px; border-bottom:1px solid #b1b1b1; margin-bottom:20px;}
+.tabs .tab { float:left; padding:0 20px 0 20px; cursor:pointer; font-size:18px; color:#006dcc; font-weight:bold;font-family: DIN-Regular, 'Microsoft YaHei', simhei;border-right:1px solid #b1b1b1;border-top:4px solid #eeeded;}
+.tabs .tab:hover { text-decoration:underline;}
+.tabs .selected {border-top:4px solid #006dcc;  margin-bottom:-1px; border-bottom:1px solid #fff; background-color:#fff;}
+
+.content_tab .t_left,.content_tabs .t_left {float: left;text-align:right; width: 120px; height: 40px;overflow: hidden; }
+.content_tab .t_right,.content_tabs .t_right {
+	height: 40px;
+}
+
+.tzfx .content_left { width:90%; padding-right:35px;}
+.tzfx .content_left input { line-height:20px; width:125px; border:1px solid #b1b1b1; height:20px;}
+
+.tzfx .content_right { margin-top:20px; width:90%;}
+.content_tabs .popup_list { line-height:20px; height:30px; cursor:pointer;}
+.content_tabs .do_address .popup_list { width:75px;}
+.content_tabs .tab_content li {line-height:30px;}
+.content_tabs .tab_content font { padding-right:3px;}
+.content_tabs .tab_content .norequired { padding-left:10px;}
+.content_tabs .other_comments { padding-left:10px; line-height:30px;}
+.content_tabs .other_comments textarea { width:425px;}
+.content_tabs .buttons { width:270px; margin:0 auto;}
+.content_tabs .buttons li {float:left; text-align:center; cursor:pointer; background:url("../img/147.jpg") no-repeat; width:110px; line-height:25px; margin-right:15px;color:#fff; font-size:14px;}
+.content_tabs .buttons li:hover {background:url("../img/147h.jpg") no-repeat;}
+.content_right .content_tabs .buttons {width:380px; padding-top:20px;}
+
+.content_right .t_left {float:left;  padding-right:20px; text-align:right; padding-left:5px; width:100px;}
+.content_right input { color:#b1b1b1;}
+.content_right .tab_comment { color:#BA2636; padding-top:30px;}
+.tab_count {margin-left: 20px; }
+.btn-primary{
+	margin-left: 9%;
+}
+.alert{
+	
+}
+
+
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+ 
