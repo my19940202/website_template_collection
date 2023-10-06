@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>旅游景区列表页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/list.css"/>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/colorAnimations.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="login.html"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="system_intro.html">公司简介</a>
+					</li>
+		             <li class="hmain">
+						<a href="list.html">旅游信息</a>
+					</li>
+		         
+					<li class="hmain">
+						<a href="list.html">旅游线路</a>
+					</li>
+					<li class="hmain">
+						<a href="news_list.html">信息公告</a>
+					</li>
+
+					<li class="hmain">
+						<a href="contactus.html">联系我们</a>
+					</li>
+					<li class="hmain">
+						<a href="message.html">客户留言</a>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">后台管理</a>
+					</li>    
+	      		</ul>
+	        </div>
+	        <div class="words">
+	        	<div class="words_content">
+					<div class="words_left">
+						<img src="Images/hotkey.jpg">
+					</div>
+					<div class="words_right">
+						<ul>
+							<li><a href="#">天目湖</a></li>
+							<li><a href="#">厦门</a></li>
+							<li><a href="#">马尔代夫</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">塞舌尔</a></li>
+							<li><a href="#">欧洲</a></li>
+							<li><a href="#">普吉岛</a></li>
+						</ul>		
+					</div>
+	        	</div>
+					
+
+			</div>
+		</div>
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">首页</a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">旅游路线</a>
+      			</span>
+      		</div>
+      		<!--限制条件start-->
+      		<div class="goods_index">
+   <!--   			<table style="margin-left:4px;font-size:14px;color:#626262;cursor:pointer;">
+					<tr align="left">
+						<td width="100">出游天数：</td>
+						<td width="50">一天</td>
+						<td width="50">二天</td>
+						<td width="50">三天</td>
+						<td width="50">四天</td>
+					</tr>
+					<tr align="left">
+						<td width="100">出游人数：</td>
+						<td width="50">双人</td>
+						<td width="50">多人</td>
+					</tr>
+								
+				</table>
+-->
+
+				<ul class="xtr_timelimit">
+					<li class="xtr_tltile">出游天数：</li>
+					<li>一天</li>					
+					<li>二天</li>
+					<li>三天</li>
+					<li>四天</li>
+				</ul>
+				<ul class="xtr_timelimit">
+					<li  class="xtr_tltile">出游人数：</li>
+					<li>双人</li>					
+					<li>多人</li>
+				</ul>
+				<ul class="xtr_timelimit">
+					<li  class="xtr_tltile">出发城市：</li>
+					<li>上海</li>					
+					<li>北京</li>
+					<li>天津</li>					
+				</ul>
+				<ul class="xtr_timelimit">
+					<li  class="xtr_tltile">产品类型：</li>
+					<li>跟团旅游</li>					
+					<li>公司旅游</li>
+					<li>邮轮旅游</li>	
+					<li>景点门票</li>	
+				</ul>
+      		</div>
+
+      		
+      		<!--限制条件end-->
+      		<div class="goods_sort">
+      			<div class="gs_sortleft">
+	      			<span>
+						排序方式
+						&nbsp;
+	      			</span>
+	 				<span>
+	 					<select>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>
+	      			<span>
+	      				<select>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>	
+      			</div>
+      			<div class="gs_sortright">
+	      			<span>
+						共150件商品
+	      			</span>
+	      			<span>|</span>
+	 				<span>1/9</span>
+	      			<span><a href="#">下一页</a> </span>
+	 				<span><a href="#">上一页</a> </span>
+
+      			</div>
+      		</div>
+      		<!--路线list显示start-->
+			<div class="xtr_spots_list">
+				<div class="xtr_spots_lititle">
+					类别一
+				</div>
+				<div class="xtr_spots_cell pull-left">
+						<div class="xtr_scellpic">
+							<p  class="xtr_picctitle">
+								<span>促销</span>
+							</p>
+							<p  class="xtr_piccaption xtr_disnoe">
+								<span>满意度：80％    点评：17</span>
+							</p>
+						</div>
+						<p  class="xtr_scelltitle">
+							<span class="xtr_spotsdiscount">8.3折</span>
+							<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+						</p>
+						<p  class="xtr_scelltext">
+							<span class="xtr_big">￥2099起</span>
+							<span class="xtr_small">12202</span>
+
+						</p>
+						<p  class="xtr_scellextra">
+							<span class="pull-left xtr_small">自助游</span>
+							<span class="pull-right xtr_small">22人浏览过</span>
+						</p>
+				</div>
+
+
+				<div class="xtr_spots_cell pull-left">
+					<div class="xtr_scellpic">
+						<p  class="xtr_picctitle">
+							<span>限时</span>
+						</p>
+						<p  class="xtr_piccaption xtr_disnoe">
+							<span>满意度：80％    点评：17</span>
+						</p>
+					</div>
+					<p  class="xtr_scelltitle">
+						<span class="xtr_spotsdiscount">8.3折</span>
+						<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+					</p>
+					<p  class="xtr_scelltext">
+						<span class="xtr_big">￥2099起</span>
+						<span class="xtr_small">12202</span>
+
+					</p>
+					<p  class="xtr_scellextra">
+						<span class="pull-left xtr_small">自助游</span>
+						<span class="pull-right xtr_small">22人浏览过</span>
+					</p>
+				</div>
+
+
+				<div class="xtr_spots_cell pull-left">
+					<div class="xtr_scellpic">
+						<p  class="xtr_picctitle">
+							<span>标签</span>
+						</p>
+						<p  class="xtr_piccaption xtr_disnoe">
+							<span>满意度：80％    点评：17</span>
+						</p>
+					</div>
+					<p  class="xtr_scelltitle">
+						<span class="xtr_spotsdiscount">8.3折</span>
+						<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+					</p>
+					<p  class="xtr_scelltext">
+						<span class="xtr_big">￥2099起</span>
+						<span class="xtr_small">12202</span>
+
+					</p>
+					<p  class="xtr_scellextra">
+						<span class="pull-left xtr_small">自助游</span>
+						<span class="pull-right xtr_small">22人浏览过</span>
+					</p>
+				</div>
+
+
+				<!--columme 2-->
+				<div class="xtr_spots_lititle">
+					类别er
+				</div>
+				<div class="xtr_spots_cell pull-left">
+						<div class="xtr_scellpic">
+							<p  class="xtr_picctitle xtr_disnoe">
+								<span>标签</span>
+							</p>
+							<p  class="xtr_piccaption xtr_disnoe">
+								<span>满意度：80％    点评：17</span>
+							</p>
+						</div>
+						<p  class="xtr_scelltitle">
+							<span class="xtr_spotsdiscount">8.3折</span>
+							<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+						</p>
+						<p  class="xtr_scelltext">
+							<span class="xtr_big">￥2099起</span>
+							<span class="xtr_small">12202</span>
+
+						</p>
+						<p  class="xtr_scellextra">
+							<span class="pull-left xtr_small">自助游</span>
+							<span class="pull-right xtr_small">22人浏览过</span>
+						</p>
+				</div>
+
+
+				<div class="xtr_spots_cell pull-left">
+					<div class="xtr_scellpic">
+						<p  class="xtr_picctitle xtr_disnoe">
+							<span>标签</span>
+						</p>
+						<p  class="xtr_piccaption xtr_disnoe">
+							<span>满意度：80％    点评：17</span>
+						</p>
+					</div>
+					<p  class="xtr_scelltitle">
+						<span class="xtr_spotsdiscount">8.3折</span>
+						<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+					</p>
+					<p  class="xtr_scelltext">
+						<span class="xtr_big">￥2099起</span>
+						<span class="xtr_small">12202</span>
+
+					</p>
+					<p  class="xtr_scellextra">
+						<span class="pull-left xtr_small">自助游</span>
+						<span class="pull-right xtr_small">22人浏览过</span>
+					</p>
+				</div>
+
+
+				<div class="xtr_spots_cell pull-left">
+					<div class="xtr_scellpic">
+						<p  class="xtr_picctitle xtr_disnoe">
+							<span>标签</span>
+						</p>
+						
+						<p  class="xtr_piccaption xtr_disnoe">
+							<span>满意度：80％    点评：17</span>
+						</p>
+					</div>
+					<p  class="xtr_scelltitle">
+						<span class="xtr_spotsdiscount">8.3折</span>
+						<span><a href="spots_detail.html"> [五一]&lt;海南双飞5日游&gt;椰旅之醉美定减2旅之醉美定减2旅之醉美定减200</a></span>
+					</p>
+					<p  class="xtr_scelltext">
+						<span class="xtr_big">￥2099起</span>
+						<span class="xtr_small">12202</span>
+
+					</p>
+					<p  class="xtr_scellextra">
+						<span class="pull-left xtr_small">自助游</span>
+						<span class="pull-right xtr_small">22人浏览过</span>
+					</p>
+				</div>
+			</div>
+			<!--路线list显示end-->
+			<div class="goods_index">
+				<div class="goodslist_footer">
+	 			<a href="#">&lt;</a> 
+	 			<a href="#">1</a>
+	 			<a href="#">2</a>
+	 			<a href="#">3</a>
+	 			<a href="#">4</a>
+	 			<a href="#">5</a>
+	 			<a href="#">6</a>
+	 			<a href="#">&gt;</a> 
+      			</div>
+
+			</div>
+		</div>
+		<div class="footer">
+   			<div class="ftcontent">
+				
+
+
+   				<div class="grayline">	
+   				</div>
+				<!--友情链接-->
+				<div class="bottom_link">
+   					<div class="pull-left">
+   						<ul>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>	
+   						</ul>
+   					</div>
+   					<div class="pull-left">
+   						<ul>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>	
+   						</ul>
+   					</div>
+   					<div class="pull-left">
+   						<ul>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>
+		   				<li><a href="#">帮助中心</a></li>		   					
+		   				<li><a href="#">帮助中心</a></li>
+		   				<li><a href="#">九寨沟旅游</a></li>
+		   				<li><a href="#">海洋世界</a></li>	
+   						</ul>
+   					</div>
+   					<div class="pull-left">
+   						<h>联系我们</h>
+		       			<p>· 电话：0571-85362136</p>
+			       		<p>· 邮编：310018</p>
+			       		<p>· 邮箱：gulong@superclass.sinacorp.cn</p>
+			       		<p>· 地址：浙江 杭州下沙高教东区成蹊苑39栋</p>
+			       		
+						<p >
+							<a href="#" class="weixin pull-left"></a>
+							<a href="#" class="weibo pull-left"></a>
+							<a href="#" class="renren pull-left"></a>
+						</p>
+   					</div>
+   				</div>
+   				<!--   -->
+   				<div class="bottom_picarr">
+   					<ul> 
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom0.png">
+	   						</a>
+	   					</li>
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom1.png">
+	   						</a>
+	   					</li>
+
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom2.png">
+	   						</a>
+	   					</li>
+
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom3.png">
+	   						</a>
+	   					</li>
+
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom4.png">
+	   						</a>
+	   					</li>
+
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom5.png">
+	   						</a>
+	   					</li>
+	   					<li>
+	   						<a class="safety1" target="_blank" rel="nofollow" title="上海市旅游行业协会在线分会" href="http://www.shtour.org/tourlist_onlineid4.html" hidefocus="false">
+	   						<img src="Images/x_bottom6.png">
+	   						</a>
+	   					</li>
+   					</ul>
+   				</div>
+
+   				<div class="bottom_copy">
+		   			<ul class="pull-right"> 
+		   					<li>&copy;</li>
+		   					<li>|</li>
+		   					<li>技术支持shiny团队</li>
+		   					<li>|</li>
+		   					<li>杭州市遇见旅行社</li>
+		   					<li>|</li>
+		   					<li>备案号：浙ICP备11037187号-2</li>
+	   				</ul>	
+   				</div>
+   			</div>
+   		</div>
+</div>
+
+</body>
+</html>

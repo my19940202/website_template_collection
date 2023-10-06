@@ -1,0 +1,75 @@
+/*导航栏及热点词汇*/
+@charset "utf-8";
+.nav{
+	width: 99%;
+	height:39px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#2E9700;
+	padding-left:10px;
+	z-index:100;
+ 	position: relative; 
+}
+.nav ul {
+	width: 1000px;
+	height:39px;
+	margin-left:10%;
+}
+ .hmain {
+	height:35px;
+	width:103px;
+	font-size: 18px;
+}
+.hmain:hover{
+	height:39px;
+	width:103px;
+	background:#59B712;
+}
+.hmain ul{
+	background-image:url(../Images/a.png);
+}
+.nav li {
+	height:36px;
+	width:103px;
+}
+.hmain a {
+	color: white;
+	height:36px;
+	width:103px;
+	font-size:15px;
+	line-height:40px;
+	text-indent:1em;
+	+text-indent:-0.3em;
+}
+.hmain li:hover{
+	height:36px;
+	width:103px;
+	background:#59b712;
+}
+
+.hmain ul {
+	display: none;
+}						
+.hmain {
+	float:left;
+	margin-right: 0px;
+}
+/*热点词汇*****/
+.words{width:100%;height:25px;}
+.words_content{width:1000px;margin:0  auto 0 auto;}
+.words_left{margin-left:0.5%;}
+.words_content div{
+	float: left;
+	margin-right:10px; 
+	height:30px;
+}
+.words_content div ul li{
+	float: left;
+	width: auto;
+	height: 25px;
+	margin:-18px 5px 0 0;
+	+margin-top:-3px;
+}
+.words_right a{color:#000;font-family: 'SimHei';font-size: 12px; }
+
+

@@ -1,0 +1,206 @@
+/*
+        Created by 奚圣波 on 14-7-12.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+        stu
+  */
+  html{-webkit-text-size-adjust: none;}
+a:hover{
+  text-decoration: none;
+}
+      /* Custom container */
+      .container {
+        margin: 0px auto;
+        width: 1024px;
+      }
+      .x_container {
+        width: 100%;
+        background: url(../img/x_stubobybg.gif) repeat-x;
+      }
+      
+      .container > hr {
+        margin: 5px 0;
+      }
+/*my css*/
+
+    /*the header start*/
+    .x_header_top{
+        position: relative;
+        width: 100%;
+        height: 27px;
+        background: url(../img/x_header_top.gif ) repeat-x #f5f7f9;
+    }
+    .x_center{
+        margin:0  auto;
+    }
+    .x_textalign{
+      text-align: center;
+    }
+    .x_phone_logo{
+      float: left;
+      width: 16px;
+      height: 14px;
+      background: url(../img/x_phone_logo.png) no-repeat;
+    }
+    .x_height{
+      width: 100%;
+      height: 500px;
+    }
+    .x_orange{
+      font-family: 'Microsoft Yahei';
+      color: #ff6c00;
+    }
+    .x_red{
+      color: red;
+    }
+    .x_border{
+      border:1px solid purple;
+     }
+     .x_blanket{
+      width: 100%;
+      height: 20px;
+     }
+.inline > li{
+        padding: 0 0px;
+}
+/*.breadcrumb{
+  width: 100%;
+  height: 33px;
+  background: #f3f3f3;
+  color: #ff6c00;
+}*/
+.breadcrumb a{
+  font-size: 15px;
+  color: #ff6c00;
+}
+
+
+body{
+        padding:0px;
+        width: 100%;
+        font-family: 'Simsun';
+        font-size: 12px;
+        /*-webkit-text-size-adjust: none;*/
+    }
+    header,nav{
+        width: 1024px;
+        margin: 1px auto;
+    }
+    header{
+        height: 18px;
+    }
+    nav{
+        height: 50px;
+        background-color: #fff;
+    }
+    nav ul li{
+      width: 65px;
+      height: 50px;
+      float: left;
+      position: relative;
+    }
+    nav ul li a{
+      font-family: 'Microsoft Yahei';
+      display: block;
+      height: 50px;
+      padding-top:15px;
+      background: url(../img/x_navbg.jpg) no-repeat;
+      text-align: center;
+      color: #666;
+    } 
+    nav ul li a:hover{
+      background: url(../img/x_navbghover.jpg) no-repeat;
+    } 
+    .x_stuinnerli{
+      position: absolute;
+      width: 156px;
+      border-width: 0px 1px 1px 1px;
+      border-color: #e6e6e6;
+      border-style: solid;
+      top: 50px;
+      z-index: 110;
+    }
+    .x_stuinnerli li{
+      width: 156px;
+      height: 25px;
+      background: #f5f7f9;      
+    }
+    .x_stuinnerli li a{
+      text-align: left;
+      font-size: 11px;
+      text-indent: 0.5em;
+      display: block;
+      width: 155px;
+      height: 23px;
+      border-top: 1px solid #e6e6e6;
+      overflow: hidden;
+      background: #f5f7f9;
+      padding: 0px;
+      background-image: none;
+    }
+    .x_stuinnerli li a:hover{
+    background-image: none;
+    background-color: #fff;
+
+  }
+
+    .x_stulogowrap{
+      display: block;
+      width: 220px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    nav input{
+      width: 120px;
+      height: 25px;
+      border-radius: 0px!important;
+      border-style: none;
+      border-right: 1px solid #fff;
+      color: #cecece;
+      background: url(../img/x_stusearchbtn.jpg) no-repeat right center;
+    }
+    .x_stusearch{
+      width: 140px;
+      height: 25px;
+      margin: 10px 0 0 55px;
+    }
+
+
+
+
+
+
+
+
+
+
+.x_stuQRcode{
+        position: fixed;
+        top: 40%;
+        right: 2%;
+        width: 115px;
+        height: 145px;
+        text-align: center;
+    }
+.x_stuQRcode p{
+    margin-top: 10px;
+}
+
+
+
+footer{
+      width: 100%;
+      height: 72px;
+      float: left;
+      font-size: 11px;
+      color: #676767;
+      background:url(../img/x_stufooterbg.jpg) repeat-x;
+    }
+footer p{
+  width: 1024px;
+  height: 20px;
+  margin: 7px auto 0 auto;
+}
+footer p .pull-right{ 
+  color: #dadada;
+} 

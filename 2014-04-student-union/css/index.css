@@ -1,0 +1,179 @@
+  /*
+        Created by 奚圣波 on 14-7-12.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+        stu
+  */
+.x_stuctfloor1{
+	width: 100%;
+	margin-top: 20px;
+}
+.x_stuctfloor2 a,.x_stuctfloor1 a{
+	color: #555;
+}
+
+.x_stuctfl1_left{
+	width: 602px;
+	height: 326px;
+}
+.x_stuctfl1_right{
+	margin-left: 30px;
+	width: 374px;
+	height: 326px;
+}
+
+.x_stuctfl1_right .unstyled {
+	height: 150px;
+	overflow: hidden;
+}
+.x_stuctfl1_right .unstyled li{
+	width: 100%;
+	height: 20px;
+	float: left;
+	margin: 2px 0;
+}
+
+
+.x_stulititle{
+	height: 32px;
+	width: 100%;
+	font-size: 13px;
+	float: left;
+	margin-bottom: 10px!important;
+	font-family: 'Microsoft Yahei';
+}
+.unstyled .pull-right a{
+	color: #959494;
+	font-family: 'Arial';
+	font-size: 11px;
+}
+.x_stumore a{
+	color: #ff6c00!important;
+	font-family: 'Microsoft Yahei';
+	font-size: 10px!important;	
+}
+
+
+
+
+
+
+
+
+
+
+/*floor2*/
+.x_stuctfloor2{
+	margin: 20px 0;
+	float: left;
+	width: 100%;
+	height: 600px; 
+  	-webkit-box-shadow:0 0 10px #f1f1f1;  
+  	-moz-box-shadow:0 0 10px #f1f1f1;  
+  	box-shadow:0 0 10px #f1f1f1;   
+}
+.x_stuweibo{
+	margin-top:20px;
+	width:282px;
+	height:552px;
+	margin-left: 26px;
+}
+.x_stunews{
+	width: 402px;
+	height: 552px;
+	margin:20px 40px 0 30px;
+}
+.x_stunstitle > li{
+	width: 190px;
+	height: 20px;
+	margin: 0 0px;
+	/*color: #ffa365*/
+}
+.x_textabbr{
+	float: left;
+	width: 100%;
+	height: 51px;
+	padding-top: 3px;
+	margin-bottom: 15px;
+	border-bottom: 1px #b8b8b8 dashed;
+}
+.tab-content  .pull-left a,.x_stuctfl1_right .pull-left a,.x_stuact3 a{
+	text-indent: 1em;
+	display: block;
+	height: 20px;
+	background: url(../img/x_arrow.png) no-repeat left -18px;
+}
+.tab-content .pull-left a:hover,.x_stuctfl1_right .pull-left a:hover,.x_stuact3 a:hover{
+	color: #ff6c00;
+	background: url(../img/x_arrow.png) no-repeat left 1px;
+}
+
+
+
+.x_stuctfloor2 .x_stunstitle{
+	border-bottom: 1px solid #ffa365;
+}
+.x_stuctfloor2 .x_stunstitle .active{
+	background: #fff;
+}
+.x_stuctfloor2 .x_stunstitle .x_stumore {
+	display: block;text-indent: 1.5em;
+	width: 52px;
+	height: 15px;
+	font-size: 10px!important;
+	background: url(../img/x_stumoreh.png) no-repeat left 3px;
+}
+.x_stuctfloor2 .x_stunstitle .active .x_stumore {
+	background: url(../img/x_stumore.png) no-repeat left 3px;
+}
+.x_stuctfloor2 .x_stunstitle .active a{
+	color: #ff6c00;
+}
+.x_stuctfloor2 .x_stunstitle li{
+	background: #ffa365;
+}
+.x_stuctfloor2 .x_stunstitle li a{
+	color: #fff;
+	
+}
+.x_stuctfloor2 .x_stunews  .unstyled .pull-left a{
+	font-weight: bold;
+}
+.x_stuactivity{
+	width: 215px;
+	height: 552px;
+	margin:20px  0 0 0;
+}
+.x_stuactivity .x_stulititle{
+	margin-bottom: 5px!important; 
+}
+
+.x_stuactivity hr{
+	height: 5px;
+	margin:5px 0!important;
+}
+
+.x_stuactitle{
+	width: 100%;
+	height: 18px;
+	margin-bottom: 10px;
+}
+
+
+
+.x_stuachire{
+	/*font-family: 'Arial';*/
+	width: 213px;
+	height: 110px;
+	border-bottom: #f8f8f8 1px solid ;
+}
+.x_stuacdownload{
+	/*font-family: 'Arial';*/
+	margin-top: 10px;
+	width: 213px;
+	height: 100px;
+	/*background: url(../img/x_studownloadbg.png) no-repeat;*/
+}
+.x_stuact3 li{
+	margin: 4px 0;
+}

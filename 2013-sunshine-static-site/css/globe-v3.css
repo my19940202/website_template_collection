@@ -1,0 +1,44 @@
+/**
+**@全站layout 如果不是布局有改变请尽量不要修改此文件
+**@author sunny
+**@email wang002007@163.com
+**线上文件希望可以压缩后再上线^^
+**/
+
+body{background-color: #fff; font-family: "Microsoft Yahei",tahoma,arial,sans-serif;}
+.fm970{margin: 0 auto; width: 970px;} /*为毛线是970...=。=*/
+
+/*combo background*/
+#header .site_logo,
+#header .site_nav .meta_icon_sm,
+#header .site_nav .meta_icon_lr,
+#header .site_nav .icon_search,
+#footer .footer_nav{background: url(../images/globe/globe_combo.png) no-repeat;}
+
+/*======================================================header==========================================================*/
+#header{padding: 43px 0 22px;}
+#header .site_logo{float: left; width: 180px; height: 50px; overflow: hidden; text-indent: -999em; line-height: 0; background-position: 0 0; }
+#header .site_nav{float: right; display: inline; margin: 10px 10px 0 0; }
+#header .site_nav li{float: left; margin-right: 25px; font-size: 14px; line-height: 32px;}
+#header .site_nav a{color: #787878; font-weight: 700; font-size: 14px;}
+#header .site_nav .meta{position: relative; width: 85px; height: 32px; margin-right: 0;}
+#header .site_nav .meta_icon_sm{position: absolute; top: 0; width: 32px; height: 32px; overflow: hidden; text-indent: -999em; cursor: pointer;}
+#header .site_nav .search{}
+#header .site_nav .icon_search{right: 88px; background-position: 0 -60px; text-indent:-999em; width:32px; height:32px; float:right}
+#header .site_nav .icon_weike{right: 48px; background-position: -32px -60px;}
+#header .site_nav .icon_app{right: 8px; background-position: -64px -60px;}
+#header_search li{width:68px; height:32px; background-color:#6e6e6e; text-align:center; color:#e3e3e3;cursor: pointer;}
+#s{display:none;}
+#s1{background-color:#515151;}
+#s li:hover{background-color:#515151;}
+/*======================================================header==========================================================*/
+
+
+/*======================================================footer==========================================================*/
+#footer{background: #4d4d4d; padding: 8px 0;}
+#footer .footer_nav{float: left; padding-left: 25px; background-position: 0 -102px; height: 21px;}
+#footer .footer_nav li{float: left; height: 20px;}
+#footer .footer_nav a{display: block; padding: 0 7px 0 8px; margin-top: 4px; *margin-top: 5px; color: #fff; border-right: 1px solid #fff; line-height: 14px;}
+#footer .footer_nav a:hover{text-decoration: underline;}
+#footer .copyright{float: right; margin-right: 10px; color: #fff; line-height: 20px;}
+/*======================================================footer==========================================================*/

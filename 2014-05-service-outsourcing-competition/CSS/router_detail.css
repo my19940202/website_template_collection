@@ -1,0 +1,170 @@
+
+	.contact_ct{
+		width: 100%;
+		height: 430px;
+	}	
+	.xtr_map{
+		width: 600px;
+		height: 350px;
+		float: left;
+		border:1px solid #d9dbde ;
+	}
+	.xtr_words{
+		margin-left: 20px;
+		width: 375px;
+		height: 350px;
+		text-align: left;
+		border:1px solid #d9dbde;
+		text-indent:1em;
+		font-size: 13px;
+		color: #404040;
+		font-family: 'Microsoft YaHei';
+	}
+	.xtr_words p{
+		height: 20px;
+		margin: 6px 0;
+	}
+	.xtr_conttilte{
+		font-size:20px;color:#4B9C3B;font-weight:bold;margin:10px !important;
+		text-align: left;
+	}
+	.xtr_dateselect{
+		width: 300px;
+		height: 20px;
+	}
+
+	.xtr_pricebig{
+		color: #FF6600;
+	    font-family: "microsoft yahei";
+    	font-size: 24px;
+	}
+	.xtr_portrait{
+		width: 100px;
+		height: 110px;
+		text-align: center;
+		overflow: hidden;
+		color: #999;
+	}
+	.xtr_portrait button{
+		width: auto;
+		height: 25px;
+		text-align: center;
+		overflow: hidden;
+		color: #999;
+	}
+
+	.xtr_comment{
+		width: 720px;
+		height: auto;
+		margin-left: 2%;
+		color: #666;
+		text-indent: 1.5em;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.xtr_comment p{
+		margin:6px; 
+	}
+
+	.xtr_bolder{
+		font-weight: bold;
+		color: #d95642;
+	}
+
+
+
+	/**********/
+	.xtr_spotshow{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		border:2px solid #59B712;
+		/**此处不知道为什么加上overflow后，height:auto生效*/
+	}
+	.xtr_spotchoice{
+		width: 80px;
+		height: auto;
+		font-size: 13px;
+		border-right:2px solid green;
+	}
+
+
+	.xtr_spotchoicemem {
+		width: 120px;
+		height: auto;
+		font-size: 13px;
+		border-right:2px solid green;
+	}
+
+
+	.xtr_spotchoicontent{
+		margin-left: 10px;
+		width: 900px;
+		min-height:400px;
+		height: auto;
+	}
+
+	.xtr_spotchoicontentmm{
+		margin-left: 10px;
+		width: 880px;
+		min-height:400px;
+		height: auto;
+	}
+	/***********************/
+	.xtr_memleft{
+		width: 400px;
+		height: auto;
+	}
+	.xtr_memright{
+		width: 400px;
+		height: auto;
+		margin-left: 20px;	
+	}
+
+	.xtr_button{
+		width: 211px !important;
+		height: 30px;
+		margin-top: 5px;
+		border-style: none;
+		color: #fff;
+		background:#FF8800;
+		font-size: 20px;
+		line-height: 25px;
+		cursor: pointer;
+	}
+
+
+
+	.xtr_spotchbtn{
+		width: 100%;
+		height: 25px;
+		text-align: center;
+		line-height: 30px;
+		margin:0;
+		cursor: pointer;
+	}
+	.xtr_spotpic span{
+		float: left;
+	}
+	.xtr_smallin{
+		width:40px !important;
+	}
+	.xtr_food{
+		width: 680px;
+		color: #fff;
+		font-size: 12px;
+		background: #F07372;
+	}
+	.xtr_all{
+		width: 220px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 20px;
+		color: #fff;
+		background: #FF8800;
+	}
+	.xtr_commentout{
+		width: 100%;
+		float: left;
+		margin: 8px 0;
+	}

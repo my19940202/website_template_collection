@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/> 
+<script src="JS/jquery.min.js"></script>
+<!--news页图片播放器-->
+<script src="JS/bjqs-1.3.min.js"></script>
+
+<script type="text/javascript" src="JS/menu.js"></script>
+<style type="text/css">
+	.goods_index{
+		width: 1000px;
+		height: 26px;
+		float: left;
+		text-align: left;
+	}
+	.goods_index a{
+		font-size: 12px;
+		color: #797979;
+		font-family: 'SimSun';
+	}
+
+	.goods_sort{
+		background: #f4f4f4;
+		width: 1000px;
+		height: 25px;	
+		margin: 0 auto 0 auto;
+	}
+	.gs_sortright{
+		float: right;
+		text-align: left;
+		height: 21px;
+		width:250px;
+		margin:2px 20px 0 0 ; 
+		color: #626262;
+		font-size: 12px;
+		padding-top: 5px;
+	}
+	.gs_sortright a{
+		display: block;
+		float:right;
+		width:57px;
+		height:19px; 
+		margin:-5px 5px 0 0;
+		text-indent:0.5em;
+		border: 1px solid #b9b9b9;
+		color: #626262;
+		font-size: 14px;
+		font-family: 'Microsoft YaHei';
+	}
+	.gs_sortright a:hover{
+		background-color: #999;
+	}
+	.news_title_time{
+		font-family: 'SimHei';
+		font-size: 12px;color:#000; 
+		font-weight: normal;
+	}
+	.news_text{
+		width: 950px;
+		height: auto;
+		margin: 20px auto 20px auto;
+		text-align: left;
+		line-height: 25px;
+		text-indent: 3em;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="login.html"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="system_intro.html">公司简介</a>
+					</li>
+		             <li class="hmain">
+						<a href="spots_detail.html">旅游信息</a>
+					</li>
+		         
+					<li class="hmain">
+						<a href="router_detail.html">旅游线路</a>
+					</li>
+					<li class="hmain">
+						<a href="news_list.html">信息公告</a>
+					</li>
+
+					<li class="hmain">
+						<a href="contactus.html">联系我们</a>
+					</li>
+					<li class="hmain">
+						<a href="message.html">客户留言</a>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">后台管理</a>
+					</li>    
+	      		</ul>
+	        </div>
+        <div class="words">
+        	<div class="words_content">
+				<div class="words_left">
+					<img src="Images/hotkey.jpg">
+				</div>
+				<div class="words_right">
+						<ul>
+							<li><a href="#">天目湖</a></li>
+							<li><a href="#">厦门</a></li>
+							<li><a href="#">马尔代夫</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">塞舌尔</a></li>
+							<li><a href="#">欧洲</a></li>
+							<li><a href="#">普吉岛</a></li>
+						</ul>		
+					</div>
+        	</div>
+				
+
+		</div>
+
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">&nbsp;首页</a>
+      			</span>
+      			<span>&gt;<a href="#">溯源动态</a></span>
+      			<span>
+      			<a href="#"></a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">扫二维码便知施肥次数 “可溯源农产品”首现哈洽会</a>
+      			</span>
+      		</div>
+      		<div class="goods_sort">
+      			<div class="gs_sortright">
+	      			<span>
+						共150新闻
+	      			</span>
+	      			<span>|</span>
+	 				<span>1/9</span>
+	      			<span><a href="#">下一页</a> </span>
+	 				<span><a href="#">上一页</a> </span>
+      			</div>
+      		</div>
+
+
+      		<!--文章+++++++++++++++++++++++++++显示-->
+      		<div class="news_content">
+      		<br>
+      			<div class="news_title">
+      				<h3 style="width:1000px;text-align:left;text-indent:3em;">扫二维码便知施肥次数 “可溯源农产品”首现哈洽会 <font class="news_title_time">2012-2-3</font></h3>
+
+      			</div>
+      			<div class="news_text">
+      				<p>
+从播种到育苗，从插秧到施肥，从收获到仓储，用手机在包装上扫一扫二维码，全明了。在本届哈洽会上，时下最热门的二维码成了很多农产品的“身份证”，消费者通过二维追溯码标识，能够有效甄别该农产品的生产过程是否安全。
+　　“我们的果蔬带‘身份证’绝对安全，不信你拿手机扫扫看。”17日，在哈洽会A厅绿色食品展区，一家食品企业正在向客商和市民发放带有二维码的宣传单。一些市民用手机在二维码区轻轻一扫，香瓜和其他蔬菜水果从种子到成品的全过程就在手机上呈现出来。
+　　记者看到，本届哈洽会上很多农产品都贴有二维条形码。在一个销售大米的柜台，记者用手机对准二维码扫了一下，大米施了几次肥、喷了几次农药、何时收割的、怎么运输的等信息一目了然。
+　　据销售负责人李先生介绍，大米的信息都是由农业合作社直接填写，有的还把组织机构代码证、合作社营业执照都记录在二维码信息里，保证产品绝对安全可靠。
+　　“当下快捷、方便的二维码技术正逐渐普及，尤其是应用在农产品上。”在哈洽会物流展示区，黑龙江劝业科技股份有限公司企划经理孙伟告诉记者，二维码是条码的一种，图像、声音、指纹等均可编码。为增强水果和蔬菜的追溯性，现在农产品正普及这一技术。他们公司已为我省多家粮油、饮料、乳制品公司制作了二维码。送短信查询或拨打400服务热线；年轻人也可到固定网址上查询溯源信息。
+　　这些可溯源的产品价格会不会很高呢？“可溯源的农产品都是从地头直接采购运输，售价能比农贸市场便宜三分之一。”据五常一家销售大米的企业经理介绍，通过直接与鲜活农产品产地的农民专业合作社产销对接，减少了流通环节、降低了流通成本，直接把节约的成本让利于消费者　　记者看到，本届哈洽会上很多农产品都贴有二维条形码。在一个销售大米的柜台，记者用手机对准二维码扫了一下，大米施了几次肥、喷了几次农药、何时收割的、怎么运输的等信息一目了然。
+　　据销售负责人李先生介绍，大米的信息都是由农业合作社直接填写，有的还把组织机构代码证、合作社营业执照都记录在二维码信息里，保证产品绝对安全可靠。
+　　“当下快捷、方便的二维码技术正逐渐普及，尤其是应用在农产品上。”在哈洽会物流展示区，黑龙江劝业科技股份有限公司企划经理孙伟告诉记者，二维码是条码的一种，图像、声音、指纹等均可编码。为增强水果和蔬菜的追溯性，现在农产品正普及这一技术。他们公司已为我省多家粮油、饮料、乳制品公司制作了二维码。
+　　孙伟说，应用二维码溯源对企业和消费者都有好处。只要用手机一扫就知产品真假，有效打击了仿冒产品，也保证了消费者的食品安全。目前从农产品到乳制品、肉制品、饮料等可溯源的食品种类已达28类，几乎都可用二维码来记录身份信息。“国内这两年才开始实行溯源流通体制，这种技术在国外已经很普及，相信不久这种二维码在所有商品上都能见到。”
+　　老年人、没有智能手机的人如何查询产品溯源信息呢？据孙伟介绍，老年人、没有智能手机的人可发送短信查询或拨打400服务热线；年轻人也可到固定网址上查询溯源信息。
+　　这些可溯源的产品价格会不会很高呢？“可溯源的农产品都是从地头直接采购运输，售价能比农贸市场便宜三分之一。”据五常一家销售大米的企业经理介绍，通过直接与鲜活农产品产地的农民专业合作社产销对接，减少了流通环节、降低了流通成本，直接把节约的成本让利于消费者
+
+
+
+      				</p>	
+      			</div>
+      		</div>
+
+      		
+		
+
+
+
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+	   				<div class="bottom_copy">
+	   					<ul class="pull-right"> 
+			   					<li>&copy;</li>
+			   					<li>|</li>
+			   					<li>衢州市新联建农产品有限公司</li>
+			   					<li>|</li>
+			   					<li>备案号：浙ICP备11037187号-2</li>
+		   				</ul>
+	   				</div>	
+   			</div>
+   		</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+							$('#banner-slide2').bjqs({
+								animtype      : 'slide',
+					            height        : 362,
+					            width         : 675,
+					            responsive    : true,
+					            randomstart   : true
+					          });
+					        });
+</script>
+</script>
+</html>

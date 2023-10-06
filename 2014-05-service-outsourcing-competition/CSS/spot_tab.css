@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*选择后的样式*/
+.tabbtn .current{
+	/*border-left:solid 1px #d5d5d5;
+	border-right:solid 1px #d5d5d5;
+	border-top:solid 1px #c5c5c5;*/
+	display: none;
+}
+.tabbtn .current a {
+	background: red;
+}
+.xtr_backgreen{
+	width: 100%;
+	height: 25px;
+	background:#2e9700;
+	color: #fff;
+}
+
+
+/**/
+
+
+/* tabcon */
+.tabcon {
+	position:relative;/*必要元素*/
+	width: 100%;
+	min-height:400px;
+	height: auto;
+	overflow: hidden;
+	text-align: left;
+	letter-spacing: 0.05em;
+}
+.tabcon dd{
+	text-indent: 1.5em;
+}
+.tabcon .subbox {
+	position:absolute;/*必要元素*/
+	left:0;
+	top:0;
+}
+.tabcon .sublist {
+	padding:5px 10px;
+	min-height:400px;
+	height: auto;
+	color: #404040;
+	font-size: 13px;
+}
+/* leftcon */
+#leftcon .subbox {
+	width:9999em;
+}
+#leftcon .subbox .sublist {
+	float:left;
+	height: auto;
+	width:100%;
+}
+/* sublist */
+.sublist {
+	padding:10px;
+}

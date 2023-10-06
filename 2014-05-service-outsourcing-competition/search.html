@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>交通工具查询</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/login.css"/>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/menu.js"></script>
+<script src="JS/jquery.tabso_yeso.js"></script>
+<style type="text/css">
+	.tabbtn {
+		height:30px;
+		width: 500px;
+		
+	}
+	.tabbtn li {
+		line-height: 25px;
+		cursor: pointer;
+		float:left;
+		border:1px solid #F7F7F7;
+		width: 100px;
+		height: 30px;
+		display: block;
+		background: #F7F7F7;
+		position:relative;
+	}
+
+	.xtr_backgreen{
+		width: 100px;
+		height: 30px;
+		border:1px solid #2e9700 !important;
+	}
+
+
+	/* tabcon */
+	.tabcon {
+		position:relative;/*必要元素*/
+		top: -17px;
+		min-height:300px;
+		border: 1px solid #2e9700;
+		text-align: left;
+	}
+	.tabcon .sublist {
+		padding:5px 10px;
+		min-height:300px;
+	}
+
+	/* sublist */
+	.sublist {
+		background: #F7F7F7;
+		padding:10px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class=" ">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来遇见网!</a></li>
+				</ul>
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>
+				</ul>
+			</div>	
+		</div>
+       	<div class="content">
+       		
+				<ul class="tabbtn" id="normaltab">
+					<li class="xtr_backgreen">
+						<sapn class="pull-left"><img src="Images/xtr_train.png"></sapn>
+						<sapn class="pull-left">火车查询</sapn>
+						</li>
+					<li>
+						<sapn class="pull-left"><img src="Images/xtr_plane.png"></sapn>
+							<sapn class="pull-left">航班查询</sapn></li>
+					<li><sapn class="pull-left"><img src="Images/xtr_metro.png"></sapn><sapn class="pull-left">公交查询</sapn> </li>
+					<li><sapn class="pull-left"><img src="Images/xtr_train.png"></sapn><sapn class="pull-left">客车查询</sapn></li>
+				</ul>
+				<form class="tabcon" id="normalcon">			
+					<div class="sublist">
+      					<p><label>出发站</label> <input type="text" value="输入请出发站" ></p>
+						<p><label>终点站</label> <input type="text" value="输入请出发"></p>
+						<p><label> &nbsp;</label> <button class="xtr_button">查询</button> </p>
+
+						<p class="xtr_conttilte">查询结果</p>
+						<div class="xtr_searchresult">
+							<ul>
+								<li>04-25周六<br>可预订</li>
+								<li>04-26周日<br>可预订</li>
+								<li>04-27周一<br>可预订</li>
+								<li>04-28周二<br>可预订</li>
+								<li>04-26周日<br>可预订</li>
+								<li>04-27周一<br>可预订</li>
+								<li>04-28周二<br>可预订</li>
+							</ul>
+							<table style="margin-left:40px;">
+								<tr align="left" style="font-weight:bold;">
+								<td width="120">车次类型</td>
+								<td width="120">发站到站</td>
+								<td width="150">发车时间到站时间</td>
+								<td width="150">参考里程时间</td>
+								<td width="120">参考票价</td>
+								</tr>
+								<tr align="left">
+									<td width="120">D365动车组</td>
+									<td width="120">北京->杭州</td>
+									<td width="150">07:35--17:16</td>
+									<td width="120">581分 1502公里</td>
+									<td width="120">
+										软/硬坐-/-<br>
+										硬卧-/-/-<br>
+										软卧 1165/1312
+									</td>
+								</tr>
+								<tr align="left">
+									<td width="120">D365动车组</td>
+									<td width="120">北京->杭州</td>
+									<td width="150">07:35--17:16</td>
+									<td width="120">581分 1502公里</td>
+									<td width="120">
+										软/硬坐-/-<br>
+										硬卧-/-/-<br>
+										软卧 1165/1312
+									</td>
+								</tr>
+								<tr align="left">
+									<td width="120">D365动车组</td>
+									<td width="120">北京->杭州</td>
+									<td width="150">07:35--17:16</td>
+									<td width="120">581分 1502公里</td>
+									<td width="120">
+										软/硬坐-/-<br>
+										硬卧-/-/-<br>
+										软卧 1165/1312
+									</td>
+								</tr>
+							</table>
+
+						</div>
+
+					</div>
+					<div class="sublist">
+						<p><label>出发城市</label> <input type="text" value="输入请出发城市" ></p>
+						<p><label>到达城市</label> <input type="text" value="输入请到达城市"></p>
+						<p><label> &nbsp;</label> <button class="xtr_button">查询</button> </p>
+
+					</div>
+					<div class="sublist">
+						<p><label>出发站</label> <input type="text" value="输入请出发站" ></p>
+						<p><label>终点站</label> <input type="text" value="输入请出发"></p>
+						<p><label> &nbsp;</label> <button class="xtr_button">查询</button> </p>
+					</div>
+					<div class="sublist">
+						
+						<p><label>出发站</label> <input type="text" value="输入请出发站" ></p>
+						<p><label>终点站</label> <input type="text" value="输入请终点站"></p>
+						<p><label> &nbsp;</label> <button class="xtr_button">查询</button> </p>
+					</div>
+				</form>
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+   				<div class="bottom_copy">
+   					<ul class="pull-right"> 
+		   					<li>&copy;</li>
+		   					<li>|</li>
+		   					<li>衢州市新联建农产品有限公司</li>
+		   					<li>|</li>
+		   					<li>备案号：浙ICP备11037187号-2</li>
+	   				</ul>
+   				</div>	
+   			</div>
+   		</div>
+</div>
+
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#normaltab").tabso({
+		cntSelect:"#normalcon",
+		tabEvent:"click",
+		tabStyle:"normal"
+	});					
+
+});								
+</script>
+</script>
+</html>

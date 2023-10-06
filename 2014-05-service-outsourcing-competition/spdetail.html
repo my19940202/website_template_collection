@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>景区详情页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<!--图片播放器-->
+<link rel="stylesheet" type="text/css" href="CSS/demo.css"/>
+<link rel="stylesheet" href="CSS/slimboxcss/slimbox2.css" type="text/css" />
+<link rel="stylesheet" href="CSS/slimboxcss/slimbox2.css" type="text/css" media="screen" />
+<script src="JS/jquery.min.js"></script>
+<!--slimbox-->
+<script type="text/javascript" src="js/slimbox2.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+<style type="text/css">
+.spot_container{
+	width: 100%;
+	min-height: 500px;
+	text-align: left;
+}
+.spotleft{
+	width: 640px;
+	height: auto;
+}
+.spotright{
+	width: 320px;
+	height: auto;
+	min-height: 500px;
+
+}
+.spot_title{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	float: left;
+	font-size: 30px;
+    line-height: 32px;
+    font-family: "Microsoft Yahei";
+}
+.spot_name{
+	color: #147850;
+}
+.spot_people{
+	color: #0073B6;
+}
+.spot_main{
+	width: 615px;
+	height: 190px;
+	padding: 10px;
+	border: #ddd 2px solid ;
+}
+.spot_pic{
+	width: 275px;
+	height: 185px;
+	position: relative;
+}
+.spot_piccaption{
+		width: 100%;
+		height: 25px;
+		background:#000;
+		filter:alpha(opacity=70);
+		-moz-opacity:0.7;
+		-khtml-opacity: 0.7;opacity: 0.7;
+		color: #fff;
+
+
+		font-size: 13px;
+		line-height: 22px;
+		text-align: center;
+		position: absolute;
+		bottom:-13px;	
+		+bottom:1px;
+		+left: -1px;
+}
+.spot_text{
+	width: 330px;
+	text-indent: 1.5em;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.spot_txttitle{
+	 color: #323232;
+	 margin:10px  0 0 0;
+    font-size: 18px;
+}
+.spot_txt{
+	line-height: 24px;
+	font-size: 14px;
+}
+.spot_txt li{
+	width: 100%;
+	height: auto;
+	line-height: 18px;
+	margin:-1% 0 0 -5%;
+}
+.tit{
+	width: 70px;
+	text-align: right;
+}
+.spot_inn{
+	margin-top: -28px;
+	padding: 10px;
+}
+.spot_inn p span{
+	font-size: 15px;
+	color: #323232;
+    font-family: "Microsoft Yahei";
+}
+.spot_inn ul{
+	margin-top: -20px; 
+}
+.spot_inn ul li{
+	border-radius: 3px;
+	margin:5px 0 5px -15%;
+	text-align: left;
+	padding: 2px;
+	width: 295px;
+	height: 25px;   
+	line-height: 25px; 
+}
+.spot_inn ul li a{ 
+	display: block;
+	width: 100%;
+	height: 25px;   
+	font-size: 13px;
+	color: #323232;   
+}
+.spot_inn ul li a:hover{ 
+	color: #fff;  
+	background: #FF6F26;    
+}
+.spot_picarray{
+	width: 180px;
+	height: 180px;
+	margin:8px;
+	position: relative;
+	overflow: hidden;
+}
+.spot_comment{
+	float: left;
+	width: 100%;
+	min-height: 60px;
+	margin:5px 0;
+	border-bottom: 1px dashed #aaa; 
+}
+.spot_comtxt{
+	font-size: 12px;
+	letter-spacing: 0.07em;
+	width:560px;
+	padding: 0 10px;
+	height: auto;
+}
+.user_potrait{
+	width: 50px;
+	height: 50px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="login.html"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="system_intro.html">公司简介</a>
+					</li>
+		             <li class="hmain">
+						<a href="spots_detail.html">旅游信息</a>
+					</li>
+		         
+					<li class="hmain">
+						<a href="router_detail.html">旅游线路</a>
+					</li>
+					<li class="hmain">
+						<a href="news_list.html">信息公告</a>
+					</li>
+
+					<li class="hmain">
+						<a href="contactus.html">联系我们</a>
+					</li>
+					<li class="hmain">
+						<a href="message.html">客户留言</a>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">后台管理</a>
+					</li>    
+	      		</ul>
+	        </div>
+		</div>
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">&nbsp;首页</a>
+      			</span>
+      			<span>&gt; <a href="#">景区详情页</a></span>
+      			<span>
+      			<a href="#"></a>
+      			</span>
+      		</div>
+      		<div class="spot_title">
+      					<span class="pull-left spot_name">布拉格城堡</span>
+      					<span class="pull-right spot_people">583人去过这里</span>
+      		</div>
+      		<div class="spot_container">
+      			<div class="spotleft pull-left">
+      				<div class="spot_main">
+      					<div class="pull-left spot_pic">
+      						<img src="Images/blage.jpg">
+      						<p class="spot_piccaption">共有273张照片    我要上传相片</p>
+      					</div>
+      					<div class="pull-left spot_text">
+      						<p>综合评分 (88条点评)</p>
+      						<p><span><img src="Images/five.png"> </span><span><img src="Images/five.png"> </span><span><img src="Images/five.png"> </span><span><img src="Images/five.png"> </span><span><img src="Images/five.png"> </span></p>
+      						<p>推荐指数</p>
+      					</div>
+      				</div>
+      				<div class="">
+						 <p class="spot_txttitle">概述</p>
+						 <p class="spot_txt">
+						布拉格城堡曾经是捷克的王室所在地，现在是总统与国家机关所在地。城堡里最主要的三个景点分别是$圣维特大教堂$、$黄金巷$和旧皇宫。城堡中著名的圣维特大教堂，是整座城市最古老的部分，至今已有1000多年历史。圣维特大教堂是一座宏伟的灰黑色哥特式建筑，参观重点包括20世纪的彩色玻璃窗、圣约翰之墓和圣温塞斯拉斯礼拜堂。中期教堂的大型彩色玻璃是布拉格著名画家穆哈的作品。旧皇宫每天中午12点时会举行士兵换岗仪式，很有特色。
+
+						黄金巷(Zlatá ulička)是城堡中一条很短的砖石铺成的街道，道路两边是色彩浪漫的精致可爱的矮房。它原本是仆人工匠居住之处，后来因为聚集不少为国王炼金的术士，因而得名。在19世纪之后，逐渐变成贫民窟。20世纪中期重新规划，将原本的房舍改为店铺，出售各类纪念品和手工艺品。著名作家卡夫卡的一处旧宅就坐落于此。
+						详情
+						</p>
+						<p class="spot_txttitle">详情</p>
+							<ul class="spot_txt">
+								<li ><span class="pull-left tit">地址：</span><p>Pražskýhrad，11908 Praha 1</p></li>
+								<li><span class="pull-left tit">到达方式：</span><p>地铁Malostranská站，或乘22号有轨电车到Pražský hrad站或Pohořelec站下车</p></li>
+								<li><span class="pull-left tit">开放时间：</span><p>夏季(4月-10月)9:00-18:00，冬季(11月-次年3月)9:00-16:00。</p></li>
+								<li><span class="pull-left tit">门票：</span><p>大通票(9个景点)350克，26岁以下学生票175克朗；小通票(4个景点)250克朗，26岁以下学生票125克朗，无中文讲解器。</p></li>
+								<li><span class="pull-left tit">电话：</span><p>224 372 423，224 373 368</p></li>
+								<li><span class="pull-left tit">网址：</span><p>http://www.hrad.cz</p></li>
+							</ul>
+      				</div>
+
+
+      				  		<!--评论展示 -->
+      				<div class="spot_title">
+      					<span class="pull-left spot_name" style="font-size:15px!important;">评论</span>
+      					<span class="pull-right spot_people" style="font-size:15px!important;">共25条评论</span>
+      				</div>
+
+      				<div class="spot_commentlist">
+      					<div class="spot_comment"> 
+      						<div class="user_potrait pull-left">
+      							<img src="Images/user_head.png" width="50" height="50">
+      						</div>
+      						<div class="spot_comtxt pull-right">
+      							 <p><font style="color:#0073b6;">用户一:</font>在三支小提琴餐馆吃完了大餐，就去走走消食。反正酒店也定在城堡旁边，晚上人不多，但是景色很好，走到最上面可以看到布拉格夜景，下次准备白天去看看 </p>
+      							 <div class="spotcm_addition"> 
+      							 	<span>2014-04-25 14:29</span>
+      							 	<span><img src="Images/five.png"><img src="Images/five.png"><img src="Images/five.png"> </span>
+      							  </div>
+      						</div>
+      					</div>
+      					<div class="spot_comment"> 
+      						<div class="user_potrait pull-left">
+      							<img src="Images/user_head.png" width="50" height="50">
+      						</div>
+      						<div class="spot_comtxt pull-right">
+      							 <p><font style="color:#0073b6;">用户一:</font>在三支小提琴餐馆吃完了大餐，就去走走消食。反正酒店也定在城堡旁边，晚上人不多，但是景色很好，走到最上面可以看到布拉格夜景，下次准备白天去看看 </p>
+      							 <div class="spotcm_addition"> 
+      							 	<span>2014-04-25 14:29</span>
+      							 	<span><img src="Images/five.png"><img src="Images/five.png"><img src="Images/five.png"> </span>
+      							  </div>
+      						</div>
+      					</div>
+
+
+
+      				</div>
+      			</div>
+
+      			<!--右侧部分start-->
+      			<div class="spotright pull-right  ">
+      				<div style="width:300px;height:180px;margin:10px auto;"> 
+      					<iframe frameborder="0" 
+							style="width:300px;height:180px;" 
+						src="http://kindeditor.net/ke4/plugins/baidumap/index.html?center=120.173704%2C30.330393&zoom=10&width=290&height=170&markers=121.473704%2C31.230393&markerStyles=l%3CA">
+					</iframe>
+      				</div>
+
+
+      				<div class="spot_inn">
+      					<p style="width:100%;height:25px;">
+      						<span class="pull-left">周边酒店</span>
+      						 
+      					</p>
+      					<ul>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡酒店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡酒店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡酒店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡酒店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡酒店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+      					</ul>
+      				</div>
+
+      				<div class="spot_inn">
+      					<p style="width:100%;height:25px;">
+      						<span class="pull-left">周边景点|周边美食</span>
+      						 
+      					</p>
+      					<ul>
+		      				<li><a href="#"><span class="pull-left">图诺夫斯卡咖啡馆 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+		      				<li><a href="#"><span class="pull-left">jdks快餐店 </span><span class="pull-right">布拉格CNY621/晚起</span></a></li>
+      					</ul>
+      				</div>
+      			</div>
+      			<!--右侧部分end-->
+      		</div>
+
+
+
+      		<!--图片展示 -->
+      		<div class="spot_title">
+      					<span class="pull-left spot_name">布拉格照片</span>
+      					<span class="pull-right spot_people">共25张照片</span>
+      		</div>
+      		<div class="spot_container">
+      			
+      			<div class="pull-left spot_picarray">
+      				<a href="Images/bgl1.jpg" rel="lightbox"><img src="Images/bgl1.jpg"></a>
+      				<p class="spot_piccaption">拍摄于15456</p>
+      			</div>
+      			
+      			<div class="pull-left spot_picarray">
+      				<a href="Images/bgl3.jpg" rel="lightbox"><img src="Images/bgl2.jpg"></a>
+      				<p class="spot_piccaption">拍摄于15456</p>
+      			</div>
+
+      			<div class="pull-left spot_picarray">
+      				<a href="Images/bgl2.jpg" rel="lightbox"><img src="Images/bgl3.jpg"></a>
+      				<p class="spot_piccaption">拍摄于15456</p>
+      			</div>
+
+      			<div class="pull-left spot_picarray">
+      				<a href="Images/bgl4.jpg" rel="lightbox"><img src="Images/bgl4.jpg"></a>
+      				<p class="spot_piccaption">拍摄于15456</p>
+      			</div>
+
+      			<div class="pull-left spot_picarray">
+      				<a href="Images/bgl5.jpg" rel="lightbox"><img src="Images/bgl5.jpg"></a>
+      				<p class="spot_piccaption">拍摄于15456</p>
+      			</div>
+      		</div>
+
+
+		</div>
+
+
+
+
+
+
+   		<div class="footer">
+   			<div class="ftcontent">
+	   			<div class="bottom_copy">
+   					<ul class="pull-right"> 
+		   					<li>&copy;</li>
+		   					<li>|</li>
+		   					<li>衢州市新联建农产品有限公司</li>
+		   					<li>|</li>
+		   					<li>备案号：浙ICP备11037187号-2</li>
+	   				</ul>
+   				</div>	
+   			</div>
+   		</div>
+</div>
+
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#xtrsopt-slide').bjqs({
+		animtype      : 'slide',
+		height        : 350,
+		width         : 600,
+		responsive    : true,
+		randomstart   : true
+		});
+});
+</script>
+</html>

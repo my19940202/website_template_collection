@@ -1,0 +1,100 @@
+
+.contact_ct{
+	margin-top: 10%;
+	width: 1000px;height: 349px;
+}	
+.xtr_map{
+	width: 564px;
+	height: 349px;
+	float: left;
+	background: url(../Images/login_img.png);
+	border:1px solid #d9dbde ;
+}
+.xtr_words{
+	margin-left: 20px;
+	width: 350px;
+	height: 349px;
+	text-align: left;
+	border:1px solid #d9dbde ;
+	text-indent:1em;
+	font-size: 13px;
+	color: #999;
+}
+p{
+	height: 30px;
+	min-width: 350px;
+	text-align: left;
+	margin:10px 0;
+	font-size: 12px; 
+	line-height: 25px;
+}
+.xtr_words p a{
+	color: #999;
+}
+.xtr_conttilte{
+	font-size:15px;color:#4e4e51;font-weight:bold;
+}
+ label{
+	float: left;
+	width: 75px;
+	font-size: 12px; 
+	line-height: 25px;
+	text-align: right;
+	height: 30px;
+}
+.xtr_words img{
+	cursor: pointer;
+}
+
+ input{
+	float: left;
+	margin-left: 10px;
+	border-style: none;
+	border: 1px solid #ddd;
+	width: 250px;
+	height: 25px;
+}
+.xtr_identify{
+	width: 100px !important;
+
+}
+.xtr_button{
+	width: 211px !important;height: 30px;
+	border-style: none;
+	color: #fff;
+	background:#92cb21;
+	font-size: 20px;
+	line-height: 25px;
+	cursor: pointer;
+}
+.xtr_searchresult{
+	font-size: 13px;
+	font-family: 'Microsoft Yahei';
+}
+.xtr_searchresult ul{
+	width: 700px;
+	height: 50px;
+}
+
+
+.xtr_searchresult ul li{
+	border: 1px solid #ccc;
+	background: #dbd8d8;
+	border-width: 1px 1px 1px 1px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	width: 95px;
+	height: 50px;
+	float: left;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+}
+.xtr_searchresult ul li:hover{
+	background: #a9a7a7;
+}
+
+.xtr_section{
+	width: 75px;
+	height: 30px;
+}

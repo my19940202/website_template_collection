@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员信息页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/member.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/spot_tab.css"/>
+
+
+
+
+
+<script src="JS/jquery.min.js"></script>
+<script src="JS/jquery.tabso_yeso.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+<style type="text/css">
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">张三，欢迎您来到遇见旅游网!</a></li>
+					<li><a href="login.html"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+				<ul class="pageheader_right">
+					<li><a href="#">交通查询&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="message.html">投诉举报&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="#">客服中心&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="#">在线咨询&nbsp;</a><img src="Images/header_leader1.png"></li>
+				</ul>
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="system_intro.html">公司简介</a>
+					</li>
+		             <li class="hmain">
+						<a href="list.html">旅游信息</a>
+					</li>
+		         
+					<li class="hmain">
+						<a href="list.html">旅游线路</a>
+					</li>
+					<li class="hmain">
+						<a href="news_list.html">信息公告</a>
+					</li>
+
+					<li class="hmain">
+						<a href="contactus.html">联系我们</a>
+					</li>
+					<li class="hmain">
+						<a href="message.html">客户留言</a>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">后台管理</a>
+					</li>    
+	      		</ul>
+	        </div>
+	        <div class="words">
+	        	<div class="words_content">
+					<div class="words_left">
+						<img src="Images/hotkey.jpg">
+					</div>
+					<div class="words_right">
+						<ul>
+							<li><a href="#">天目湖</a></li>
+							<li><a href="#">厦门</a></li>
+							<li><a href="#">马尔代夫</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">塞舌尔</a></li>
+							<li><a href="#">欧洲</a></li>
+							<li><a href="#">普吉岛</a></li>
+						</ul>		
+					</div>
+	        	</div>
+			</div>
+		</div>
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">&nbsp;首页</a>
+      			</span>
+      			<span>&gt; <a href="#">会员信息</a></span>
+      			<span>
+      			<a href="#"></a>
+      			</span>
+      			
+      		</div>
+      		<!--会员展示start-->
+      		<div class="xtr_spotshow">
+      			<!--选择按钮-->
+      			<div class="xtr_spotchoicemem pull-left" class="tabbtn" id="fadetab">
+					<p class="xtr_spotchbtn">会员基本信息</p>
+					<p class="xtr_spotchbtn">订单信息</p>
+					<p class="xtr_spotchbtn">游记</p>	
+      			</div>
+      			<!--对应的内容-->
+      			<div class="xtr_spotchoicontent pull-left">
+      				<!--内容开始-->
+      					<form class="tabcon" id="fadecon">
+								<div class="sublist">
+									<div class="pull-left xtr_memleft">
+										<p class="xtr_twotitle">会员基本信息</p>
+										<p><img src="Images/user_head.png"></p>
+										<p><label>用户名：</label>张三</p>
+										<p><label>手机号：</label>157*****09</p>
+										<p><label>会员名：</label>896450456</p>
+										<p>
+											<label>性别：</label> 
+											<select>
+												<option>男</option><option>女</option>
+											</select>
+										</p>
+										<p><label>出生日期：</label>
+											<input type="text" value="请输入出生日期" >
+										</p>
+										<p>
+											<label>*证件号：</label>
+											<select class="xtr_section">
+													<option>身份证</option>
+													<option>军官证</option>
+													<option>护照</option>
+											</select>
+											<input type="text" value="输入证件号">
+										</p>
+									</div>
+								
+									<div class="pull-left xtr_memright">
+										<p><label>邮编：</label>
+											<input type="text" value="" >
+										</p>
+										<p>
+											<label>QQ号：</label>
+											<input type="text" value=" ">
+										</p>
+										<p>
+											<label>微博号：</label>
+											<input type="text" value=" ">
+										</p>
+										<p>提示：您的资料将被默认保存为第一游客信息，请您完整如实填写，避免资料不实带来的不便。</p>
+
+									</div>
+								</div>
+								<div class="sublist">
+									<p class="xtr_twotitle">订单信息</p>
+									<table style="margin-left:40px;">
+										<tr align="left" style="font-weight:bold;">
+										<td width="120">订单名称</td>
+										<td width="120">产品信息</td>
+										<td width="120">订单金额(元)</td>
+										<td width="150">订单状态</td>
+										<td width="150">操作</td>
+										</tr>
+										<tr align="left">
+											<td width="120">香格里拉-昆大丽双飞6日游</td>
+											<td width="120">京途牛国际旅行社有限公司杭州分公司及具有资质的合作旅行社提供相关服务</td>
+											<td width="150">1256.0</td>
+											<td width="120">已付款</td>
+											<td width="120">
+												<span><img src="Images/btn_add.png"></span>
+												<span><img src="Images/btn_delete.png"></span>
+												<span><img src="Images/btn_edit.png"></span>
+											</td>
+										</tr>
+								</table>
+								</div>
+								<div class="sublist">
+									<p class="xtr_twotitle">游记</p>
+									<div class="xtr_memcomment">
+										<h5>路线一的游记</h5>
+										<p>陪护的导游个人不太喜欢，觉得他总是自顾自的在讲，还不准睡觉，必须听他讲，还挺严肃，跟高中时的班主任一样的说，好在作为导游，还算尽心尽力的，帮我们安排的还算妥当吧，直到到了七彩云南要我们买翡翠，说我们一路上的矿泉水都是他个人买给我们的，然后说做人不能没有良心，好吧，尽管知道导游是靠这个赚钱的，但他一路上从不给我们好脸色看，关键时候又说出这样的话，着实让人不太好受，比较</p>
+										<div class="pull-left">
+											景点：<font  class="xtr_bolder">5分</font>
+											酒店：<font  class="xtr_bolder">5分</font>
+											服务：<font  class="xtr_bolder">5分</font>  
+											交通：<font  class="xtr_bolder">5分</font> 
+										</div>
+										<div class="pull-right">2012-12-15</div>
+										<br>
+									</div>
+									<div class="xtr_memcomment">
+										<h5>路线一的游记</h5>
+										<p>陪护的导游个人不太喜欢，觉得他总是自顾自的在讲，还不准睡觉，必须听他讲，还挺严肃，跟高中时的班主任一样的说，好在作为导游，还算尽心尽力的，帮我们安排的还算妥当吧，直到到了七彩云南要我们买翡翠，说我们一路上的矿泉水都是他个人买给我们的，然后说做人不能没有良心，好吧，尽管知道导游是靠这个赚钱的，但他一路上从不给我们好脸色看，关键时候又说出这样的话，着实让人不太好受，比较</p>
+										<div class="pull-left">
+											景点：<font  class="xtr_bolder">5分</font>
+											酒店：<font  class="xtr_bolder">5分</font>
+											服务：<font  class="xtr_bolder">5分</font>  
+											交通：<font  class="xtr_bolder">5分</font> 
+										</div>
+										<div class="pull-right">2012-12-15</div>
+										<br>
+									</div>
+								</div>	
+						</form>
+      				<!--内容end-->
+      			</div>
+      		</div>
+      		<!--会员展示end-->
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+   				<div class="bottom_copy">
+   					<ul class="pull-right"> 
+		   					<li>&copy;</li>
+		   					<li>|</li>
+		   					<li>衢州市新联建农产品有限公司</li>
+		   					<li>|</li>
+		   					<li>备案号：浙ICP备11037187号-2</li>
+	   				</ul>
+   				</div>	
+   		
+   			</div>
+   		</div>
+</div>
+
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+//tab夜的切换效果
+	$("#fadetab").tabso({
+		cntSelect:"#fadecon",
+		tabEvent:"click",
+		tabStyle:"fade"
+	});
+});
+</script>
+</html>

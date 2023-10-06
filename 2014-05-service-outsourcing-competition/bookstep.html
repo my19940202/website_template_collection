@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/login.css"/>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/menu.js"></script>
+<script src="JS/jquery.tabso_yeso.js"></script>
+<style type="text/css">
+	.tabbtn {
+		height:30px;
+		width: auto;
+		border: 1px solid #2e9700;
+		background: #F7F7F7;
+	}
+	.tabbtn li {
+		line-height: 30px;
+		cursor: pointer;
+		float:left;
+		width: 230px;
+		height: 30px;
+		display: block;
+		position:relative;
+	}
+
+	.xtr_backgreen{
+		background:#2e9700;
+		width: 100px;
+		height: 30px;
+	}
+
+
+	/* tabcon */
+	.tabcon {
+		position:relative;/*必要元素*/
+		margin-top: -20px;
+		min-height:300px;
+		border: 1px solid #2e9700;
+		text-align: left;
+	}
+	.tabcon .sublist {
+		padding:5px 10px;
+		min-height:300px;
+	}
+
+	/* sublist */
+	.sublist {
+		background: #F7F7F7;
+		padding:10px;
+		color: #333;
+	}
+	.xtr_payway{
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class=" ">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来遇见网!</a></li>
+				</ul>
+
+				<ul class="pageheader_right">
+					<li><a href="#">交通查询&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="message.html">投诉举报&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="#">客服中心&nbsp;</a><img src="Images/header_leader1.png"></li>
+					<li><a href="#">在线咨询&nbsp;</a><img src="Images/header_leader1.png"></li>
+				</ul>
+			</div>	
+		</div>
+       	<div class="content">
+				<ul class="tabbtn" id="normaltab">
+					<li class="xtr_backgreen">填写订单</li>
+					<li>填写游客信息</li>
+					<li>选择支付方式</li>
+					<li>预订成功</li>
+				</ul>
+				<form class="tabcon" id="normalcon">
+					
+					<div class="sublist">
+      					<p class="xtr_conttilte">产品信息</p>
+      					<p><label>产品名称：</label>海南5日游 全天蜈支洲，4晚180海景，可升海边挂五</p>
+						<p><label>出发城市：</label>杭州</p>
+						<p><label>出发日期：</label>	2014-05-01 归来日期：2014-05-05</p>
+						<p><label>人数：</label>	2成人</p>
+						<p><label>*联系人：</label><input type="text" value="输入手机号码" >	</p>
+						<p><label>*手机：</label>	<input type="text" value="输入手机号码" >（用于接收订单确认信息）</p>
+						<p><label>*邮箱：</label>  <input type="text" value="输入请出发城市" ></p>
+						<p><label>固定电话：</label><input type="text" value="输入请出发城市" >（选填）</p>
+						<p> <button class="xtr_button pull-right">下一步</button></p>
+					</div>
+
+					<div class="sublist">
+						<p class="xtr_conttilte">第一位游客</p>
+						<p><label>*姓名：</label><input type="text" value="输入手机号码" >	</p>
+						<p><label>*手机：</label>	<input type="text" value="输入手机号码" >（用于接收订单确认信息）</p>
+						<p><label>*证件号：</label>
+								<select class="xtr_section pull-left">
+									<option>身份证</option>
+									<option>军官证</option>
+									<option>护照</option>
+								</select>
+							<input type="text" value="输入证件号" class="pull-left">
+						</p>
+
+
+						<hr>
+						<p class="xtr_conttilte">第2位游客</p>
+						<p><label>*姓名：</label><input type="text" value="输入手机号码" >	</p>
+						<p><label>*手机：</label>	<input type="text" value="输入手机号码" >（用于接收订单确认信息）</p>
+						<p><label>*证件号：</label>
+								<select class="xtr_section pull-left">
+									<option>身份证</option>
+									<option>军官证</option>
+									<option>护照</option>
+								</select>
+							<input type="text" value="输入证件号" class="pull-left">
+						</p>
+
+						<hr>
+						<p class="xtr_conttilte">第3位游客</p>
+						<p><label>*姓名：</label><input type="text" value="输入手机号码" >	</p>
+						<p><label>*手机：</label>	<input type="text" value="输入手机号码" >（用于接收订单确认信息）</p>
+						<p><label>*手机：</label>	<input type='radio' value='0'> 用于接收订单确认信息）</p>
+						<p><label>*证件号：</label>
+								<select class="xtr_section pull-left">
+									<option>身份证</option>
+									<option>军官证</option>
+									<option>护照</option>
+								</select>
+							<input type="text" value="输入证件号" class="pull-left">
+						</p>
+
+
+						<p> <button class="xtr_button pull-right">下一步</button></p>
+					</div>
+
+
+
+
+
+
+					<div class="sublist">
+						<div class="xtr_payway"><img src="Images/payb.jpg"> </div>
+					</div>
+
+					<div class="sublist">
+						<p>恭喜您付款成功</p>
+					</div>
+				</form>
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+   				<div class="bottom_copy">
+   					<ul class="pull-right"> 
+		   					<li>&copy;</li>
+		   					<li>|</li>
+		   					<li>衢州市新联建农产品有限公司</li>
+		   					<li>|</li>
+		   					<li>备案号：浙ICP备11037187号-2</li>
+	   				</ul>
+   				</div>	
+   			</div>
+   		</div>
+</div>
+
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#normaltab").tabso({
+		cntSelect:"#normalcon",
+		tabEvent:"mouseover",
+		tabStyle:"normal"
+	});					
+
+});								
+</script>
+</script>
+</html>

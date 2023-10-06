@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>系统介绍</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<script src="JS/jquery.min.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+<style type="text/css">
+	#moving_tab a {
+		color:#333;
+		text-decoration:none;
+		display:block;
+	}
+
+	#moving_tab a:hover {
+		color:#888;
+		text-decoration:none;
+	}
+	
+	#moving_tab {
+		/* hide overlength child elements*/
+		overflow:hidden;
+		
+		/* all the child elements are refering to this width */
+		width:1010px;
+		/* fix ie 6 overflow bug */
+		position:relative;
+
+		
+		/* styling */
+		border:1px solid #ccc;	
+		margin:0 auto;
+	}
+	
+		#moving_tab .tabs {
+			/* enable absolute position for .lava */
+			position:relative;	
+			float: left;
+			width:100px;
+			height:auto;
+			text-align: left;
+			text-indent: 1em;
+			/* styling */
+			cursor:pointer;
+		}
+	
+		#moving_tab .tabs .item {
+			/* enable z-index */
+			position:relative;
+			z-index:10;
+		
+			/* display in one row */
+			/*float:left;*/
+			display:block;
+			width:100px;
+			height:30px;
+			text-align:left;
+			font-size:14px;
+			line-height: 35px;
+		}
+
+		#moving_tab .tabs .lava {
+			/* Set it to absolute */
+			position:absolute;
+			top:0;
+			left:0;
+			
+			/* display the lava in bottom most layer */
+			z-index:0;		
+				
+			/* width = half size of #moving_tab */
+			width:100px;
+
+			/* height = height of .tabs */
+			height:30px;
+			
+			/* styling */
+			background:#59B712;
+
+		}
+		
+		#moving_tab .tabcontent {
+			/* enable absolute position for .panel */	
+			margin-left: 10px;
+			width:900px;
+			float: left;
+			position:relative;
+			overflow:hidden;
+			
+			/* styling */
+
+			border-top:1px solid #d9fafa;
+		}
+		
+		#moving_tab .panel {
+			/* width is width of #moving_tab times 2 */
+			position:relative;
+			width:3600px;
+		}
+		
+		#moving_tab .panel ul {
+			/* display in one row */
+			float:left;
+			text-align: left;
+			/* width is the same with #moving_tab */
+			width:900px;
+			padding: 0 15px;
+			/* remove all styles */
+			padding:0;
+			margin:0;
+			list-style:none;
+			
+
+		}
+			/* styling */
+			#moving_tab .panel ul li {
+				padding:5px 0 5px 10px;	
+				border-bottom:1px dotted #fff;
+			}
+.xtr_cmtext{
+	font-size: 13px;letter-spacing: 0.06em;
+	padding:0 10px;
+}
+.xtr_cmtext p{
+	text-indent: 1.5em;
+}
+	
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="login.html"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="system_intro.html">公司简介</a>
+					</li>
+		             <li class="hmain">
+						<a href="spots_detail.html">旅游信息</a>
+					</li>
+		         
+					<li class="hmain">
+						<a href="router_detail.html">旅游线路</a>
+					</li>
+					<li class="hmain">
+						<a href="news_list.html">信息公告</a>
+					</li>
+
+					<li class="hmain">
+						<a href="contactus.html">联系我们</a>
+					</li>
+					<li class="hmain">
+						<a href="message.html">客户留言</a>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">后台管理</a>
+					</li>    
+	      		</ul>
+	        </div>
+	        <div class="words">
+	        	<div class="words_content">
+					<div class="words_left">
+						<img src="Images/hotkey.jpg">
+					</div>
+					<div class="words_right">
+						<ul>
+							<li><a href="#">天目湖</a></li>
+							<li><a href="#">厦门</a></li>
+							<li><a href="#">马尔代夫</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">塞舌尔</a></li>
+							<li><a href="#">欧洲</a></li>
+							<li><a href="#">普吉岛</a></li>
+						</ul>		
+					</div>
+	        	</div>
+			</div>
+		</div>
+       	<div class="content">
+      		<div id="moving_tab">
+				<div class="tabs">
+					<div class="lava" style="top: 0px;"></div>
+					<div class="item">公司历史</div>
+					<div class="item">公司业务</div>
+					<div class="item">公司结构</div>
+					<div class="item">公司荣誉</div>
+				</div>		
+				<div class="tabcontent">						
+					<div class="panel" style="left: 0px;">						
+						<ul>
+							<div class="xtr_cmtext">
+							<p class="xtr_systitle">
+								<span class="pull-left"><img src="Images/sys_com.png"></span>
+ 								<span class="pull-left">公司简介</span>
+							</p>
+							
+							<p>1、具有良好的审美观和设计创新能力。
+							2、要有较强的学习能力和高度的责任心，沟通能力强，具有团队合作精神。
+							3、对Photoshop、Adobe Illustrator等软件感兴趣并有一定了解，擅长者优先。
+							4、主要负责网站的海报、宣传单、广告条、页面的平面设计工作和图片的后期处理。
+							Web前端开发工程师：
+							1、 了解HTML,CSS,javascript等前端语言
+							2、有良好的沟通能力和团队合作精神，工作主动积极、能承受一定压力。
+							3、有较强的学习能力，有较强的领悟力和逻辑分析能力。
+							4、有代码编写经验者优先。
+							程序设计师：
+							1、了解C，C++，Java，PHP，.net(asp)的任何一项。
+							2、对程序设计、编程语言、网页开发感兴趣，并有一定的了解。
+							3、肯吃苦，工作积极认真，学习和理解能力强，能承受一定工作压力，有团队合作精神。
+							4、负责完成整个网站的程序实现、上线测试及维护。
+							5、有一定基础者优先。
+							服务器端开发工程师：</p>
+
+							</div>
+						</ul>
+						<ul>
+							<div class="xtr_cmtext">
+							<p class="xtr_systitle">
+								<span class="pull-left"><img src="Images/sys_com.png"></span>
+ 								<span class="pull-left">公司业务</span>
+							</p>
+							<p>
+								厦门晨曦旅行社（Sunshine travel agency）成立于2012年4月1日，是经厦门旅游局批准设立的旅行社。晨曦旅行社旨在于为高中的学生找寻心中的梦想而设立的，主要的业务为在不同的阶段推出不同的文化之旅，带领高中学生游览理想中的大学，同时游览该大学所在的城市。一方面，这让高中生在忙碌的学习中得到了放松，另一方面，亲自体验到了心中的大学校园的氛围，会让莘莘学子们更加坚定心中的信念，努力的为梦想奋斗。 
+								我社拥有一批专业的优秀人才，他们曾经都在大型的旅行社有过丰富的工作经验，并有多人曾获得市十佳导游的荣誉，另外我社还有一群有过丰富旅行社管理经验的人才，如今皆加盟我社旨在共同打造一个独一无二的特色文化之旅。我社硬件设施完善，备有旅游面包车、豪华空调旅游中巴及豪华空调旅游大巴 ，同时与全国各地旅行社、宾馆饭店 、民航铁路等部门建立良好的合作关系。 
+								    我们秉承着“顾客至上”的原则，可根据不同学生
+							</p>
+
+							</div>
+						</ul>
+
+
+						<ul>
+							<div class="xtr_cmtext">
+						
+							<p class="xtr_systitle">
+								<span class="pull-left"><img src="Images/sys_structure.png"></span>
+ 								<span class="pull-left">公司结构</span>
+							</p>
+							<div>
+								<h3>办公室</h3>
+								<p>
+									分为办公室经理和办公室员工。办公室主要为公司管理人员，进行统筹、管理、行政，管理公司内部员工，保证公司的正常运营。根据公司发展情况，修改人力资源规划：明确各部门、岗位的职责；做好员工人事档案管理工作；办理员工录用、迁调、奖惩、离职、退休等手续及时与各部门沟通、协调，协助各部门做好管理工作。
+								</p>
+
+
+								<h3>财务部</h3>
+								<p>
+									财务部分为财务经理和财务员工。
+									做好财务分析报告，为公司管理者提供可靠的财务分析数据。
+									业务来往账款信息的整理，对于订单的财务管理。
+									对公司工作人员进行业绩评估，发放工资报酬。
+									根据财务保密制度及财务人员职业道德规范，对公司财务信息保密。
+								</p>
+
+								<h3>导游部</h3>
+								<p>导游部分为导游经理和导游。
+							　　　负责接待各旅游团体和零星散客，组织本地区各旅游团体、零星散客外出观光旅游。
+							　　　为旅游团或者个人提供旅游线路咨询、代购机票、车票、船票等。
+							　　　广泛收集信息，努力开发旅游资源。
+							　　　完成旅行社下达的各项经济指标和工作任务。
+							　　</p>
+
+								<h3>计调部</h3>
+								<p>分为计调部经理和计调部员工。
+									负责与旅行社、酒店的联系沟通工作。
+									负责本社旅游团队的住房、用餐、用车、导游服务等接待工作。
+									做好团队的有关单据的收发和登记工作以及团队档案整理工作，确保团队资料齐全，搞好统计工作。
+									掌握公司导游员的个人素质、带团技巧、工业记录等情况。
+									负责按旅行社的要求安排导游。
+									负责导游服务质量、等级的划分和评定工作。
+									负责导游出团情况的统计工作，以及编写导游带团过程中有价值的案例。
+								</p>
+
+								<h3>市场营销部</h3>
+								<p>
+																		分为营销部经理和营销部员工。
+									市场开发、组织客源和产品销售，其中销售内容包括各种旅游产品和服务项目。
+									通过各种渠道确定销售对象，预测销售及所需费用、销售收人和销售利润。
+									确定具体的销售策略，为旅行社的接待安排提供可靠的依据。
+								</p>
+								<h3>系统管理与维护人员</h3>
+								<p>
+									系统管理员除了可以维护升级本系统以外还具有对资源管理、客户管理、线路管理、外联销售、财务操作、计调操作、导游操作、核心管理的权限设置功能。
+								</p>
+
+							</div>
+								
+							</div>
+						</ul>
+
+
+						<ul>
+							<div class="xtr_cmtext">
+								<p class="xtr_systitle">
+									<span class="pull-left"><img src="Images/sys_honour.png"></span>
+ 									<span class="pull-left">公司荣誉</span>
+								</p>
+								<p>
+																		2002年，完美营养保健食品系列、个人护理品系列、家居日用品系列和玛丽艳美容护肤品系列被中国保护消费者基金会评为“中国消费者放心产品信誉品牌”
+									2002年6月，完美公司先后通过保健食品GMP认证、HACCP食品安全控制体系认证、ISO9001:2000质量管理体系认证和ISO14001:2004环境管理体系认证等四项国际权威认证。
+									2003年3月顺利通过了中国伊斯兰教协会的清真食品认证。
+									2003年，中国企业信用协会和《消费日报》社授予完美公司“中国产品质量放心用户满意十佳诚信企业”和“中国化妆品质量放心用户满意十佳诚信企业”荣誉称号，完美芦荟矿物晶也被中国医促会免疫性疾病专业委员会推荐为“调节人体免疫优秀产品”
+									2004年，完美芦荟牙膏被中华预防医学会列入“中华预防医学会健康金桥重点工程”
+									2004年，完美公司在投资逾千万美元的总部二期工程（其中包括采用德国ASRS全智能化仓储系统的物流控制中心、智能化办公大楼和星级员工宿舍等）正式投入使用后，又在江苏省扬州市投资建设新的生产基地――扬州完美日用品有限公司，项目总占地面积为358亩，首期投资3,000万美元，建成之后将以一流的研发、生产和物流设施，为完美事业的进一步发展提供强劲保障与支援……。
+									2004年，共青团中央授予完美公司“中国青年志愿者行动特别贡献奖”
+									2005年，中华慈善总会、《中国贸易报》和第二届企业公民论坛组委会授予完美公司“2005年中国优秀企业公民示范单位”荣誉称号
+									2005年，完美公司被中国质量信用评价中心评为“AAA+级中国质量信用企业”
+									2005年，我国第一部《禁止传销条例》和《直销管理条例》正式颁布并实施之后，完美公司予以高度重视，积极配合两个条例的落实，于2006年12月1日获国家商务部颁发直销经营许可证，成为直销企业。
+									2005年8月，完美公司与拥有“轻工高等教育明珠”之称的江南大学联合组建研发中心，极大地提升公司的自主研发能力和对研发成果的综合利用能力。
+									2005年10月，完美六种营养保健食品全部通过“国家体育总局运动医学研究所兴奋剂检测中心”的兴奋剂检测，证明产品不含任何国家及国际禁止运动员服用的违禁成分。
+									继2004年和2005年中国食品安全年会组委会连续两年将完美公司评为“2004-2005年度全国食品安全示范单位”和“2005-2006年度全国食品安全百佳
+								</p>
+							</div>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+   		<div class="footer">
+   			<div class="ftcontent">
+   					<div class="bottom_copy">
+	   					<ul class="pull-right"> 
+			   					<li>&copy;</li>
+			   					<li>|</li>
+			   					<li>衢州市新联建农产品有限公司</li>
+			   					<li>|</li>
+			   					<li>备案号：浙ICP备11037187号-2</li>
+		   				</ul>
+	   				</div>	
+   			</div>
+   		</div>
+
+</div>
+
+</body>
+<script>
+	$(document).ready(function () {
+
+		//set the default location (fix ie 6 issue)
+		//$('.lava').css({left:$('div.item:first').position()['left']});
+		
+		$('.item').click(function () {
+			//scroll the lava to current item position
+			$('.lava').stop().animate({top:$(this).position()['top']}, {duration:500});
+			
+			//scroll the panel to the correct content
+			$('.panel').stop().animate({left:$(this).position()['top']*(-30)}, {duration:500});
+		});
+	});
+	</script>
+</html>
