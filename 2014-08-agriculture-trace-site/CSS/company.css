@@ -1,0 +1,176 @@
+@charset "utf-8";
+.content{
+	width:1200px;
+	height:auto;
+	background-color: #fff;
+	margin:0 auto 0 auto;
+	font-family: 'Microsoft YaHei';
+}
+.goods_index{
+	width: 501px;
+	height: 26px;
+	margin-left:9%;
+	text-align: left;
+}
+.goods_index a{
+	font-size: 12px;
+	color: #797979;
+	font-family: 'SimSun';
+}
+.goods_sort{
+	background: #f4f4f4;
+	width: 1000px;
+	height: 25px;	
+	margin: 0 auto 0 auto;
+}
+
+.gs_sortleft{
+	color:#626262;
+	float:left;
+}
+.gs_sortleft select{
+	color:#626262;
+}
+.gs_sortright{
+	float: right;
+	text-align: left;
+	height: 21px;
+	width:250px;
+	margin:2px 20px 0 0 ; 
+	color: #626262;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.gs_sortright a{
+	display: block;
+	float:right;
+	width:57px;
+	height:19px; 
+	margin:-5px 5px 0 0;
+	text-indent:0.5em;
+	border: 1px solid #b9b9b9;
+	color: #626262;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+}
+.gs_sortright a:hover{
+	background-color: #999;
+}
+/*新闻页 详细布局*/
+.news_title{
+	width: 820px;
+	height: 65px;margin: 0 auto 0 auto;
+	text-align: left;
+	
+}
+.news_big_title{
+	font-size: 21px;color:#046e40; border-left:3px solid #000; 
+	text-indent:0.2em;
+}
+.news_title_time{
+font-family: 'SimHei';
+	font-size: 12px;color:#000; 
+}
+
+
+/*合作企业详细布局**/
+.company_content_detail{
+	width:900px;height:800px;
+	margin: 0 auto 0 auto;
+}
+.company_content_left{
+	width:238px ;
+	height: 721px;
+	margin-left:30px;
+	float: left;
+}
+.company_content_left div{
+ 	margin-bottom:10px;
+	border: 1px solid #c9c9c9;
+	border-radius:2px; 
+}
+.company_logo{
+	width: 236px;
+	height: 173px;
+}
+.company_logo img{
+	margin:20px;
+	
+}
+.company_index{
+	width: 236px;
+	height:auto;
+	background-color: #f8f8f8;
+	text-align:left;
+}
+.company_index p{
+line-height:18px;
+text-indent: 0.5em;
+font-size: 16px;
+color: #232323;
+}
+.company_name{
+	font-size:17px;
+	text-indent:0.5em;
+	width: 236px;
+	height:30px;
+	color: #252525;
+	font-weight: bold;
+	background-color: #eef3e4;
+	border-bottom:#b5b5b5 1px solid;
+}
+.company_content_right{
+	width:604px ;
+	height: 721px;
+	margin-right: -10px;
+	float:right;
+	text-align: left;
+	font-size: 18px;
+	color: #252525;
+}
+.copmany_introtext{
+	text-indent: 2em;
+	line-height: 31px;
+}
+.company_essentail{
+	width:604px ;
+	height:501px;
+}
+.company_essentail ul{
+margin:-10px  0 0 -38px;
+	width:290px;
+	height: 200px;
+	float: left;
+}
+.company_essentail ul li{
+	width:250px;
+	height:35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.goodslist_footer{
+	width:1000px;
+	height:40px;	
+	margin: 0 auto 0 auto;
+}
+.goodslist_footerinner{
+	width:500px;
+	height:40px;	
+	margin:20px auto 0 auto;
+}
+.goodslist_footer a{
+color: #626262;
+border: 1px solid #b9b9b9;
+background-color: #f4f4f4;
+padding: 2px 5px;
+font-family: 'Microsoft YaHei';
+}

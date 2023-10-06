@@ -1,0 +1,224 @@
+
+.content-wrapper {
+	width:700px;
+	height: 435px;
+
+}
+
+/****************************************************************************/
+
+.homepage-wrapper {
+	padding:0 0  24px 0;
+}
+
+.homepage-slider {
+	width: 698px;
+	position: relative;
+	overflow: hidden;
+}
+
+.homepage-slider .tag,.tag1 {
+	width:698px;
+	height:34px;
+	margin:-2px -2px 0 0; 
+	background: url(../Images/s1idebar_bg.png) no-repeat;
+	background-position:7px 0px ;
+	position: absolute;
+	right:4px;
+	top:5px;
+	z-index:3;
+}
+.plytitle{
+	color: #fff;
+	display: block;
+	width: 85px;
+	height: 22px;margin-left:15px;
+	+margin-left:-580px;
+	font-size: 21px;
+
+	font-family:'Microsoft YaHei';
+}
+.plycpc{
+	margin-top: -15px;
+	margin-top:-18px\9;
+	display: block;
+	float: right;
+	width: 40px;
+	height:25px;
+}
+.homepage-slider .rounded-corners {
+	float:left;
+	width:698px;
+	height:30px;
+	margin-left:-349px; 
+	text-align: left;
+	position: absolute;
+	z-index:2;
+}
+:root .rounded-corners {
+	margin-left:-349px; 
+	}
+
+
+.homepage-slider .navigation {
+	width: 250px;
+	height: 20px;
+	z-index: 100px;
+	margin:3px auto 0 auto;
+}
+
+.homepage-slider .navigation a {
+	margin-left:  4px;
+	width:41px;
+	height:6px;
+	background:#046d42;
+	display: block;
+	float: left;
+}
+
+.homepage-slider .navigation a:hover {
+	background:#e34246;
+}
+
+.homepage-slider .navigation .active {
+	background:#e34246;
+}
+
+.homepage-slider .btn-previous {
+	width:45px;
+	height:435px;
+	margin: 0 0 0 -320px;
+	+left: 20px;
+	margin: 0 0 0 30px\9;
+	position: absolute;
+	z-index:2;
+}
+
+.homepage-slider .btn-previous:hover {
+	background: url(../Images/arrow_previous.png) center center no-repeat;
+}
+
+.homepage-slider .btn-next {
+	margin:0 0 0 280px;
+	margin:0 0 0 620px\9;
+	+right: 20px;
+	width: 45px;
+	height:400px;
+	position: absolute;
+	z-index:2;
+}
+
+.homepage-slider .btn-next:hover {
+	background: url(../Images/arrow_next.png) center center no-repeat;
+}
+
+
+
+
+.homepage-slider-item {
+	width: 698px;
+	height:400px;
+	float: left;
+}
+/**图片小介绍*/
+.homepage-slider-item .background {
+	width: 698px;
+	height:135px;
+	margin-top:33px;
+	+margin:33px 0 0 -350px;
+	font-size: 16px;
+	font-family: 'Microsoft YaHei';
+	background:url(../Images/player_bg.png) repeat;
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+.product_name{
+	font-size: 21px;color:#03492f;
+	position: relative;
+	width:100px;
+	height:2px;
+	top:-30px;
+	left:40px;
+	z-index: 4;
+}
+.introduce_words{
+	width: 320px;
+	height: 130px;
+	margin: -1px 0 0 60px;
+	float: left;
+}
+.introduce_words li{
+	width: 320px;
+	height:26px;
+	text-align: left;
+}
+.introduce_qrcode{
+margin-top: -1px;
+	width: 150px;text-align: left;
+	height: 130px;
+	float: right;
+	font-size: 11px;
+}
+
+
+
+
+
+.homepage-slider-image-shadow {
+	width: 698px;
+	height: 9px;
+	background: url(../Images/image-shadow-5.png) center 1px no-repeat;
+}
+
+.homepage-columns {
+	margin: 0 0 30px 0;
+	overflow: hidden;
+}
+
+.homepage-columns .last {
+	margin: 0;
+}
+
+.homepage-columns-item {
+	margin: 0 40px 0 0;
+	width: 195px;
+	float: left;
+}
+
+
+.homepage-spacer {
+	margin: 0 0 30px 0;
+	height: 3px;
+	line-height: 3px;
+	background: url(../Images/shortcode-spacer-2-bg.png) top left repeat-x;
+}
+
+.homepage-about {
+	margin: 0 30px 0 0;
+	width: 620px;
+	float: left;
+}
+
+.homepage-about .caps:first-letter {
+	margin: 5px 6px 0 0;
+	font-size: 40px;
+	font-weight: bold;
+	float: left;
+}
+
+.homepage-about p {
+	margin: 0 0 12px 0;
+}
+
+.homepage-footer .block-1 {
+	float: left;
+}
+
+.homepage-footer .last {
+	margin-bottom: 0;
+}
+
+
+
+

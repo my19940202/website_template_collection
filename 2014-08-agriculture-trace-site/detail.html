@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>详情页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/detail.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/demo.css"/>
+
+<script src="JS/jquery.min.js"></script>
+<!--<script src="JS/xx.js" type="text/javascript"></script>-->
+<script  src="JS/menu.js"></script>
+<script src="JS/bjqs-1.3.min.js"></script>
+
+
+<!--视频播放器已解决-->
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+
+
+<style type="text/css"> 
+#box{width:900px;height:200px;border:#00FF00 10px ridge;overflow:hidden} 
+.bigbox{overflow:hidden;} 
+.smallbox{width:auto!important width:180px;min-width:180px;height:180px;border:red solid 1px;float:left;display:inline;overflow:visible;}
+	
+
+	#moving_tab a {
+		color:#333;
+		text-decoration:none;
+		display:block;
+	}
+
+	#moving_tab a:hover {
+		color:#888;
+		text-decoration:none;
+	}
+	#moving_tab {
+		/* hide overlength child elements*/
+		overflow:hidden;
+		
+		/* all the child elements are refering to this width */
+		width:300px;
+
+		/* fix ie 6 overflow bug */
+		position:relative;
+		
+		/* styling */
+		border:1px solid #ccc;	
+		margin:0 auto;
+	}
+	#moving_tab1 {
+		overflow:hidden;
+		width:300px;
+		position:relative;
+		border:1px solid #ccc;	
+		margin:0 auto;
+	}
+	
+		 .tabs {
+			
+			position:relative;	
+			height:30px;
+			
+			padding-top:5px;
+			cursor:pointer;
+			background-color:#a8a8a8; 
+		}
+	
+		 .tabs .item {
+			
+			position:relative;
+			z-index:10;
+		
+			
+			float:left;
+			display:block;
+
+			/* width = half size of #moving_tab */
+			width:75px;
+			
+			/* height = height of .tabs */
+			text-align:center;
+			font-size:18px;
+			font-weight:bold;	
+		}
+		 .tabs .lava {
+			/* Set it to absolute */
+			position:absolute;
+			top:0; left:0;
+			
+			/* display the lava in bottom most layer */
+			z-index:0;		
+				
+			/* width = half size of #moving_tab */
+			width:75px;
+
+			/* height = height of .tabs */
+			height:35px;			
+			/* styling */
+			background:#f1f1f1;
+
+		}
+		
+		 .content_tab{
+			/* enable absolute position for .panel */	
+			position:relative;
+			height: 326px;
+			overflow:hidden;
+			
+			/* styling */
+			background:#f1f1f1;
+
+		}
+		
+		 .panel {
+			/* width is width of #moving_tab times 2 */
+			position:relative;
+			width:1200px;
+		}
+		
+		 .panel ul {
+			/* display in one row */
+			float:left;
+			text-align: left;
+			/* width is the same with #moving_tab */
+			width:300px;
+			/* remove all styles */
+			padding:0;
+			margin:0;
+			list-style:none;
+		}
+			/* styling */
+		 .panel ul li {
+				width: 65px;
+				height:27px;
+				margin: 8px 4px 0 4px;
+				float: left;
+				overflow: hidden;
+				border: 1px solid #a8a8a8;
+		}
+		 .panel ul li a{
+			text-align: center;
+			margin-top: 3px;
+		}	
+</style> 
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="#"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+								<img src="Images/search_choose2.jpg" class="img0">
+								<img src="Images/search_choose1.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" class="img22"></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">蔬菜</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+
+
+		             <li class="hmain">
+						<a href="javascript:void(0)">果品</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		         
+					<li class="hmain">
+						<a href="javascript:void(0)">粮油</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">茶叶</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">禽畜</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">水产</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">食用菌</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">溯源系统登录</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>     
+	      		</ul>
+	        </div>
+	        <div class="words">
+	        	<div class="words_content">
+					<div class="words_left">
+						<img src="Images/hotkey.jpg">
+					</div>
+					<div class="words_right">
+							<ul>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">花生</a></li>
+								<li><a href="#">樱桃</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">樱桃</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">花生</a></li>
+								<li><a href="#">樱桃</a></li>
+								<li><a href="#">土豆</a></li>
+								<li><a href="#">土豆</a></li>
+							</ul>	
+					</div>
+	        	</div>
+				
+
+		</div>
+
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">&nbsp;首页</a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">蔬菜</a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">叶菜</a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">白菜</a>
+      			</span>
+      		</div>
+      		<div class="goods_sort">
+      			<div class="gs_sortleft">
+	      			<span>
+	      				&nbsp;
+						排序方式
+						&nbsp;
+	      			</span>
+	 				<span>
+	 					<select>
+	 					<option select="selected">时间</option>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>
+	      			<span>
+	      				<select>
+	 					<option select="selected">人气</option>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>	
+      			</div>
+      			<div class="gs_sortright">
+	      			<span>
+						共150新闻
+	      			</span>
+	      			<span>|</span>
+	 				<span>1/9</span>
+	      			<span><a href="#">下一页</a> </span>
+	 				<span><a href="#">上一页</a> </span>
+
+      			</div>
+      		</div>
+      		<!--详情页显示-->
+      		<div class="news_content">
+      			<div class="news_title">
+      				<p class="news_big_title">产品信息</p>
+      			</div>
+				<!--图片播放器显示-->
+				<div class="detail_header">
+      				<div class="detail_header_pic">
+						    <div id="banner-slide">
+						        <ul class="bjqs">
+						          <li><a href=""><img src="Images/banner01.jpg" ></a></li>
+						          <li><img src="Images/banner02.jpg" title="Aion"></li>
+						          <li><img src="Images/banner03.jpg" title="Aion"></li>
+						          <li><img src="Images/banner01.jpg" title="Aion"></li>
+						          <li><img src="Images/banner03.jpg" title="Automatically generated caption"></li>
+						        </ul>
+      						</div>	
+					</div>
+					<div class="detail_header_intro">
+						<div class="detail_goods_title">白菜</div>
+						<p> <span class="bolder">品种：</span>青杂三号大白菜</p>
+						<p> <span class="bolder">上市时间：</span>2013年10月5日 </p>
+						<p> <span class="bolder"> 下市时间：</span>2014年3月5日</p>
+						<p><span class="bolder"> 产品规格：</span>一等 </p>
+						<p><span class="bolder"> 生产面积：</span>200亩 </p>
+						<p><span class="bolder">产品用途：</span>食用  </p>
+						<p><span class="bolder">包装名称：</span> 网袋 </p>
+						<p><span class="bolder">所属商家：</span>怀远县龙辉蔬菜种植专业合作社 </p>
+					</div>
+					<div class="detail_header_text">
+						<div class="left_words">产品介绍：</div>
+					    <div class="right_text">阳光乔A级，采用“阳光乔”健康种植体系生产。 青杂三号大白菜比普通白菜味道鲜，益胃生津，清热除烦。并且我公司拥有进出口经营权，已获得国家商检卫生注册，并先后通过HACCP食品安全管理体系认证、KOSHER 犹太认证，美国FDA认证 ,2009年公司又先后通过了BRC 认证、ISO22000认证及生产许可证QS。公司拥有自己的检测中心有能力对出口的产品进行微生物以及农残检测 。本公司是发展迅速、并具有一定规模的专业农产品加工出口企业之一。种植的青杂三号大白菜安全系数高。
+					    </div>
+						
+
+					</div>
+					<div class="detail_header_video">
+								<p class="videos_topline"></p>
+								<div class="slideclass">
+								<!--视频播放七七七七++++++++++++++++++++++++++++++-->
+									<object type="application/x-shockwave-flash" data="VideoPlayer7.swf" width="639" 	height="397">
+										<param name="movie" value="VideoPlayer7.swf"/> 
+										<param name="allowFullScreen" value="true" />
+										<param name="FlashVars" value="xml=
+											{vcastr}
+											   {channel}				
+											{ad}	
+												{reqult}true{/reqult}
+												{source}image/1.jpg{/source}
+												{duration}5{/duration}
+												{link}http://www.google.com{/link}
+											  {/ad}					 
+							                   		  {item}
+												  {source}video/a.mp4{/source}
+												  {duration}{/duration}
+												  {title}视频名称{/title}
+												  {link}http://www.baidu.com{/link}	
+												  
+											 {/item}	
+											   {/channel}
+											{/vcastr}"/>
+									</object>
+
+
+
+
+								</div>
+
+
+							    <div class="video_right">
+									<!--<ul class="video_title">
+										<li>出芽期</li>
+										<li>幼苗期</li>
+										<li>成熟期</li>
+										<li>收割期</li>
+									</ul>
+									<ul class="video_date1">
+										<li>第11天</li>
+										<li>第2天</li>
+										<li>第3天</li>
+										<li>第4天</li>
+										<li>第5天</li>
+										<li>第6天</li>
+										<li>第7天</li>
+										<li>第8天</li>
+										<li>第9天</li>
+										<li>第10天</li>
+										<li>第11天</li>
+										<li>第12天</li>
+										<li>第13天</li>
+										<li>第14天</li>
+										<li>第15天</li>
+										<li>第16天</li>
+										<li>第17天</li>
+										<li>第18天</li>
+										<li>第19天</li>
+										<li>第20天</li>
+										<li>第21天</li>
+										<li>第22天</li>
+										<li>第23天</li>
+										<li>第24天</li>
+										<li>第25天</li>
+										<li>第26天</li>
+										<li>第27天</li>
+										<li>第28天</li>
+										<li>第29天</li>
+										<li>第30天</li>
+										<li>第31天</li>
+										<li>第32天</li>
+										<li>第33天</li>
+										<li>第34天</li>
+										<li>第35天</li>
+										<li>第36天</li>
+										<li>第11天</li>
+										<li>第2天</li>
+										<li>第3天</li>
+										<li>第4天</li>
+										<li>第5天</li>
+										<li>第6天</li>
+										<li>第7天</li>
+										<li>第8天</li>
+										<li>第9天</li>
+									</ul>
+									<ul class="video_date2">
+										<li>第21天</li>
+										<li>第2天</li>
+										<li>第3天</li>
+										<li>第4天</li>
+										<li>第5天</li>
+										<li>第6天</li>
+										<li>第7天</li>
+										<li>第8天</li>
+										<li>第9天</li>
+										<li>第10天</li>
+										<li>第11天</li>
+										<li>第12天</li>
+										<li>第13天</li>
+										<li>第14天</li>
+										<li>第15天</li>
+										<li>第16天</li>
+										<li>第17天</li>
+										<li>第18天</li>
+										<li>第19天</li>
+										<li>第20天</li>
+										<li>第21天</li>
+										<li>第22天</li>
+										<li>第23天</li>
+										<li>第24天</li>
+										<li>第25天</li>
+										<li>第26天</li>
+										<li>第27天</li>
+										<li>第28天</li>
+										<li>第29天</li>
+										<li>第30天</li>
+										<li>第31天</li>
+										<li>第32天</li>
+										<li>第33天</li>
+										<li>第34天</li>
+										<li>第35天</li>
+										<li>第36天</li>
+									</ul>
+									<ul class="video_date3">
+										<li>第31天</li>
+										<li>第2天</li>
+										<li>第3天</li>
+										<li>第4天</li>
+										<li>第5天</li>
+										<li>第6天</li>
+										<li>第7天</li>
+										<li>第8天</li>
+										<li>第9天</li>
+										<li>第10天</li>
+										<li>第11天</li>
+										<li>第12天</li>
+										<li>第13天</li>
+										<li>第14天</li>
+										<li>第15天</li>
+										<li>第16天</li>
+										<li>第17天</li>
+										<li>第18天</li>
+										<li>第19天</li>
+										<li>第20天</li>
+										<li>第21天</li>
+										<li>第22天</li>
+										<li>第23天</li>
+										<li>第24天</li>
+										<li>第25天</li>
+										<li>第26天</li>
+										<li>第27天</li>
+										<li>第28天</li>
+										<li>第29天</li>
+										<li>第30天</li>
+										<li>第31天</li>
+										<li>第32天</li>
+										<li>第33天</li>
+										<li>第34天</li>
+										<li>第35天</li>
+										<li>第36天</li>
+									</ul>
+									<ul class="video_date4">
+										<li>第41天</li>
+										<li>第2天</li>
+										<li>第3天</li>
+										<li>第4天</li>
+										<li>第5天</li>
+										<li>第6天</li>
+										<li>第7天</li>
+										<li>第8天</li>
+										<li>第9天</li>
+										<li>第10天</li>
+										<li>第11天</li>
+										<li>第12天</li>
+										<li>第13天</li>
+										<li>第14天</li>
+										<li>第15天</li>
+										<li>第16天</li>
+										<li>第17天</li>
+										<li>第18天</li>
+										<li>第19天</li>
+										<li>第20天</li>
+										<li>第21天</li>
+										<li>第22天</li>
+										<li>第23天</li>
+										<li>第24天</li>
+										<li>第25天</li>
+										<li>第26天</li>
+										<li>第27天</li>
+										<li>第28天</li>
+										<li>第29天</li>
+										<li>第30天</li>
+										<li>第31天</li>
+										<li>第32天</li>
+										<li>第33天</li>
+										<li>第34天</li>
+										<li>第35天</li>
+										<li>第36天</li>
+									</ul>
+									<ul class="page_index">
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">下一页</a></li>
+									</ul>
+									-->
+									<div id="moving_tab">
+										<div class="tabs">
+											<div class="lava" style="left: 0px;"></div>
+											<span class="item">出芽期</span>
+											<span class="item">幼苗期</span>
+											<span class="item">成熟期</span>
+											<span class="item">收割期</span>
+										</div>				
+										<div class="content_tab">						
+											<div class="panel" style="left: 0px;">						
+												<ul>
+													<li><a href=" #">第1天</a></li>
+													<li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li>
+													
+												</ul>
+												<ul>
+													<li><a href=" #">Panel 02 Item 01</a></li>
+													<li><a href=" #">Panel 02 Item 02</a></li>
+													<li><a href=" #">Panel 02 Item 03</a></li>
+													<li><a href=" #">Panel 02 Item 04</a></li>
+													<li><a href=" #">Panel 02 Item 05</a></li>			
+												</ul>
+												<ul>
+													<li><a href=" #">Panel 02 Item 01</a></li>
+													<li><a href=" #">Panel 02 Item 02</a></li>
+													<li><a href=" #">Panel 02 Item 03</a></li>
+													<li><a href=" #">Panel 02 Item 04</a></li>
+													<li><a href=" #">Panel 02 Item 05</a></li>			
+												</ul>
+												<ul>
+													<li><a href=" #">Panel 02 Item 01</a></li>
+													<li><a href=" #">Panel 02 Item 02</a></li>
+													<li><a href=" #">Panel 02 Item 03</a></li>
+													<li><a href=" #">Panel 02 Item 04</a></li>
+													<li><a href=" #">Panel 02 Item 05</a></li>			
+												</ul>						
+											</div>
+										</div>
+										<div style="height:10px;">
+											<ul class="page_index">
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">下一页</a></li>
+											</ul>
+										</div>
+									</div>	
+							    </div>
+					</div>
+      			</div>
+      			
+      		</div>
+
+
+      		<div class="detail_files">
+      			<div class="news_title">
+      				<p class="news_big_title">生产档案信息</p>
+      			</div>
+				<!--图片播放器显示-->
+				
+      				<div class="detail_file_left">
+      					<div class="detail_base_location">
+      						<h1 class="base_info">基地信息</h1>
+      						<!--调用百度地图API,预定义地点需要详细经纬度，宽度定义有问题-->
+						    <iframe frameborder="0" 
+							style="width:419px;height:306px;" 
+						src="http://kindeditor.net/ke4/plugins/baidumap/index.html?center=120.173704%2C30.330393&zoom=11&width=400&height=290&markers=121.473704%2C31.230393&markerStyles=l%2CA">
+							</iframe>
+						</div>
+						
+
+						<!--小图片播放器-->
+						<div class="small_picplayer">
+						    <div id="banner-slide1">
+						        <ul class="bjqs">
+						          <li><a href=""><img src="Images/banner01.jpg" ></a></li>
+						          <li><img src="Images/banner02.jpg" title="Aion"></li>
+						          <li><img src="Images/banner03.jpg" title="Aion"></li>
+						          <li><img src="Images/banner02.jpg" title="Aion"></li>
+						        </ul>
+      						</div>
+						</div>
+					
+					</div>
+					<div class="detail_file_right">
+						<p> <span class="bolder">基地名称：</span>腾飞现代农业科技开发有限公司 立臣种植合作社</p>
+						<p> <span class="bolder">基地地址：</span>双城市水泉乡 </p>
+						<p> <span class="bolder">基地面积/规模：</span>1000亩</p>
+						<!--内容过长,使用table-->
+						<table frame=void>
+  							<tr>
+					    	<td width=134><span class="table_bolder">基地执行标准：</span>	</td>
+					    	<td width=340> GB4285农药安全使用标准 GB/T8321（所有部分）农药合理使用准则 GB/T16715.1—1996 瓜类作物种子 瓜类 GB/6715.3瓜菜作物种子 茄果类 NY/T 496—2002肥料合理使用检测通则 NY5010无公害食品 蔬菜产地环境条件</td>
+					  		</tr>
+
+					  		<tr>
+					    	<td width=134><span class="table_bolder">生产操作规程： </span>	</td>
+					    	<td width=340>绿色食品—番茄生产标准 无公害食品—香瓜生产技术规程 无公害食品—西瓜生产技术规程</td>
+					  		</tr>
+						</table>
+						<p><span class="bolder">管理形式：</span>集中管理  </p>
+						<p><span class="bolder">基地负责人：</span>鲁春 </p>
+						<p><span class="bolder">技术负责人：</span>苍云朋</p>
+						<table frame=void>
+  							<tr>
+					    	<td width=100><span class="table_bolder">生产计划：</span>	</td>
+					    	<td width=370> 2013年，腾飞高效瓜菜示范园区双城市水泉乡、临江计划生产1500亩绿色无公害果菜，1000亩有机水稻。</td>
+					  		</tr>
+						</table>
+						<p><span class="bolder">质量控制措施：</span><br>
+							1.基地实行专业化管理，由公司指派专门的基地负责人和技术人员，并做到责任到人，分工明确。2.基地所需的生产资料（种子、化肥、农药等）必须在技术人员的指导下采购，其他工作人员不得私自采购。3.基地所有的管理措施，必须在基地负责人及技术人员的指导和监控下进行。4.	对作物的生长过程及各项管理措施、投入品使用、原料收获和销售等必须有详细的记录，并交公司存档管理。 5.保证基地内部和周围环境的清洁卫生，不受污染。 4.对作物的生长过程及各项管理措施、投入品使用、原料收获和销售等必须有详细的记录，并交公司存档管理。6.基地发生突发情况时，及时报告公司领导小组，由领导小组提出处理意见。
+						</p>
+					</div>
+					
+					<!--第二个tab切换
+					<div class="product_log">
+						<h1 class="base_info">生产档案</h1>
+						<ul class="video_title">
+							<li>基本作业</li>
+							<li>施肥作业</li>
+							<li>收获作业</li>
+						</ul>
+						<div class="pro_log1">
+								<table >
+									<tr  style="border:1px solid blue" colspan="2">
+									<td>1作业类型</td>
+									<td>管理形式</td>
+									<td>开始时间</td>
+									<td>结束时间</td>
+									<td>作业面积</td>
+									<td>作业内容</td>
+									</tr>	
+									<tr>
+									<td>田间管理</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>2014年2月9日</td>
+									<td>10亩</td>
+									<td>剪葱，栽葱</td>
+									</tr>
+									<tr>
+									<td>栽种</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>结束时间</td>
+									<td>10亩</td>
+									<td>作业内容</td>
+									</tr>
+									<tr>
+									<td>筛土</td>
+									<td>集中生产管理</td>
+									<td>开2014年2月8日</td>
+									<td>结束时间</td>
+									<td>作10亩</td>
+									<td>作业内容</td>
+									</tr>
+								</table>
+						</div>	
+						<div class="pro_log2">
+								<table >
+									<tr  style="border:1px solid blue" colspan="2">
+									<td>2作业类型</td>
+									<td>管理形式</td>
+									<td>开始时间</td>
+									<td>结束时间</td>
+									<td>作业面积</td>
+									<td>作业内容</td>
+									</tr>	
+									<tr>
+									<td>田间管理</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>2014年2月9日</td>
+									<td>10亩</td>
+									<td>剪葱，栽葱</td>
+									</tr>
+									<tr>
+									<td>栽种</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>结束时间</td>
+									<td>10亩</td>
+									<td>作业内容</td>
+									</tr>
+									<tr>
+									<td>筛土</td>
+									<td>集中生产管理</td>
+									<td>开2014年2月8日</td>
+									<td>结束时间</td>
+									<td>作10亩</td>
+									<td>作业内容</td>
+									</tr>
+								</table>
+						</div>	
+						<div class="pro_log3">
+								<table >
+									<tr  style="border:1px solid blue" colspan="2">
+									<td>3作业类型</td>
+									<td>管理形式</td>
+									<td>开始时间</td>
+									<td>结束时间</td>
+									<td>作业面积</td>
+									<td>作业内容</td>
+									</tr>	
+									<tr>
+									<td>田间管理</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>2014年2月9日</td>
+									<td>10亩</td>
+									<td>剪葱，栽葱</td>
+									</tr>
+									<tr>
+									<td>栽种</td>
+									<td>集中生产管理</td>
+									<td>2014年2月8日</td>
+									<td>结束时间</td>
+									<td>10亩</td>
+									<td>作业内容</td>
+									</tr>
+									<tr>
+									<td>筛土</td>
+									<td>集中生产管理</td>
+									<td>开2014年2月8日</td>
+									<td>结束时间</td>
+									<td>作10亩</td>
+									<td>作业内容</td>
+									</tr>
+								</table>
+						</div>	
+							
+					</div>-->
+					<div class="product_log">
+						<div id="moving_tab1">
+							<div class="tabs">
+												<div class="lava" style="left: 0px;"></div>
+												<span class="item">出芽期</span>
+												<span class="item">幼苗期</span>
+												<span class="item">成熟期</span>
+												<span class="item">收割期</span>
+							</div>				
+							<div class="content_tab">						
+												<div class="panel" style="left: 0px;">						
+													<ul>
+														<li><a href=" #">第1天</a></li><li><a href=" #">第1天</a></li>
+														
+													</ul>
+													<ul>
+														<li><a href=" #">Panel 02 Item 01</a></li>
+														<li><a href=" #">Panel 02 Item 02</a></li>
+														<li><a href=" #">Panel 02 Item 03</a></li>
+														<li><a href=" #">Panel 02 Item 04</a></li>
+														<li><a href=" #">Panel 02 Item 05</a></li>			
+													</ul>
+													<ul>
+														<li><a href=" #">Panel 02 Item 01</a></li>
+														<li><a href=" #">Panel 02 Item 02</a></li>
+														<li><a href=" #">Panel 02 Item 03</a></li>
+														<li><a href=" #">Panel 02 Item 04</a></li>
+														<li><a href=" #">Panel 02 Item 05</a></li>			
+													</ul>
+													<ul>
+														<li><a href=" #">Panel 02 Item 01</a></li>
+														<li><a href=" #">Panel 02 Item 02</a></li>
+														<li><a href=" #">Panel 02 Item 03</a></li>
+														<li><a href=" #">Panel 02 Item 04</a></li>
+														<li><a href=" #">Panel 02 Item 05</a></li>			
+													</ul>						
+												</div>
+							</div>
+							<div style="height:10px;">
+												<ul class="page_index">
+													<li><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">下一页</a></li>
+												</ul>
+							</div>
+						</div>	
+					</div>
+
+      		</div>
+
+
+      		<div class="compnay_honor">
+      			<div class="news_title">
+      				<p class="news_big_title">公司荣誉</p>
+      			</div>
+      			<div class="honor_1">
+						
+						<ul class="honor_qualification">
+						<h1 class="base_info">公司档案</h1>
+							<li><img src="Images/honor_1.png"></li>
+							<li><img src="Images/honor_2.png"></li>			
+							<li>
+								<p><span class="bolder">商标注册：</span>臣府</p>
+								<p><span class="bolder">商标类型：</span>商品商标 </p>
+								<p><span class="bolder">商标注册号：</span>ZC11169876SL</p>
+							</li>	
+						</ul>
+
+						
+						<ul class="honor_time">                                                    
+							<h1 class="base_info">资质荣誉</h1> 
+							<li>
+								<span class="honor_left">内蒙古著名商标  </span>
+								<span class="honor_right">获证时间：2012-02-01</span>
+							</li>	
+							<li>
+								<span class="honor_left"> 鄂托克旗农牧业产业化经营重点龙头企业   </span>
+								<span class="honor_right"> 获证时间：2005-06-30 </span>
+							</li>
+							<li>
+								<span class="honor_left"> 鄂托克旗现代草原畜牧业示范户 </span>
+								<span class="honor_right">   获证时间：2011-10-01</span>
+							</li>
+							<li>
+								<span class="honor_left"> 鄂尔多斯市知名商标    </span>
+								<span class="honor_right"> 获证时间：2011-01-01</span>
+							</li>
+						</ul>
+						<ul>
+							<div class="picplayer_2">
+								<iframe src="hh.html"  frameborder=no scrolling=no  width=935  height=220></iframe>
+							</div>
+						</ul>
+					</div>
+
+      		</div>
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+   					<div class="greenline">	
+   					</div>	
+	   				<ul>
+   					<li>&copy;Copyright 2013.All Rights Reserved 版权所有</li>
+   					<li>|</li>
+   					<li>衢州市新联建农产品有限公司</li>
+   					<li>|</li>
+   					<li>备案号：浙ICP备11037187号-2</li>
+   				   	</ul>
+   			</div>
+   		</div>
+</div>
+</body>
+<!--pic播放器-->
+<script class="secret-source">
+					        jQuery(document).ready(function($) {
+					          
+					         $('#banner-slide1').bjqs({
+					        
+					            height        : 303,
+					            width         : 421,
+					            responsive    : true,
+					            randomstart   : true
+					          });
+							$('#banner-slide').bjqs({
+					            height        : 386,
+					            width         : 620,
+					            responsive    : true,
+					            randomstart   : true
+					          });
+					        });
+		$(document).ready(function () {
+		//set the default location (fix ie 6 issue)
+		$('.lava').css({left:$('span.item:first').position()['left']});
+		
+		$('.item').mouseover(function () {
+			//scroll the lava to current item position
+			$('.lava').stop().animate({left:$(this).position()['left']}, {duration:300});
+			
+			//scroll the panel to the correct content
+			$('.panel').stop().animate({left:$(this).position()['left'] * (-4)}, {duration:300});
+		});
+		
+	});
+
+</script>
+</html>

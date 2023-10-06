@@ -1,0 +1,67 @@
+  /*
+        Created by 奚圣波 on 14-6-18.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+  */
+.x_artright{
+  width: 700px;
+  padding:0 15px 60px 15px;
+  height: auto;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+  color: #5f5e5e;
+}
+.x_noborder{
+  border-bottom:none!important;
+}
+.x_noborder p{
+  height: 20px;
+  margin: 5px 0;
+}
+
+
+
+/*NEW */
+.x_item{
+  width: 733px!important;
+  height: auto;
+}
+.x_cell{
+  width: 226px;
+  height: 291px;
+  +margin:5px;
+  margin:18px  7px ;
+}
+
+.x_product_sort{
+  width: 700px;
+  height: 61px;
+  border:1px solid #e0e0e0;
+}
+.x_product_sort .x_add_on1{
+  background: #fff !important;
+  border:none!important;
+}
+.x_add_on2{
+  font-size: 16px !important;
+  color: #fff!important;
+  width: 120px !important;
+  background: #78a82f !important;
+  border-radius: 0px !important;
+}
+.x_input_width{
+  width: 94px!important;
+}
+.x_ps_margin{
+  margin-top:20px;
+}
+.x_plbottom{
+  position: absolute;
+  bottom:0.5%;
+  left: 35%;
+}
+.x_plbottom ul li a{
+  border-color: #e0e0e0 !important;
+  color: #777 !important;
+}

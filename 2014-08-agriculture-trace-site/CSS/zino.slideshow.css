@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+.zui-slideshow{
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+.zui-slideshow-box{
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.zui-slideshow-box .zui-slideshow-item{
+	border: none;
+	float: left;
+	z-index: 1;
+}
+.zui-slideshow-nav, 
+.zui-slideshow-control{
+	background:url(Images/bg_nav.png) repeat;
+	bottom: 10px;
+	overflow: hidden;
+	padding: 7px 10px;
+	position: absolute;
+	z-index: 10;
+	/**/
+}
+/*为播放器右侧的小点*/
+.zui-slideshow-nav{
+	right: 26%;
+	bottom: -2px;
+}
+.zui-slideshow-nav a:link, .zui-slideshow-nav a:visited, .zui-slideshow-nav a:active{
+	float: left;
+	background-color:#046d42 ;
+	display: block;
+	margin: 0 5px 0 5px;
+	width:41px;
+	height: 6px;	
+}
+.zui-slideshow-nav a.zui-slideshow-nav-focus{
+	background-color: #e34246;
+}
+.zui-slideshow-control{
+	left: 10px;
+	display: none;
+}
+.zui-slideshow-arrow{
+	background-color: #fff;
+	display: none;
+	outline: none;
+	position: absolute;
+	z-index: 10;
+}
+.zui-slideshow-prev, .zui-slideshow-next{
+	height:45px;
+	top: 45%;
+	width:45px;
+}
+.zui-slideshow-prev{
+	background: url(../Images/arrow_previous.png) no-repeat;
+	left: 0;
+}
+.zui-slideshow-next{
+	background: url(../Images/arrow_next.png) no-repeat;
+
+	right: 0;
+}
+.zui-slideshow-up, .zui-slideshow-down{
+	height: 35px;
+	left: 45%;
+	width: 40px;
+}
+.zui-slideshow-up{
+	background: #fff url(img/zui-up.png) center center no-repeat;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	top: 0;
+}
+.zui-slideshow-down{
+	background: #fff url(img/zui-down.png) center center no-repeat;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	bottom: 0;
+}

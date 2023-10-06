@@ -1,0 +1,77 @@
+/*导航栏及热点词汇*/
+@charset "utf-8";
+.nav{
+width: 1200px;
+	height:39px;
+	margin-left:auto;
+	margin-right:auto;
+	background:url(../Images/navbg.jpg) repeat-x;
+	padding-left:10px;
+	z-index:100;
+ 	position: relative; 
+}
+.nav ul {
+	/*清除子菜单的缩进值*/
+	padding: 0;
+	margin-left: 5%;
+}
+ .hmain {
+	height:39px;
+	width:103px;
+	background-image:url(../Images/navonebg.jpg) no-repeat;
+}
+.hmain:hover{
+	height:39px;
+	width:103px;
+	background-image:url(../Images/navhover.jpg);
+}
+.hmain ul{
+	background-image:url(../Images/a.png);
+	margin:-3px 0 0 0;
+}
+.nav li {
+	height:36px;
+	width:103px;
+}
+.hmain a {
+	color: white;height:36px;
+	width:103px;
+	font-size:15px;
+	background-image: url(../images/nav.gif);
+	background-repeat: no-repeat;
+	line-height:32px;
+	text-indent:1em;
+	+text-indent:-0.3em;
+}
+.hmain li:hover{
+	height:36px;
+	width:103px;
+	background:#3c8e52;
+}
+
+.hmain ul {
+	display: none;
+}
+.hmain {
+	float:left;
+	margin-right: 0px;
+}
+/*热点词汇*****/
+.words{width:100%;height:25px;}
+.words_content{width:1200px;margin:0  auto 0 auto;}
+.words_left{margin-left:8%;}
+.words_content div{
+	float: left;
+	margin-right:10px; 
+	height:30px;
+}
+.words_content div ul li{
+	float: left;
+	width: 52px;
+	height: 30px;
+	margin:-18px 5px 0 0;
+	+margin-top:-3px;
+}
+.words_right a{color:#000;font-family: 'SimHei';font-size: 12px; }
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="CSS/x_product_info.css"/>
+
+<script src="../ckeditor/ckeditor.js"></script>
+<script src="../ckeditor/languages.js"></script>
+
+<script type="text/javascript" src="../ckfindor/ckfinder.js"></script>
+<title>产品信息1</title>
+<style type="text/css">
+	 #ckfinder {
+			margin: 0 auto;
+			border: 0;
+			width:100%;
+			height:100%;
+			overflow: hidden;
+		}
+		 #ckfinder2{
+			margin: 0 auto;
+			border: 0;
+			width:100%;
+			height:100%;
+			overflow: hidden;
+		}
+</style>
+</head>
+<body>
+	<div class="x_container">
+       <div class="news_content">
+	      			<div class="news_title">
+	      				<p class="news_big_title">产品信息</p>
+	      			</div>
+	      			<!--左侧-->
+	      			<div class="x_recommand_left">
+	      				<div class="xr_input">
+	      				<!--此处图片上传-->
+		      				<div class="x_uploadpic">
+		      					<div id="ckfinder"></div>
+		      				</div>
+	      				</div>
+	      			</div>
+	      			<!--右侧-->
+					<div class="x_recommand_right">
+						<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">名称：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item"> 品种： </span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item"> 上市时间： </span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">下市时间：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item"> 产品规格： </span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">  生产面积： </span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item"> 生产用途：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">包装名称：  </span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">所属商家：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				
+
+	      				</div>
+					</div>
+	   </div>
+	   <div class="news_content">
+	   		<!--文本框输入-->
+	   		<div style="height:30px;"><span class="xr_input_item">产品介绍:</span></div>
+       		<div class="x_hornor_title">
+       			<form method="post">
+					<p style ="display :none; ">
+						<span id="count"> </span>种语言可选<br>
+						<script>
+
+							document.write( '<select disabled="disabled" id="languages" onchange="createEditor( this.value );">' );
+
+							// Get the language list from the _languages.js file.
+							for ( var i = 0 ; i < window.CKEDITOR_LANGS.length ; i++ ) {
+								document.write(
+									'<option value="' + window.CKEDITOR_LANGS[i].code + '">' +
+										window.CKEDITOR_LANGS[i].name +
+									'</option>' );
+							}
+
+							document.write( '</select>' );
+
+						</script>
+					</p>
+					<p>
+						<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;这是一个示例文本。
+						------&lt;strong&gt;衢州新联建溯源系统&lt;/strong&gt;
+						</textarea>
+						<script>
+							// Set the number of languages.
+							document.getElementById( 'count' ).innerHTML = window.CKEDITOR_LANGS.length;
+							var editor;
+							function createEditor( languageCode ) {
+								if ( editor )
+									editor.destroy();
+
+								// Replace the <textarea id="editor"> with an CKEditor
+								// instance, using default configurations.
+								editor = CKEDITOR.replace( 'editor1', {
+									language: languageCode,
+
+									on: {
+										instanceReady: function() {
+											// Wait for the editor to be ready to set
+											// the language combo.
+											var languages = document.getElementById( 'languages' );
+											languages.value = this.langCode;
+											languages.disabled = false;
+										}
+									}
+								});
+							}
+							// At page startup, load the default language:
+							createEditor( '' );
+						</script>
+					</p>
+				</form>
+       		</div>
+	   </div>
+	   <div class="news_content">
+	   		<!--此处要求视频名称，地址，类别，所属天数-->
+	   		<div style="height:30px;"><span class="xr_input_item">视频上传:</span></div>
+       		<div class="x_hornor_qualification">
+       			<div id="ckfinder2"></div>
+       		</div>	
+	   </div>
+	   	<div class="news_content">
+	   		<div class="x_save_btn">保存</div>
+	   	</div>
+	</div>
+</body>
+<script type="text/javascript" src="../ckfindor/kl.js"></script>
+</html>

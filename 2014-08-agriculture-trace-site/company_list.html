@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>溯源动态列表页</title>
+<!--套用index.html-->
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+
+<!-- 头部下拉菜单-->
+<script src="JS/jquery.min.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+
+</head>
+<body>
+	<div class="container_list">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="#"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="register.html"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">蔬菜</a>
+						<ul>
+							<li>
+								<a href="list.html">芹菜</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+
+
+		             <li class="hmain">
+						<a href="javascript:void(0)">果品</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		         
+					<li class="hmain">
+						<a href="javascript:void(0)">粮油</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">茶叶</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">禽畜</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">水产</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">食用菌</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">溯源系统登录</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>     
+	      		</ul>
+	        </div>
+        <div class="words">
+        	<div class="words_content">
+				<div class="words_left">
+					<img src="Images/hotkey.jpg">
+				</div>
+				<div class="words_right">
+						<ul>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">花生</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">花生</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+						</ul>	
+				</div>
+        	</div>
+				
+
+		</div>
+
+       	<div class="content">
+       		<div class="content_right">	
+       			<div class="list_search">
+       				<span class="news_list_title">合作企业</span>
+       				<span class="news_list_search">
+       					<span><input value="关键词搜索" style="width:99px;height:20px;+height:18px;margin:2px 0 0 2px ;border:none;float:left;"></span>
+       					<span><a href="#">搜索</a></span>
+       				</span>
+       			</div>
+       			<div class="list_content">
+	       				<div>
+	       						<img src="Images/notice_dot.jpg">
+	       						<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       						<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+       					<div>
+	       					
+	       						<img src="Images/notice_dot.jpg">
+	       						<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       						<a href="#" class="rightspan">2012-02-22</a>
+	       					
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div><div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+						<div>
+	       					<img src="Images/notice_dot.jpg">
+	       					<a href="#">“农产品身份证”首次亮相2013内蒙古绿色农畜产品博览会</a>
+	       					<a href="#" class="rightspan">2012-02-22</a>
+						</div>
+       			</div>
+       		</div>
+
+
+
+       		<div class="content_left">
+       			<!--左侧新闻分类-->
+       			<div class="cleft_notice">
+       				<div class="notice_title">
+       					<ul>
+       						<li class="news_big_title">一周热点排行</li>
+
+       					</ul>
+       				</div>
+       				<div class="notice_content">
+	       					<ul>
+	       					<li><a href="#">陈晓华：农村经营管理工作要. . .</a></li>
+	       						<li><a href="#">聚焦重点 找准方向 扎实开展. . .</a></li>
+	       						<li><a href="#">农业部副部长余欣荣与印尼农. . .</a></li>
+	       						<li><a href="#">农业部举办学习十八届三中全. . .</a></li>
+	       						<li><a href="#">农业部下发关于促进家庭农场. . .</a></li>
+	       						<li><a href="#">粮食局局长任正晓主持召开粮. . .</a></li>
+	       						<li><a href="#">央行：全面做好家庭农场等新. . .</a></li>
+	       						<li><a href="#">国土部将出台农村征地补偿等. . .</a></li>
+	       					</ul>
+       				</div>
+
+       			</div>
+       			<div class="cleft_notice">
+       				<div class="notice_title">
+       					<ul>
+       						<li class="news_big_title">系统介绍</li>
+       					</ul>
+       				</div>
+
+       				<div class="notice_content">
+	       					<ul>
+	       						<li><a href="#">陈晓华：农村经营管理工作要. . .</a></li>
+	       						<li><a href="#">聚焦重点 找准方向 扎实开展. . .</a></li>
+	       						<li><a href="#">农业部副部长余欣荣与印尼农. . .</a></li>
+	       						<li><a href="#">农业部举办学习十八届三中全. . .</a></li>
+	       						<li><a href="#">农业部下发关于促进家庭农场. . .</a></li>
+	       						<li><a href="#">粮食局局长任正晓主持召开粮. . .</a></li>
+	       						<li><a href="#">央行：全面做好家庭农场等新. . .</a></li>
+	       						<li><a href="#">国土部将出台农村征地补偿等. . .</a></li>
+
+	       					</ul>
+       				</div>
+
+       			</div>
+
+       		</div>
+		</div>
+   		<!--尾部-->	
+
+
+   		
+   		<div class="footer">
+   			<div class="ftcontent">
+   					<div class="greenline">	
+   					</div>	
+	   				<ul>
+   					<li>&copy;Copyright 2013.All Rights Reserved 版权所有</li>
+   					<li>|</li>
+   					<li>衢州市新联建农产品有限公司</li>
+   					<li>|</li>
+   					<li>备案号：浙ICP备11037187号-2</li>
+   				   	</ul>
+   			</div>
+   		</div>
+
+</div>
+
+</body>
+</html>

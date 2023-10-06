@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.unslider-arrow{
+    position: absolute;
+    width:60px;
+      height:60px;
+    display: block;
+    z-index: 100;
+    cursor: pointer;
+}
+.banner .prev{
+    top: 43%;
+    left: 23%;
+    background: url(../img/bg_direction_nav.png) 0px 0px;
+}
+.banner .next{
+    top: 43%;
+    right: 23%;
+    background: url(../img/bg_direction_nav.png) -60px 0px;
+}
+.banner .prev:hover{
+    top: 43%;
+    right: 23%;
+    background: url(../img/bg_direction_nav.png) 0px 60px;
+}
+.banner .next:hover{
+    top: 43%;
+    right: 23%;
+    background: url(../img/bg_direction_nav.png) -60px 60px;
+}
+::selection {
+    background: #bfa57c;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 486px;
+    overflow: auto;
+}
+.banner ul {
+    list-style: none;
+    width: 300%;
+    height: 100%;
+}
+.banner ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    min-height: 350px;
+    height: 100%;
+    /*-o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+    
+}
+.banner ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;-o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+.xj_news{
+	width: 710px;
+	height: 426px;
+	margin: 0 auto;
+}
+.xj_news .xj_news_lf{
+	width: 161px;
+	height: 426px;
+}
+.xj_news .xj_news_rh{
+	width: 440px;
+	height: 386px;
+	padding-top: 40px;
+	position: relative;
+}
+.xj_news  .xj_news_rh ul li{
+	height: 15px;
+	width: 100%;
+	float: left;
+	margin: 5px 0;
+	background: url(../img/xj_dot.png) no-repeat center left;
+}
+.xj_news  .xj_news_rh ul li a{
+	font-size: 14px;
+	color: #000;
+	font-family: 'SimSun';
+}
+.xj_news  .xj_news_rh ul li a:hover{
+	color: #a09fa0;
+}
+.xj_news  .xj_news_rh ul li .pull-left{
+	text-indent: .8em;
+}
+.xj_news  .xj_news_rh ul li .pull-right a{
+	color: #a09fa0;
+}
+.xj_news_title{
+	color: #a2a2a2;
+	font-size: 18px;
+}
+.xj_page{
+	width: 307px;
+	height: 18px;
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+}
+.xj_page a{
+	display: block;
+	float: left;
+	padding: 0 6px;
+	font-size: 13px;
+	color: #a2a2a2;
+}
+/*电视剧内页的样式*/
+.tvd_inner{
+	width: 860px;
+	min-height: 950px;
+	margin: 20px auto;
+}
+.tvd_in_fl1{
+	height: 760px;
+}
+.tvd_in_pst{
+	width: 416px;
+	height: 606px;
+	text-align: center;
+}
+.tvd_in_pst img{
+	width: 415px;
+	height: 573px;
+}
+.tvd_in_pst a{
+	font-size: 16px;
+	line-height: 25px;
+	color: #111;
+}
+.tvd_in_pstrh{
+	margin-left: 10px;
+	width: 400px;
+	height: 440px;
+
+}
+.xj_short_plot{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+}
+.xj_sp_title{
+	margin: 5px 0;
+	font-size: 18px;
+	color: #8d8d8d;
+}
+.xj_sp_text{
+	color: #452f23;
+	font-size: 13px;
+	text-indent: 2em;
+}
+
+.xj_short_info{
+margin-top: 100px;
+}
+.xj_short_info .xj_sp_text{
+	text-indent: 0em;
+}
+.xj_sp_nsp{
+	margin-left:10px; 
+}
+.tvd_text{
+	height: 130px;
+	width: 100%;
+}
+.tvd_in_fl2{
+	width: 100%;
+	height: 175px;
+}
+.tvd_text .xj_sp_title,.tvd_in_fl2 .xj_sp_title{
+	font-size: 14px;
+}
+
+
+

@@ -1,0 +1,387 @@
+@charset "utf-8";
+.content{
+	width:1200px;
+	height:auto;
+	background-color: #fff;
+	margin:0 auto 0 auto;
+	font-family: 'Microsoft YaHei';
+}
+.goods_index{
+	width: 501px;
+	height: 26px;
+	margin-left:9%;
+	text-align: left;
+}
+.goods_index a{
+	font-size: 12px;
+	color: #797979;
+	font-family: 'SimSun';
+}
+.goods_sort{
+	background: #f4f4f4;
+	width: 1000px;
+	height: 25px;	
+	margin: 0 auto 0 auto;
+	display: none;
+}
+
+.gs_sortleft{
+	color:#626262;
+	float:left;
+}
+.gs_sortleft select{
+	color:#626262;
+}
+.gs_sortright{
+	float: right;
+	text-align: left;
+	height: 21px;
+	width:250px;
+	margin:2px 20px 0 0 ; 
+	color: #626262;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.gs_sortright a{
+	display: block;
+	float:right;
+	width:57px;
+	height:19px; 
+	margin:-5px 5px 0 0;
+	text-indent:0.5em;
+	border: 1px solid #b9b9b9;
+	color: #626262;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+}
+.gs_sortright a:hover{
+	background-color: #999;
+}
+/*新闻页 详细布局,在详情页继续用*/
+.news_content{
+	width: 1000px;height:1100px;
+	margin:20px auto 0 auto;
+	border:2px solid #c9c9c9;
+	border-radius: 2px;  
+}
+.news_title{
+	width: 1000px;
+	height: 65px;margin: 0 auto 0 auto;
+	text-align: left;
+}
+.news_big_title{
+	font-size: 21px;
+	color:#046e40; 
+	border-left:3px solid #000; 
+	text-indent:0.2em;
+	margin-top: -2px;
+	font-weight: bold;
+}
+.news_title_time{
+font-family: 'SimHei';
+	font-size: 12px;color:#000; 
+}
+.detail_header{
+	width:1000px;
+	height:369px;
+	margin: 0 auto 0 auto;
+}
+.detail_header_pic{
+	float: left;
+	width: 581px;
+	height: 386px;
+}
+
+
+
+.slideclass{
+	float: left;
+	border: 1px solid red;
+	width: 637px;
+	height: 397px;
+}
+.detail_header_intro{
+	text-align: left;
+	float: right;
+	margin-right:30px;
+	width: 325px;
+	height: 369px;
+	color: #1c1714;
+}
+.detail_header_intro p{
+	line-height:18px;
+}
+
+.detail_goods_title{
+	font-size: 37px;
+	margin: -10px 0 40px 0;
+}
+.bolder{
+	font-weight: bold;
+	font-size: 18px;
+}
+.detail_header_text{
+	float: left;
+	width: 1000px;
+	margin-top: 20px;
+	text-align: left;
+	height:135px; 
+}
+.left_words{
+	margin-left:40px;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	width: 90px;
+	height:145px;
+}
+.right_text{
+	float: right;
+	font-size: 16px;
+	line-height:28px;
+	margin-right:55px;
+	width:814px;
+	height:145px;
+}
+/*视频播放flash*/
+.detail_header_video{
+	width: 1000px;
+	height: 430px;
+	float: left;
+}
+.videos_topline{
+	width: 887px;
+	height:2px;
+	margin: 35px auto 35px auto;
+	background-color: #999;
+}
+.video_right{
+	width: 302px;
+	height: 394px;
+	overflow: hidden;
+	float:left;
+	border: 1px solid #235462;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+.video_right li{
+	cursor: pointer;
+}
+.video_title{
+	margin:0 0 0 -39px;
+	font-size: 18px;
+	width:302px ;
+	height: 32px;
+}
+.video_title li{
+	width: 74px ;
+	max-height:35px;
+	margin:0px 1px 0 0;
+	float: left;
+	padding-top:3px;
+	background-color:#a8a8a8;
+}
+.video_title li:hover{
+	background-color: #f1f1f1;
+}
+.video_date1,.video_date2,.video_date3,.video_date4{
+	margin:0 0 0 -39px;
+	width:300px;
+	height:326px;
+}
+.video_date2,.video_date3,.video_date4{
+	display: none;
+}
+.video_date1 li,.video_date2 li,.video_date3 li,.video_date4 li{
+	float: left;
+	font-size: 14px;
+	width: 65px;
+	height:27px;
+	margin: 8px 4px 0 4px;
+	border: 1px solid #a8a8a8;
+}
+.page_index li{
+	float: left;
+	margin:0 5px 0 5px; 
+}
+.page_index li a{
+	color: #6d6d6d;
+	font-family: 'SimSun';
+}
+.page_index{
+width: 200px;
+height: 20px;
+	margin-left:100px;
+}
+.display{
+	display: none;
+}
+
+
+
+/*第二个档案信息*/
+.detail_files{
+	width: 1000px;
+	height: 1091px;
+	margin:20px auto 0 auto;
+	border:2px solid #c9c9c9;
+	border-radius: 2px; 
+	text-align: left;
+}
+.detail_file_left{
+	float: left;
+	width: 434px;
+	height: 1024px;
+	text-align: left;
+
+}
+.base_info{
+	font-size: 20px;
+	margin-left:30px; 
+}
+.detail_base_location{
+	width:434px;
+	height: 356px;
+}
+.detail_base_location img{
+	border:1px solid #d6d6d6;
+	border-radius: 2px; 
+}
+#slideshow1{
+	margin-top:45px;
+}
+.detail_file_right{
+	float:right;
+	width:460px;
+	height: 1024px;
+	margin-right:50px;
+}
+.detail_file_right dd{
+	text-indent: 4em;
+}
+.table_bolder{
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.product_log{
+	float: left;
+	width:100%;
+	height: 190px;
+	margin:-185px auto 0 auto;
+}
+.small_picplayer{
+	width: 402px;
+	height: 302px;
+}
+
+
+.compnay_honor{
+	width:1000px;
+	height: 730px;
+	margin: 20px auto 20px auto;
+	border:2px solid #c9c9c9;
+	border-radius: 2px;  
+}
+.product_log table{
+	background-color: #e4e4e4;
+}
+.product_log table td{
+	width:165px;
+	height:20px;
+	text-align: center;
+}
+.pro_log4,.pro_log3,.pro_log2{
+	display:none;	
+}
+.header_tr{
+
+}
+.honor_1{
+	width:100%;
+	height: auto;
+	text-align: left;
+	margin-top: -50px;
+}
+.honor_1 ul{
+	float: left;
+}
+.honor_qualification li{
+	height: 188px;
+	width: auto;
+	margin:20px;
+	float: left;
+}
+.honor_time{
+	margin-top: -20px;
+}
+.honor_time li{
+	width:900px;
+	height: 30px;
+}
+.honor_right{
+	float: right;
+}
+
+
+.picplayer_2{
+	width:935px;
+	height:220px;
+	border: 1px solid #aeaeae;
+	margin:-4px auto 10px auto;
+	background: #e4e4e4;
+}
+.picplayer_2 div{
+	float: left;
+}	
+
+.picplayer_ul{
+	width:400%;
+	height:188px;
+	margin-top:10px;
+}
+.picplayer_ul div{
+	width:188px;
+	height:188px;
+	float: left;
+	margin:0 5px 0 5px;
+	border:1px solid yellow;  
+}
+.picplayer_ul div img{
+	margin:3px;
+}
+.pic2_arrow_lt{
+	width:64px;
+	height:216px;
+	background-image: url(../Images/left_pointer.png); 
+}
+.pic2_arrow_rt{
+	width:64px;
+	height:216px;
+	background-image: url(../Images/right_pointer.png); 
+}
+
+
+
+
+
+
+/*尾部分页*/
+.goodslist_footer{
+	width:1000px;
+	height:40px;	
+	margin: 0 auto 0 auto;
+	display: none;
+}
+.goodslist_footerinner{
+	width:500px;
+	height:40px;	
+	margin:20px auto 0 auto;
+}
+.goodslist_footer a{
+color: #626262;
+border: 1px solid #b9b9b9;
+background-color: #f4f4f4;
+padding: 2px 5px;
+font-family: 'Microsoft YaHei';
+}

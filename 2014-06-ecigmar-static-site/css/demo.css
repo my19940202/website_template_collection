@@ -1,0 +1,82 @@
+
+#banner-fade,
+#banner-slide{
+	margin: 0 auto;
+	margin-bottom: 60px;
+	/*處理IE7的播放器bug*/
+	+width: 100%;
+	+background: url(../img/x_post3.jpg) no-repeat;
+}
+#banner-slide img{
+	+display: none;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display: none;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#000;
+	color:#fff;
+}
+ul.bjqs-markers li a{
+	background:#2E9700;
+	color:#fff;
+	margin:5px;
+	width: 40px;
+	height: 4px;
+	text-decoration: none;
+	display: none!important;
+
+}
+
+ul.bjqs-markers li.active-marker a,
+ul.bjqs-markers li a:hover{
+	background:#FF8800;
+}
+p.bjqs-caption{
+	height: 25px;
+	text-align: left;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+}
+.detail_header_pic ul.bjqs{position:relative; list-style:none;padding:0;margin:0;}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;}
+.bjqs li{overflow:hidden; display:none;}
+
+.bjqs li{overflow:hidden;+margin-left:-600px;}
+
+li.bjqs-slide{position:absolute;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{display: block;float: left;}
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	+display: none;
+	position: relative; 
+	left:65%;
+	bottom:230px; 
+	width:40px;
+	height:40px;
+	background: url(../img/bg_direction_nav.png) -60px 0px;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	+display: none;
+	position: relative; 
+	left:25%;
+	bottom:230px;
+  	width:40px;
+  	height:40px;
+	background: url(../img/bg_direction_nav.png) 0px 0px;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a:hover{background: url(../img/bg_direction_nav.png) -60px 60px;}
+ul.bjqs-controls.v-centered li.bjqs-prev a:hover{background: url(../img/bg_direction_nav.png) 0px 60px;}
+
+ul.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ul.bjqs-markers.h-centered{text-align: center;}
+ul.bjqs-markers li{display:inline;}
+ul.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;height:1%; margin:0;padding:2.5%;position:absolute;bottom:0;}
+

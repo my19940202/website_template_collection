@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="CSS/register.css"/>
+<title>推荐商家管理</title>
+<link rel="stylesheet" href="CSS/default.css" />
+<script charset="utf-8" src="JS/kindeditor-min.js"></script>
+<script charset="utf-8" src="JS/zh_CN.js"></script>
+
+<!--文本输入大框-->
+<script src="../ckeditor/ckeditor.js"></script>
+<script src="../ckeditor/languages.js"></script>
+</head>
+<body>
+	<div class="x_container">
+       <div class="news_content">
+       				<!--11111-->
+	      			<div class="news_title">
+	      				<p class="news_big_title">基本信息</p>
+	      			</div>
+	      			<!--左侧-->
+	      			<div class="x_recommand_left">
+	      				<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">企业名称：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">主营产品：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">注册号码：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">注册地址：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">法定代表人：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">企业注册资本：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">企业类型：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">成立日期：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">登记机关：</span>
+		      					<span><input  ></span>	
+		      				</p>
+	      				</div>
+	      			</div>
+	      			<!--右侧-->
+					<div class="x_recommand_right">
+						<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">企业商标：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">主要经营地点：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">主要经营市场：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">经营品牌：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">经营模式：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">外商投资年营业额：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">员工数量：</span>
+		      					<span><input  ></span>	
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">经营范围：</span>
+		      					<span><input  ></span>	
+		      				</p>
+	      				</div>
+					</div>
+					<div class="x_recommand_text">
+							<p>
+		      					<span class="xr_input_item">主要内容：</span>
+	      					</p>
+	      					<div style="width:100%;height:400px;">
+			      				<form method="post" style="width:100%;height:400px;">
+									<p style ="display :none; ">
+										<span id="count"> </span>种语言可选<br>
+										<script>
+
+											document.write( '<select disabled="disabled" id="languages" onchange="createEditor( this.value );">' );
+
+											// Get the language list from the _languages.js file.
+											for ( var i = 0 ; i < window.CKEDITOR_LANGS.length ; i++ ) {
+												document.write(
+													'<option value="' + window.CKEDITOR_LANGS[i].code + '">' +
+														window.CKEDITOR_LANGS[i].name +
+													'</option>' );
+											}
+
+											document.write( '</select>' );
+
+										</script>
+									</p>
+									<p>
+										<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;这是一个示例文本。
+										------&lt;strong&gt;衢州新联建溯源系统&lt;/strong&gt;
+										</textarea>
+										<script>
+											// Set the number of languages.
+											document.getElementById( 'count' ).innerHTML = window.CKEDITOR_LANGS.length;
+											var editor;
+											function createEditor( languageCode ) {
+												if ( editor )
+													editor.destroy();
+
+												// Replace the <textarea id="editor"> with an CKEditor
+												// instance, using default configurations.
+												editor = CKEDITOR.replace( 'editor1', {
+													language: languageCode,
+
+													on: {
+														instanceReady: function() {
+															// Wait for the editor to be ready to set
+															// the language combo.
+															var languages = document.getElementById( 'languages' );
+															languages.value = this.langCode;
+															languages.disabled = false;
+														}
+													}
+												});
+											}
+											// At page startup, load the default language:
+											createEditor( '' );
+										</script>
+									</p>
+								</form>
+	      					</div>
+					</div>
+	   </div>
+	   <div class="news_content">
+       				<!--222222-->
+	      			<div class="news_title">
+	      				<p class="news_big_title">新农商指数</p>
+	      			</div>
+	      			<!--左侧-->
+	      			<div class="x_recommand_left">
+	      				<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">商家指数：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">身份验证：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">主营行业：</span>
+		      					<span><input  ></span>	
+		      				</p>
+	      				</div>
+	      			</div>
+	      			<!--右侧-->
+					<div class="x_recommand_right">
+						<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">CPC编码：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">商家类型：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				
+		      				<p>
+		      					<span class="xr_input_item">所属区域：</span>
+		      					<span><input  ></span>	
+		      				</p>
+	      				</div>
+					</div>
+				
+	   </div>
+	   <div class="news_content">
+       				<!--33333-->
+	      			<div class="news_title">
+	      				<p class="news_big_title">联系方式</p>
+	      			</div>
+	      			<!--左侧-->
+	      			<div class="x_recommand_left">
+	      				<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">联系人：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">手机号码：</span>
+		      					<span><input  ></span>
+		      					
+		      				</p>
+		      				
+	      				</div>
+	      			</div>
+	      			<!--右侧-->
+					<div class="x_recommand_right">
+						<div class="xr_input">
+		      				<p>
+		      					<span class="xr_input_item">联系电话：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      				<p>
+		      					<span class="xr_input_item">传真号码：</span>
+		      					<span><input  ></span>
+		      				</p>
+		      			
+	      				</div>
+					</div>
+	   </div>
+	   	<div class="news_content">
+	   		<div class="x_save_btn">保存</div>
+	   	</div>
+	</div>
+</body>
+</html>

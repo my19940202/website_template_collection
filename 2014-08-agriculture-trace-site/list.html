@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页</title>
+<link rel="stylesheet" type="text/css" href="CSS/header.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/list.css"/>
+<script src="JS/jquery.min.js"></script>
+<script type="text/javascript" src="JS/menu.js"></script>
+<!--picplayer-->
+<script src="JS/jquery.easing.1.3.js"></script>
+<script src="JS/jquery.easing.compatibility.js"></script>
+<script src="JS/zino.slideshow.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="pageheader">
+				<ul class="pageheader_left">
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader2.png">
+							设为主页
+						</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="list.html">
+							<img src="Images/header_leader3.png">
+							添加收藏
+						</a>
+					</li>
+					
+					<li><a href="#">欢迎来到新联建农产品网!</a></li>
+					<li><a href="#"><font style="color:#3ca824;">登入</font> </a></li>
+					<li><a href="#"><font style="color:#3ca824;">注册</font> </a></li>
+				</ul>
+
+
+				<ul class="pageheader_right">
+					<li><a href="#"><font style="color:#3ca824;">合作专区 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">投诉举报 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">客服中心 </font></a><img src="Images/header_leader1.png"></li>
+					<li><a href="#"><font style="color:#3ca824;">在线咨询 </font></a><img src="Images/header_leader1.png"></li>					
+				</ul>
+
+			</div>	
+			<div class="hr_content">
+
+				<div class="left_pic"></div>
+				<div class="right_search">
+					<ul>
+						<li class="search_inp">
+							<div class="picsearch">
+							<img src="Images/search_choose1.jpg" class="img0">
+							<img src="Images/search_choose2.jpg" class="img1">
+							</div>
+							<div><input></div>
+						</li>
+						<li class="search_btn"><img src="Images/search_btn.jpg"></li>
+						
+					</ul>
+					<div class="img2"><img src="Images/search_choose2.jpg" ></div>
+				</div>
+			</div>
+	    	<div class="nav">
+				<ul>
+					<li class="hmain">
+						<a href="index.html">首页</a>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">蔬菜</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+
+
+		             <li class="hmain">
+						<a href="javascript:void(0)">果品</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		         
+					<li class="hmain">
+						<a href="javascript:void(0)">粮油</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">茶叶</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">禽畜</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+		             
+		              <li class="hmain">
+						<a href="javascript:void(0)">水产</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">食用菌</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>
+					<li class="hmain">
+						<a href="javascript:void(0)">溯源系统登录</a>
+						<ul>
+							<li>
+								<a href="#">产品分类管理</a>
+							</li>
+		                    <li>
+								<a href="#">产品客户评价</a>
+							</li>
+							<li>
+								<a href="#">溯源防伪查询</a>
+							</li>
+							<li>
+								<a href="#">数据智能分析</a>
+							</li>
+							<li>
+								<a href="#">产品预警监测</a>
+							</li>
+							<li>
+								<a href="#">产品查询</a>
+							</li>
+						</ul>
+					</li>     
+	      		</ul>
+	        </div>
+        <div class="words">
+        	<div class="words_content">
+				<div class="words_left">
+					<img src="Images/hotkey.jpg">
+				</div>
+				<div class="words_right">
+						<ul>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">花生</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">花生</a></li>
+							<li><a href="#">樱桃</a></li>
+							<li><a href="#">土豆</a></li>
+							<li><a href="#">土豆</a></li>
+						</ul>	
+				</div>
+        	</div>
+				
+
+		</div>
+
+       	<div class="content">
+      		<div class="goods_index">
+      			<span>
+      			<a href="#">&nbsp;首页</a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">蔬菜 </a>
+      			</span>
+      			<span>&gt;</span>
+      			<span>
+      			<a href="#">叶菜</a>
+      			</span>
+      		</div>
+      		<div class="goods_sort">
+      			<div class="gs_sortleft">
+	      			<span>
+	      				&nbsp;
+						排序方式
+						&nbsp;
+	      			</span>
+	 				<span>
+	 					<select>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>
+	      			<span>
+	      				<select>
+	 					<option>升序</option>
+	 					<option>降序</option>
+	 					</select>
+	 				</span>	
+      			</div>
+      			<div class="gs_sortright">
+	      			<span>
+						共150件商品
+	      			</span>
+	      			<span>|</span>
+	 				<span>1/9</span>
+	      			<span><a href="#">下一页</a> </span>
+	 				<span><a href="#">上一页</a> </span>
+
+      			</div>
+      		</div>
+
+      		
+      		<!--商品列表显示-->
+			<div class="goods_list">
+				<ul class="goods_listul">
+					<li class="goods_listli">
+						<div class="goods_listpic">
+							 <a href="detail.html"><img src="Images/goods_1.png"></a>
+						</div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+
+					<li class="goods_listli">
+						<div class="goods_listpic"><a href="detail.html"><img src="Images/goods_2.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_3.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+				</ul>	
+				<ul class="goods_listul">
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_4.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_5.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_6.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+				</ul>	
+				<ul class="goods_listul">
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_7.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_8.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_9.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+				</ul>	
+				<ul class="goods_listul">
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_10.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_11.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+					<li class="goods_listli">
+						<div class="goods_listpic">  <a href="detail.html"><img src="Images/goods_12.png"></a></div>
+						<div class="goods_listdetail">
+							<p class="goods_listdetail_title">木耳菜</p>
+							<UL>
+								<li>品种：木耳菜</li>
+								<li>地址：浙江省金华市</li>
+								<li style="text-indent:3em;">金华杰邦蔬果专业合作社</li>
+								<li>上市时间:2013年12月28日</li>
+							</UL>
+							<div class="rest_time">
+
+							<p>距离下市还有<font style="color:#e34246;">309</font>天</p>
+							</div>	
+						</div>
+					</li>
+				</ul>				      			
+			</div>
+			
+      			<div class="goodslist_footer">
+	 				<a href="#">上一页</a> 
+	 				<a href="#">1</a>
+	 				<a href="#">2</a>
+	 				<a href="#">3</a>
+	 				<a href="#">4</a>
+	 				<a href="#">5</a>
+	 				<a href="#">6</a>
+	 				<a href="#">下一页</a> 
+      			</div>
+      	
+
+		</div>
+   		<div class="footer">
+   			<div class="ftcontent">
+   					<div class="greenline">	
+   					</div>	
+	   				<ul>
+   					<li>&copy;Copyright 2013.All Rights Reserved 版权所有</li>
+   					<li>|</li>
+   					<li>衢州市新联建农产品有限公司</li>
+   					<li>|</li>
+   					<li>备案号：浙ICP备11037187号-2</li>
+   				   	</ul>
+   		
+   			</div>
+   		</div>
+
+</div>
+
+</body>
+</script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>hshshkkkkk</title> 
+<style type="text/css"> 
+#box{width:800px;height:220px;overflow:hidden;float: left; background: #e4e4e4;} 
+.bigbox{overflow:hidden;} 
+.smallbox{width:200px;height:202px;float:left;display:inline;}
+.smallbox img{
+    margin:5px;
+} 
+</style> 
+<script language="javascript" type="text/javascript"> 
+var box,scrollIndex=0,sbArr=new Array(); 
+function $(id){return document.getElementById(id)} 
+window.onload=function(){ 
+    box=$("box"); 
+    var bb=box.firstChild; 
+    var tmp=bb.getElementsByTagName("div"); 
+    var allWidth=0; 
+    for (var n=0;n<tmp.length;n++){ 
+        if(tmp[n].className=="smallbox"){ 
+            sbArr.push(tmp[n]); 
+            sbArr[sbArr.length-1].scrollFlag=allWidth; 
+            allWidth=allWidth+sbArr[sbArr.length-1].offsetWidth; 
+        } 
+    } 
+    resize(bb); 
+} 
+function resize(o){ 
+    var width=0,height=0; 
+    for (var n=0;n<sbArr.length;n++){ 
+        width=width+sbArr[n].offsetWidth; 
+        if (sbArr[n].offsetHeight>height) height=sbArr[n].offsetHeight; 
+    } 
+    o.style.width=width+"px"; 
+    o.style.height=height+"px"; 
+} 
+function goPrevious(){ 
+    if (--scrollIndex<0) scrollIndex=0; 
+    moveBox(sbArr[scrollIndex].scrollFlag); 
+} 
+function goNext(){ 
+    if (sbArr[scrollIndex+1].scrollFlag>=box.scrollWidth-box.clientWidth){ 
+        moveBox(box.scrollWidth-box.clientWidth); 
+        if (box.scrollLeft!=box.scrollWidth-box.clientWidth) ++scrollIndex; 
+    }else{ 
+        if (++scrollIndex>sbArr.length-1) scrollIndex=sbArr.length-1; 
+        moveBox(sbArr[scrollIndex].scrollFlag); 
+    } 
+} 
+function moveBox(scrollFlag){ 
+    clearTimeout(box.getAttribute("ta")); 
+    if (Math.abs(scrollFlag-box.scrollLeft)<1){ 
+        box.scrollLeft=scrollFlag; 
+    }else{ 
+        var ta=parseInt((scrollFlag-box.scrollLeft)/8+1); 
+        if (Math.abs(ta)<0.5) ta=ta>0?0.5:-0.5; 
+        box.scrollLeft=box.scrollLeft+ta; 
+        box.setAttribute("ta",setTimeout(function(){moveBox(scrollFlag)},10)); 
+    } 
+} 
+</script> 
+</head> 
+<body> 
+<div style="width:935px;height:220px;">
+    <div onclick="goPrevious()" style=" float:left;width:64px;background:url(Images/left_pointer.png);height:216px;cursor: pointer;"></div>
+    <div id="box"><div class="bigbox"> 
+    <div class="smallbox"><img src="Images/honor_3.png"></div> 
+    <div class="smallbox"><img src="Images/honor_4.png"></div> 
+    <div class="smallbox"><img src="Images/honor_5.png"></div> 
+    <div class="smallbox"><img src="Images/honor_6.png"></div>
+    <div class="smallbox"><img src="Images/honor_4.png"></div> 
+    <div class="smallbox"><img src="Images/honor_5.png"></div> 
+    <div class="smallbox"><img src="Images/honor_6.png"></div> 
+    </div></div>
+    <div onclick="goNext()" style="float:right;width:64px;height:216px;background:url(Images/right_pointer.png) -10px 0;cursor: pointer;"></div> 
+</div>
+
+</body> 
+</html> 
+

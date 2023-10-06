@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="CSS/register.css"/>
+<title>新闻信息管理</title>
+<link rel="stylesheet" href="CSS/default.css" />
+<!--ckeditor -->
+<script src="../ckeditor/ckeditor.js"></script>
+<script src="../ckeditor/languages.js"></script>
+
+<script type="text/javascript" src="../ckfindor/ckfinder.js"></script>
+<style type="text/css">
+	 #ckfinder2{
+			margin: 0 auto;
+			border: 0;
+			width:100%;
+			height:100%;
+			overflow: hidden;
+		}
+</style>
+</head>
+<body>
+	<div class="x_container">
+       <div class="news_content">
+	      			<div class="news_title">
+	      				<div class="news_big_title">新闻信息</div>
+	      			</div>
+	      			<div class="xr_input">
+	      				<p>
+	      					<span class="xr_input_item">新闻标题：</span>
+	      					<span><input  ></span>
+	      				</p>
+	      				<p>
+	      					<span class="xr_input_item">新闻来源：</span>
+	      					<span><input  ></span>
+	      					
+	      				</p>
+
+	      				<p>
+	      					<span class="xr_input_item">新闻日期：</span>
+	      					<span><input  ></span>
+	      				</p>
+	      				<p>
+	      					<span class="xr_input_item">主要内容：</span>
+	      				</p>
+
+	      			</div>
+	      			<div style="width:100%;height:500px;">
+	      				<form method="post" style="width:100%;height:auto;">
+							<p style ="display :none; ">
+								<span id="count"> </span>种语言可选<br>
+								<script>
+
+									document.write( '<select disabled="disabled" id="languages" onchange="createEditor( this.value );">' );
+
+									// Get the language list from the _languages.js file.
+									for ( var i = 0 ; i < window.CKEDITOR_LANGS.length ; i++ ) {
+										document.write(
+											'<option value="' + window.CKEDITOR_LANGS[i].code + '">' +
+												window.CKEDITOR_LANGS[i].name +
+											'</option>' );
+									}
+
+									document.write( '</select>' );
+
+								</script>
+							</p>
+							<p>
+								<textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;这是一个示例文本。
+								------&lt;strong&gt;衢州新联建溯源系统&lt;/strong&gt;
+								</textarea>
+								<script>
+									// Set the number of languages.
+									document.getElementById( 'count' ).innerHTML = window.CKEDITOR_LANGS.length;
+									var editor;
+									function createEditor( languageCode ) {
+										if ( editor )
+											editor.destroy();
+
+										// Replace the <textarea id="editor"> with an CKEditor
+										// instance, using default configurations.
+										editor = CKEDITOR.replace( 'editor1', {
+											language: languageCode,
+
+											on: {
+												instanceReady: function() {
+													// Wait for the editor to be ready to set
+													// the language combo.
+													var languages = document.getElementById( 'languages' );
+													languages.value = this.langCode;
+													languages.disabled = false;
+												}
+											}
+										});
+									}
+									// At page startup, load the default language:
+									createEditor( '' );
+								</script>
+							</p>
+						</form>
+	      			</div>
+	      			<div class="xr_input">
+	      				<p>
+	      					<span class="xr_input_item">新闻图片：</span>
+	      				</p>
+	      			</div>
+					<div style="width:100%;height:400px;"><div id="ckfinder" style="width:100%;height:400px;"></div></div>
+	    </div>
+	</div>
+</body>
+<script type="text/javascript" src="../ckfindor/kl.js"></script>
+</html>

@@ -1,0 +1,167 @@
+  /*
+        Created by 奚圣波 on 14-6-18.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+  */
+@charset "utf-8";
+ body {
+  padding:0px;
+  font-family: 'Calibri','SimSun';
+  letter-spacing: 0;
+  zoom:1;
+  font-size: medium !important;
+  width: 100%;
+  background: url(../img/xj_body_bg.jpg) repeat-y #eaeaea;
+}
+body a{
+  font-family: 'Calibri','SimSun';;
+}
+body a:hover{
+  text-decoration: none;
+}
+      .container {
+        margin: 0 auto;
+        width: 990px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+       .x_height{
+      width: 100%;
+      height: 500px;
+    }
+    .x_border{
+      border:1px solid red;
+    }
+    .x_center{
+        margin:0  auto;
+    }
+    .x_textalign{
+      text-align: center;
+    }
+    .x_blanket{
+      width: 100%;
+      float: left;
+      height: 30px;
+    }
+.breadcrumb a{
+  color: #242424;
+  font-size: 14px;
+}
+
+
+
+
+    header{
+      width: 100%;
+      height: 26px;
+    }
+    .header{
+      width: 990px;
+      height: 335px;
+      margin: 0 auto;
+    }
+.xj_nav{
+  width: 100%;
+  height: 108px;
+}
+.xj_logo{
+  width: 206px;
+  height: 70px;
+}
+.xj_nav .xj_right {
+  font-size: 10px;
+  cursor: pointer;
+}
+.xj_navcell{
+  float: left;
+  width: 990px;
+  height: 33px;
+  margin-top: 25px;
+  line-height: 30px;
+  position: relative;
+}
+.xj_navcell a{
+  font-size: 14px;
+  color: #000;
+}
+.xj_navcell a:hover{
+  color:#999;
+    -webkit-transition:0.4s ease;
+      -moz-transition:0.4s ease;
+  text-decoration: none;
+}
+.xj_navcell ul li{
+  float: left;
+  height: 33px;
+  width: 150px;
+  position: relative;
+  margin-right: 15px;
+  line-height: 33px;
+}
+.xj_navcell ul li a{
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+.xj_navcell .xj_about .unstyled{
+  color: #FFF;
+  background: #8f8f90;
+  width: 84px;
+  +width: 180px;
+  +float: left;
+  height: 106px;
+  +height: 35px;
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 9999;
+}
+.xj_navcell .xj_about .unstyled li{
+  width: 100%;
+  height: 35px;
+  +width: 50px;
+  +height: 35px;
+  +float: left;
+  +margin: 0px 5px;
+  text-align: left!important;
+}
+.xj_navcell .xj_about .unstyled li a{
+  
+  color: #4e4e4e; 
+  +font-size: 12px;
+  text-align: left!important;
+  text-indent: 1em;
+  line-height: 25px;
+}
+.xj_navcell .xj_about .unstyled li a:hover{
+  color: #111;
+}
+.xj_post{
+  width: 100%;
+  height: 280px;
+  float: left;
+  +margin-top: 20px;
+  z-index: 3;
+  overflow: hidden;
+  +overflow: hidden;
+}
+.footer{
+  width: 990px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #878686;
+  line-height: 30px;
+  text-align: center;
+}
+.footer a{
+  color: #878686;
+}
+.footer p{
+  margin: 0px;
+}
+.x_phone_logo{
+  width: 16px;
+  height: 14px;
+}

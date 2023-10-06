@@ -1,0 +1,244 @@
+  /*
+        Created by 奚圣波 on 14-6-18.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+  */
+.x_artleft{
+  width: 235px;
+  height: auto;
+  padding: 0 5px;
+}
+.x_skype_list{
+  width: 235px;
+  height: 30px;
+}
+.x_skype_list a{ 
+  display: block;
+  float: left;
+  width:100px;
+  margin-bottom: 10px;
+}
+.x_artright{
+  width: 700px;
+  margin-left: 20px;
+  padding:5px 0px;
+  height: auto;
+  font-size: 16px;
+  line-height: 25px;
+  color: #5f5e5e;
+}
+.x_ps_mleft{
+  margin-left:200px;
+}
+
+.x_artleft ul li{
+  width: 100%;
+  min-height: 40px;
+  padding-top: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.x_artleft ul li:hover{
+  background: #f5f7f9;
+}
+
+.x_artleft  .x_topsell li{
+  width: 235px;
+  height: 70px;
+  padding-bottom: 13px;/*
+  overflow: hidden;*/
+}
+.x_artleft  .x_topsell li img{
+  width: 70px;
+  height: 70px;
+  border:1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+
+.x_artleft a{
+  color: #444;
+  text-decoration: none;
+  line-height: 40px;
+}
+.x_artleft .x_support_title{
+  margin:25px 0 10px 0 ;
+  font-size: 23px !important;
+  height: 44px !important;
+  line-height: 40px;
+  color: #000;
+}
+.x_emailno:hover {
+  background: #fff!important;
+}
+.x_artleft .x_support_title:hover{
+  background: #fff;
+}
+.x_artleft .pdf li:hover{
+  background: #fff!important;
+}
+
+
+.x_topslcell{
+  width:145px;
+  height:70px; 
+  margin-left: 10px;
+  overflow:hidden;
+}
+
+.x_topslcell a{
+  line-height: 15px;
+}
+.x_topslclstar{
+  margin-top: 5px;
+  width: 106px;
+  height: 20px;
+}
+ input[type="text"] #inquiry {
+  width: 336px !important;
+    height: 35px !important;
+}
+
+.x_artleft input{
+  border:1px solid #9a9a9a;
+  border-radius: 0px!important;
+  color: #9a9a9a;
+  font-size: 13px;
+}
+.x_noborder{
+  border-bottom:none!important;
+}
+.x_pdtname{
+  font-size: 40px;
+  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #000;
+}
+.x_pdtdisplay{
+  width: 735px;
+  height: 330px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+/*右边*/
+.x_pdtdisplay .x_ittag{
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 80px;
+  height: 80px;
+  background: url(../img/x_tagbig.png) no-repeat;
+}
+.x_pdtdisplay .x_cell{
+  width: 314px !important;
+  height: 314px !important;
+}
+
+.x_pdtdisplay .x_cell img{
+  width: 271px;
+  height: 294px;
+  margin: 20px;
+}
+.x_pdtdisplay ul li{
+  width: 395px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 13px;
+  overflow: hidden;
+}
+.x_pdtdisplay ul li select{ 
+  font-size: 13px;
+  width: 327px;
+  height: 29px;
+  border:1px solid #e0e0e0;
+}
+.x_pdtdisplay .x_start{ 
+  line-height: 30px;
+  margin-top: -1px;
+}
+
+.x_product_sort .x_add_on1{
+  background: #fff !important;
+  border:none!important;
+}
+.x_add_on2{
+  font-size: 16px !important;
+  color: #fff!important;
+  width: 90px !important;
+  background: #78a82f !important;
+  border-radius: 0px !important;
+  cursor: pointer;
+}
+.x_input_width{
+  width: 48px!important;
+}
+.x_prelated {
+  width: 686px;
+  min-height: 198px;
+  margin-bottom: 40px;
+}
+.x_prelated .x_cell{
+  width: 148px;
+  height: 198px;
+  overflow: hidden;
+}
+.x_prelated .x_cell img{
+  margin: 12px;
+  width: 125px;
+  height: 142px;
+}
+.x_prelated .x_itname{
+  margin-top: -7px;
+  height: 45px;
+  width: 100%;
+}
+.x_prelated .x_itnames{
+  width: 100%; 
+  height: 45px;
+  line-height: 20px;
+  text-align: center;
+}
+.x_e0line{
+  margin: 5px 0;
+  width: 96%;
+  height: 1px;
+  border-bottom:1px solid  #e0e0e0;
+}
+
+.tab-content input{
+  border-style: none;
+  border-radius: 0px;
+  margin-top: 5px;
+  border: 1px solid #e0e0e0;
+}
+.tab-content .x_number{
+  width: 600px;
+  float: left;
+  margin-left:60px;
+}
+.tab-content  .x_number span{
+  float: left;
+  width: 17px;
+}
+
+
+
+.x_nickname1{
+  width: 336px;
+  height: 45px;
+}
+.x_review1{
+  width: 600px;
+  height: 122px!important;
+}
+.x_prelated ul li a{
+  color: #5f5f5f!important;
+}
+
+.x_plbottom{
+  position: absolute;
+  bottom:1%;
+  left: 35%;
+}

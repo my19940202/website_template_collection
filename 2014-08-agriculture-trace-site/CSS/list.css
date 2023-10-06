@@ -1,0 +1,127 @@
+@charset "utf-8";
+a img{ border:none}
+.content{
+	width:1200px;
+	height:auto;
+	background-color: #fff;
+	margin:0 auto 0 auto;
+}
+.goods_index{
+	width: 501px;
+	height: 26px;
+	margin-left:9%;
+	text-align: left;
+}
+.goods_index a{
+	font-size: 12px;
+	color: #797979;
+	font-family: 'SimSun';
+}
+.goods_sort{
+	background: #f4f4f4;
+	width: 1000px;
+	height: 25px;	
+	margin: 0 auto 0 auto;
+}
+
+.gs_sortleft{
+	color:#626262;
+	float:left;
+}
+.gs_sortleft select{
+	color:#626262;
+}
+.gs_sortright{
+	float: right;
+	text-align: left;
+	height: 21px;
+	width:250px;
+	margin:2px 20px 0 0 ; 
+	color: #626262;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.gs_sortright a{
+	display: block;
+	float:right;
+	width:57px;
+	height:19px; 
+	margin:-5px 5px 0 0;
+	text-indent:0.5em;
+	border: 1px solid #b9b9b9;
+	color: #626262;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+}
+.gs_sortright a:hover{
+	background-color: #999;
+}
+.goods_list{
+	width: 1000px;
+	margin:20px auto 0 auto;
+	height:auto;
+}
+.goods_listpic{
+	margin-top:2px;
+}
+.goods_listpic a{
+	margin-top:2px;
+}
+.goods_listul{
+	width:1000px;
+	height:366px;
+	margin-left: -30px;
+	
+	}
+.goods_listli{
+	width:314px;
+	height:370px;
+	background:url(../Images/goods_list_bg.png);
+	float: left;
+	border-radius:4px;
+	/*box-shadow:-2px -2px 2px #c9c9c9 inset; */
+	margin: 0 12px 0 0;
+	background-color:#fff;
+}
+.goods_listdetail{
+	text-align: left;
+	font-size:13px;
+	color: #626262;
+	font-family: 'Microsoft YaHei';
+}
+
+.goods_listdetail_title{
+	margin: 2px 0 0 0;
+	font-size: 18px;
+	text-indent:1em;
+	color:#046e3f;
+	font-weight: bold; 
+}
+.rest_time{
+	width:308px;
+	height: 38px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin-top:18px; 
+	text-indent:8em;
+}
+.rest_time p{
+	margin-top:30px;
+	margin-top:40px\9;
+	+margin-top:10px;  
+}
+.goodslist_footer{
+	
+	width:900px;
+	height:40px;	
+	margin: 0 auto 0 auto;
+}
+
+.goodslist_footer a{
+color: #626262;
+border: 1px solid #b9b9b9;
+background-color: #f4f4f4;
+padding: 2px 5px;
+font-family: 'Microsoft YaHei';
+}

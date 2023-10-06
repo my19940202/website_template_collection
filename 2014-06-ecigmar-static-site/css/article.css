@@ -1,0 +1,112 @@
+  /*
+        Created by 奚圣波 on 14-6-18.  
+        Copyright (c) 2014年 奚圣波. All rights reserved.
+        email:15757125409@163.com;
+  */
+input[type="submit"]{
+  width: 135px;
+  height: 35px;
+  border-style: none;
+  color: #fff!important;
+  background: #78a82f;
+}
+.x_artleft{
+  width: 235px;
+  height: auto;
+  padding: 0 5px;
+}
+.x_artleft ul li{
+  width: 100%;
+  min-height: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.x_artleft ul li h4{
+  margin-top: 20px;
+}
+
+.x_artleft .x_support_title{
+  margin:25px 0 10px 0 ;
+  font-size: 23px;
+  height: 44px !important;
+  line-height: 40px;
+  color: #444;
+}
+.x_artleft a{
+  font-size: 15px;
+  color: #444;
+  text-decoration: none;
+  line-height: 40px;
+}
+.x_artleft button{
+  width: 135px;
+  height: 35px;
+  border-style: none;
+  color: #fff;
+  background: #78a82f;
+}
+.x_artright{
+  width: 700px;
+  height: auto;
+  font-size: 17px;
+  line-height: 25px;
+  color: #5f5e5e;
+}
+.x_noborder{
+  border-bottom:none!important;
+}
+
+
+/*contact us*/
+.x_ccontact ul li{
+  min-height: 50px;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+
+.x_e0line{
+  margin: 5px 0;
+  width: 96%;
+  height: 1px;
+  border-bottom:1px solid  #e0e0e0;
+}
+.x_ctform{
+  width: 650px;
+  height: 465px;
+  padding-bottom: 40px;
+  border:1px solid #e0e0e0;
+}
+.x_ctform h1{
+  text-indent: 0.5em;
+  color: #000;
+  font-size: 31px!important;
+  font-weight: normal!important;
+}
+.x_ctform ul{
+  width: 606px;
+  margin:0 auto;
+}
+
+.x_review1{
+  width: 580px;
+  height: 115px!important;
+}
+.x_margin_top{
+  margin-top: 25px;
+}
+.x_margin_top span{
+  line-height: 30px;
+}
+.x_ctform input[type="text"]{
+  width: 276px;
+  height: 35px;
+  border:1px solid #e0e0e0;
+}
+.x_map{
+  width: 1000px;
+  height: 500px;
+}
+.x_maptitle{
+  font-size: 23px;
+  margin: 5px 0;
+}
